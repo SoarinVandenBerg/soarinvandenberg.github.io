@@ -10,5 +10,17 @@
   </head>
   <body>
     hello world!
+    <img id="globe" src="globe/pixil-frame-109.png">
+    <script>
+      let img = document.getElementById("globe")
+      let frame = 109
+      setInterval(function(){
+        img.src = "globe/pixil-frame-" + frame + ".png"
+        frame--
+      if (frame < 0) {
+        frame = 109
+      }
+      }, 50)
+    </script>
   </body>
 </html>
