@@ -8,23 +8,13 @@
     }
       #globe {
         width: 290px;
+        mix-blend-mode: screen;
     filter: brightness(1.5);
         image-rendering: pixelated
       }
   </style>
   </head>
   <body>
-    <img id="globe" src="globe/pixil-frame-109.png">
-    <script>
-      let img = document.getElementById("globe")
-      let frame = 109
-      setInterval(function(){
-        img.src = "globe/pixil-frame-" + frame + ".png"
-        frame--
-      if (frame < 0) {
-        frame = 109
-      }
-      }, 50)
-    </script>
+<img id="globe" src="globe.gif">
   </body>
 </html>
