@@ -35,61 +35,70 @@
   </style>
   </head>
   <body>
-    <p id="title">ESP-32 Project</p>
-    <br>
-    <p id="text">This is where ill put all the info for my ESP-32 project. I don't</p>
-    <p id="text">think anyone will read this, but im just going to use this as</p>
-    <p id="text">a spot to keep all the info so I don't lose this.</p>
-    <br>
-    <p id="text">This project consists of ~25 games, a bunch of basic apps, and some other</p>
-    <p id="text">useful stuff. It has the same theme as the website, and it's got a bunch of</p>
-    <p id="text">other features such as a stats logger, settings page, multiplayer and</p>
-    <p id="text">singleplayer on most games, and some other stuff. I originally made the globe</p>
-    <p id="text">pixel art animation for the idle screen for the device, but am just using the</p>
-    <p id="text">freeze frame, but theres an option to revert in settings.</p>
-    <br>
-    <p id="text">About the making of this,, as explained in my <a href="https://soarinvandenberg.ca/ai" target="_blank">"thoughts about AI page"</a>, I used</p>
-    <p id="text">AI, specifically claude code (Opus 4.5) heavily on this project. It did most</p>
-    <p id="text">of the coding, but I reviewed it all and there shouldnt be too many bugs.</p>
-    <p id="text">Without using it, I don't think this project would have been possible, or it</p>
-    <p id="text">would have just been smaller and/or worse.</p>
-    <br>
-    <p id="text">Before even considering doing this, read all of the instructions below.</p>
-    <br>
-    <p id="text">Step 1: Buy the device. It costs around 50$ canadian depending on where</p>
-    <p id="text">you buy it, but if you get it on the waveshare website, it comes with</p>
-    <p id="text">a battery. Anywhere else i've found you have to buy it seperately which</p>
-    <p id="text">is usually around 10$ canadian. <a href="https://www.waveshare.com/esp32-s3-touch-amoled-1.8.htm?sku=29957" target="_blank">(here's the link to the site to buy it)</a></p>
-    <br>
-    <p id="text">Step 2: Install <a href="https://thonny.org/" target="_blank">Thronny</a> and also download all the code (below) for the project. Then</p>
-    <p id="text">put the bootloader file onto it using a python script (I completely forget</p>
-    <p id="text">how to do this part, just ask a smart AI, im too lazy to find the file rn,</p>
-    <p id="text">just contact me if you need help). <a href="https://github.com/SoarinVandenBerg/ESP-32-Project" target="_blank">Here's the repo with the code.</a></p>
-    <br>
-    <p id="text">Step 3: Connect the ESP-32 via USB-C to whatever computer you're using for</p>
-    <p id="text">this. To make it connect, just look up a tutorial for how to set up thronny</p>
-    <p id="text">for an ESP-32-S3. Then, put the rest of the files in thronny (this should</p>
-    <p id="text">be pretty easy to figure out). It does take a while to transfer the</p>
-    <p id="text">files, but it shouldnt be too long.</p>
-    <br>
-    <p id="text">Step 4: Press CTRL+D to restart the device and boot it up. CTRL+C reboots</p>
-    <p id="text">it. Make sure to look up a tutorial for how to use thronny first. Once you</p>
-    <p id="text">unplug it from your computer, press and hold both buttons for ~10s until</p>
-    <p id="text">the screen flashes, then hold the PWR button until you see the idle screen.</p>
-    <br>
-    <p id="text">Now if everything has worked so far (very unlikely), you should see an idle</p>
-    <p id="text">screen (a globe) and if you tap the screen, you should see a list of apps!</p>
-    <p id="text">The touch controls are pretty finnicky, but everything should be pretty</p>
-    <p id="text">intuitive. If you need any help, feel free to contact me!</p>
-    <br>
-    <p id="text">That should be it! To do this project, you do need to be familliar with</p>
-    <p id="text">thronny or coding, and you will most likely encounter problems with stuff</p>
-    <p id="text">as ive only done this twice and each time different problems occured.</p>
-    <p id="text">If I havent said it already, DO THIS AT YOUR OWN RISK!! There's</p>
-    <p id="text">probably a buncha stuff I left out here, so ask if needed. I don't think</p>
-    <p id="text">anyone will ever use this anyway, but im just using this page as a spot</p>
-    <p id="text">to keep all the info in one place for future me :)</p>
-    <br><br>
+<p id="title">ESP-32 Project</p>
+<br>
+<p id="text">This is where ill put all the info for my ESP-32 project. I don't think</p>
+<p id="text">anyone will read this, but im just going to use this as a spot to keep all</p>
+<p id="text">the info so I don't lose this.</p>
+<br>
+
+<p id="text">This project consists of ~25 games, a bunch of basic apps, and some other</p>
+<p id="text">useful stuff. It has the same theme as the website, and it's got a bunch of</p>
+<p id="text">other features such as a stats logger, settings page, multiplayer and</p>
+<p id="text">singleplayer on most games, and some other stuff. I originally made the globe</p>
+<p id="text">pixel art animation for the idle screen for the device, but am just using the</p>
+<p id="text">freeze frame, but theres an option to revert in settings.</p>
+<br>
+
+<p id="text">About the making of this,, as explained in my <a href="https://soarinvandenberg.ca/ai" target="_blank">"thoughts about AI page"</a>, I used</p>
+<p id="text">AI, specifically claude code (Opus 4.5) heavily on this project. It did most</p>
+<p id="text">of the coding, but I reviewed it all and there shouldnt be too many bugs.</p>
+<p id="text">Without using it, I don't think this project would have been possible, or it</p>
+<p id="text">would have just been smaller and/or worse.</p>
+<br>
+
+<p id="text">Before even considering doing this, read all of the instructions below.</p>
+<br>
+
+<p id="text">Step 1: Buy the device. It costs around 50$ canadian depending on where you</p>
+<p id="text">buy it, but if you get it on the waveshare website, it comes with a battery.</p>
+<p id="text">Anywhere else i've found you have to buy it seperately which is usually around</p>
+<p id="text">10$ canadian. <a href="https://www.waveshare.com/esp32-s3-touch-amoled-1.8.htm?sku=29957" target="_blank">(here's the link to the site to buy it)</a></p>
+<br>
+
+<p id="text">Step 2: Install <a href="https://thonny.org/" target="_blank">Thronny</a> and also download all the code (below) for the project. Then put</p>
+<p id="text">the bootloader file onto it using a python script (I completely forget how to</p>
+<p id="text">do this part, just ask a smart AI, im too lazy to find the file rn, just</p>
+<p id="text">contact me if you need help). <a href="https://github.com/SoarinVandenBerg/ESP-32-Project" target="_blank">Here's the repo with the code.</a></p>
+<br>
+
+<p id="text">Step 3: Connect the ESP-32 via USB-C to whatever computer you're using for</p>
+<p id="text">this. To make it connect, just look up a tutorial for how to set up thronny</p>
+<p id="text">for an ESP-32-S3. Then, put the rest of the files in thronny (this should be</p>
+<p id="text">pretty easy to figure out). It does take a while to transfer the files, but it</p>
+<p id="text">shouldnt be too long.</p>
+<br>
+
+<p id="text">Step 4: Press CTRL+D to restart the device and boot it up. CTRL+C reboots it.</p>
+<p id="text">Make sure to look up a tutorial for how to use thronny first. Once you unplug</p>
+<p id="text">it from your computer, press and hold both buttons for ~10s until the screen</p>
+<p id="text">flashes, then hold the PWR button until you see the idle screen.</p>
+<br>
+
+<p id="text">Now if everything has worked so far (very unlikely), you should see an idle</p>
+<p id="text">screen (a globe) and if you tap the screen, you should see a list of apps! The</p>
+<p id="text">touch controls are pretty finnicky, but everything should be pretty intuitive.</p>
+<p id="text">If you need any help, feel free to contact me!</p>
+<br>
+
+<p id="text">That should be it! To do this project, you do need to be familliar with</p>
+<p id="text">thronny or coding, and you will most likely encounter problems with stuff as</p>
+<p id="text">ive only done this twice and each time different problems occured. If I havent</p>
+<p id="text">said it already, DO THIS AT YOUR OWN RISK!! There's probably a buncha stuff I</p>
+<p id="text">left out here, so ask if needed. I don't think anyone will ever use this</p>
+<p id="text">anyway, but im just using this page as a spot to keep all the info in one</p>
+<p id="text">place for future me :)</p>
+<br><br>
     <p id="text"><a href="https://soarinvandenberg.ca"><-- Exit</a></p>
   </body>
 </html>
