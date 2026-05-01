@@ -37,17 +37,21 @@ Notes!!
       background-color: black;
       color: white;
       }
-      #title {
+      .title {
         font-size: 40px;
+        font-family:'Departure Mono', monospace;
+        margin: 0;
       }
-      #text {
+      .text {
         font-size: 14px;
+        font-family:'Departure Mono', monospace;
+        margin: 0;
       }
   </style>
   </head>
   <body>
     <p>Coming Soon!</p>
     <br><br>
-    <p id="text"><a href="https://soarinvandenberg.ca"><-- Exit</a></p>
+    <p class="text"><a href="https://soarinvandenberg.ca"><-- Exit</a></p>
   </body>
 </html>
