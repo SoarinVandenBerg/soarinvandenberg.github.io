@@ -20,6 +20,12 @@
       background-color: black;
       color: white;
       }
+      #globe {
+        width: 290px;
+        mix-blend-mode: screen;
+    filter: brightness(2);
+        image-rendering: pixelated;
+      }
       .title {
         font-size: 40px;
         font-family:'Departure Mono', monospace;
