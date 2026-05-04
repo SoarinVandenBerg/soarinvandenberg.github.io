@@ -3,7 +3,9 @@ Notes!!
 -Green Colour: #00be00
 -Font: Departure Mono
 
-MAKE CONWAY's GAME OF LIFE!
+To do:
+-MAKE CONWAY's GAME OF LIFE!
+-fix icon blur!
 
 
 
