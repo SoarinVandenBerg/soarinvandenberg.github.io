@@ -28,6 +28,11 @@
       .pixel {
         image-rendering: pixelated;
       }
+      .book {
+        width: 140px;
+        height: auto;
+        image-rendering: pixelated;
+      }
       .title {
         font-size: 40px;
         font-family:'Departure Mono', monospace;
