@@ -3,6 +3,8 @@ Notes!!
 -Green Colour: #00be00
 -Font: Departure Mono
 
+MAKE CONWAY's GAME OF LIFE!
+
 
 
 
