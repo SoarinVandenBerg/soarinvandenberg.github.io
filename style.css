@@ -22,8 +22,10 @@
       }
       #globe {
         width: 290px;
-        mix-blend-mode: screen;
-    filter: brightness(2);
+        filter: brightness(2);
+        image-rendering: pixelated;
+      }
+      .pixel {
         image-rendering: pixelated;
       }
       .title {
