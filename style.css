@@ -30,7 +30,7 @@
       }
       .notes {
         border: 1px solid #00be00;
-        border-radius: 2px
+        border-radius: 4px;
       }
       .book {
         width: 300px;
