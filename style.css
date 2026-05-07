@@ -28,6 +28,9 @@
       .pixel {
         image-rendering: pixelated;
       }
+      .notes {
+        border: 1px solid #00be00
+      }
       .book {
         width: 300px;
         height: auto;
