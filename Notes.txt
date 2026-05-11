@@ -5,7 +5,7 @@ Notes!!
 
 To do:
 -MAKE CONWAY's GAME OF LIFE!
--fix icon blur!
+-crash thing
 
 
 
@@ -26,5 +26,6 @@ To do:
     <br><br>
     <a href="https://soarinvandenberg.ca"><-- Exit</a>
     </p>
+    <script src="nomobile.js"></script>
   </body>
 </html>
