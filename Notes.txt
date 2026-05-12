@@ -23,7 +23,7 @@ To do:
   <body>
     <p class="text">
       Coming Soon!
-    <br><br>
+    <br><br><br>
     <a href="https://soarinvandenberg.ca"><-- Exit</a>
     </p>
   </body>
