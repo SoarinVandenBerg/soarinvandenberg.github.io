@@ -26,6 +26,5 @@ To do:
     <br><br>
     <a href="https://soarinvandenberg.ca"><-- Exit</a>
     </p>
-    <script src="nomobile.js"></script>
   </body>
 </html>
