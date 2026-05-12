@@ -10,6 +10,7 @@
       p {
         font-family: 'Departure Mono', Monospace;
         margin: 0;
+        max-width: 500px;
       }
       /*hello henry :D */
       @font-face {
