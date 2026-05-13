@@ -5,7 +5,7 @@ const rows = 20;
 const cellWidth = canvas.width / cols;
 const cellHeight = canvas.height / rows;
 function drawGrid() {
-    ctx.strokeStyle = "#444"
+    ctx.strokeStyle = "#00be00"
 
     for (let x = 0; x <= cols; x = x + 1) {
         ctx.beginPath();
@@ -31,7 +31,7 @@ function initBoard() {
     }
 }
 function drawCells() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    // ctx.clearRect(0, 0, canvas.width, canvas.height);
     for (let y = 0; y < rows; y = y + 1) {
         for (let x = 0; x < cols; x = x + 1) {
 
@@ -39,6 +39,5 @@ function drawCells() {
     }
 }
 initBoard();
-drawGrid();
 drawCells();
-console.log("JS loaded");
+drawGrid();
