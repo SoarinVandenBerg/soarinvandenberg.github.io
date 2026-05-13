@@ -41,3 +41,4 @@ function drawCells() {
 initBoard();
 drawGrid();
 drawCells();
+console.log("JS loaded");
