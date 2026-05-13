@@ -38,3 +38,6 @@ function drawCells() {
         }
     }
 }
+initBoard();
+drawGrid();
+drawCells();
