@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="website_icon.png">
+    <title>Soarin's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="robots" content="noindex">
+  </head>
+  <body>
+    <p class="title">  
+        Countdowns!
+    </p><br><br>
+
+    <p class="header">
+        Time until end of the school day:
+    </p><br>
+    <p id="countdown" class="text"></p>
+
+
+
+
+    <p class="text">
+        Credits:
+    </p>
+    <ul>
+        <li>The base code for the countdowns is from <a href="https://www.delftstack.com/howto/java/countdown-timer-java/" target="_blank">Delftstack</a> </li>
+        <li>The idea is from the <a href="https://neal.fun/progress/" target="_blank">Neal.fun's progress page.</a></li>
+    </ul>
+    <br><br><br>
+    <a href="https://soarinvandenberg.ca"><-- Exit</a>
+    </p>
+    <script>
+        const now = new Date();
+        const day = now.getDay();
+
+        const startTime = new Date();
+        startTime.setHours(8, 40, 0, 0);
+
+        const endTime = new Date();
+        endTime.setHours(15, 10, 0, 0);
+
+
+        if (day === 0 || day === 6) {
+            document.getElementById("countdown").innerText = "School is not in session!";
+        }
+        else if (now < startTime) {
+            document.getElementById("countdown").innerText = "School is not in session!";
+        }
+        else if (now > endTime) {
+            document.getElementById("countdown").innerText = "School is not in session!";
+        }
+
+
+    </script>
+  </body>
+</html>
