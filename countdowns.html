@@ -14,19 +14,16 @@
     <p class="header">
         Time until end of the school day:
     </p>
-    <p class="countdown">00:00:00</p>
+    <p id="countdown" class="countdown"></p>
 
 
 
 
-    <p class="text">
-        Credits:
+    <p class="text"><br><br>
+        The idea of this page is from <a href="https://neal.fun/progress/" target="_blank">Neal.fun's progress page.</a> :D
     </p>
-    <ul class="text">
-        <li>The base code for the countdowns is from <a href="https://www.delftstack.com/howto/java/countdown-timer-java/" target="_blank">Delftstack</a> </li>
-        <li>The idea is from the <a href="https://neal.fun/progress/" target="_blank">Neal.fun's progress page.</a></li>
-    </ul>
     <br><br><br>
+    <p class="text">
     <a href="https://soarinvandenberg.ca"><-- Exit</a>
     </p>
 
@@ -49,6 +46,25 @@
         }
         else if (now > endTime) {
             document.getElementById("countdown").innerText = "School is not in session!";
+        }
+        else {
+            setInterval(() => {
+                const pad = (num) => String(num).padStart(2, "0");
+                const now = new Date();
+                const diff = endTime - now;
+
+                if (diff <= 0) {
+                    document.getElementById("countdown").innerText = "School is not in session!";
+                    return;
+                }
+
+                const hours = Math.floor(diff / (1000 * 60 * 60));
+                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+                document.getElementById("countdown").innerText =
+                `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
+            }, 1000);
         }
 
 
