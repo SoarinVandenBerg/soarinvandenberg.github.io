@@ -41,3 +41,6 @@ function drawCells() {
 initBoard();
 drawCells();
 drawGrid();
+
+
+// im way too lazy to finish this rn
