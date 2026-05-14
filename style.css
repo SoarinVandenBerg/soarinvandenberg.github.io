@@ -1,17 +1,11 @@
       a {
         color: white;
         text-decoration: none;
-        font-family: 'Departure Mono', Monospace;
       }
       a:hover {
         text-decoration:none;
         color: #00be00;
       }
-      p {
-        font-family: 'Departure Mono', Monospace;
-        margin: 0;
-      }
-      /*hello henry :D */
       @font-face {
   font-family: 'Departure Mono';
   src: url('DepartureMono-Regular.otf') format('opentype');
@@ -19,6 +13,8 @@
     body {
       background-color: black;
       color: white;
+      font-family:'Departure Mono', monospace;
+      margin: 0;
       }
       #globe {
         width: 290px;
@@ -39,27 +35,21 @@
       }
       .title {
         font-size: 40px;
-        font-family:'Departure Mono', monospace;
-        margin: 0;
+      }
+      .countdown {
+        font-size: 30px;
+        color: #00be00;
       }
       .header {
         font-size: 20px;
-        font-family:'Departure Mono', monospace;
-        margin: 0;
       }
       .massive {
         font-size: 200px;
-        font-family:'Departure Mono', monospace;
-        margin: 0;
       }
       .text {
         font-size: 14px;
-        font-family:'Departure Mono', monospace;
-        margin: 0;
         max-width: 600px;
       }
       .blog {
         font-size: 14px;
-        font-family:'Departure Mono', monospace;
-        margin: 0;
       }
