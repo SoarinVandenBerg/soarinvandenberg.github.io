@@ -49,6 +49,7 @@
       .text {
         font-size: 14px;
         max-width: 600px;
+        font-weight: bold;
       }
       .blog {
         font-size: 14px;
