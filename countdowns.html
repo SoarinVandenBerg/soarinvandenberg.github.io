@@ -14,7 +14,7 @@
     <p class="header">
         Time until end of the school day:
     </p>
-    <p id="countdown" class="countdown"></p>
+    <p id="countdown1" class="countdown"></p>
 
 
 
@@ -39,13 +39,13 @@
 
 
         if (day === 0 || day === 6) {
-            document.getElementById("countdown").innerText = "School is not in session!";
+            document.getElementById("countdown1").innerText = "School is not in session!";
         }
         else if (now < startTime) {
-            document.getElementById("countdown").innerText = "School is not in session!";
+            document.getElementById("countdown1").innerText = "School is not in session!";
         }
         else if (now > endTime) {
-            document.getElementById("countdown").innerText = "School is not in session!";
+            document.getElementById("countdown1").innerText = "School is not in session!";
         }
         else {
             setInterval(() => {
@@ -54,7 +54,7 @@
                 const diff = endTime - now;
 
                 if (diff <= 0) {
-                    document.getElementById("countdown").innerText = "School is not in session!";
+                    document.getElementById("countdown1").innerText = "School is not in session!";
                     return;
                 }
 
@@ -62,9 +62,16 @@
                 const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
                 const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-                document.getElementById("countdown").innerText =
+                document.getElementById("countdown1").innerText =
                 `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
             }, 1000);
+        }
+        
+        const now = new Date();
+        const currentTime = now.getHours() * 60 + now.getMinutes();
+
+        if (currentTime < 10 * 60) {
+            block = "class1"
         }
 
 
