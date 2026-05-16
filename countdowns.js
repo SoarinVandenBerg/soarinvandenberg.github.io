@@ -288,7 +288,7 @@ const now = new Date();
         document.getElementById("countdown2").innerText = "School is not in session!";
     }
 
-    const Freedom = new Date("June 23, 2026 15:00:10");
+    const Freedom = new Date("June 23, 2026 15:10:00");
 
     setInterval(() => {
                 const now3 = new Date();
