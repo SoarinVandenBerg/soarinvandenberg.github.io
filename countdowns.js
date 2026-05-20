@@ -7,6 +7,7 @@ const now = new Date();
         const endTime = new Date();
         endTime.setHours(15, 10, 0, 0);
 
+        // I know this code is probably pretty bad, but I dont really care becuase it works :D
 
         if (day === 0 || day === 6) {
             document.getElementById("countdown1").innerText = "School is not in session!";

@@ -1,11 +1,10 @@
-const ua = navigator.userAgent;
+document.addEventListener("DOMContentLoaded", () => {
+  const ua = navigator.userAgent;
 
-// Blocks ALL Apple devices (Mac, iPhone, iPad)
-if (
-  (ua.includes("Safari") && !ua.includes("Chrome")) || 
-  ua.includes("Macintosh") || 
-  ua.includes("iPhone") || 
-  ua.includes("iPad")
-) {
-  window.location.href = "/offline";
-}
+  const isIOS = /iPhone|iPad|iPod/i.test(ua);
+  const isMac = /Macintosh/i.test(ua);
+
+  if (isIOS || isMac) {
+    window.location.href = "/offline";
+  }
+});
