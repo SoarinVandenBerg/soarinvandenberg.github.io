@@ -311,3 +311,24 @@ const now = new Date();
                     `${pad(days)}:${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
     }, 1000);
 
+const endOfYear = new Date("June 23, 2026 15:10:00");
+
+function countSchoolDays(start, end) {
+    let count = 0;
+    let d = new Date(start);
+
+    while (d <= end) {
+        const day3 = d.getDay();
+        if (day3 !== 0 && day3 !==6) {
+            count++;
+        }
+        d.setDate(d.getDate() + 1);
+    }
+
+    return count;
+}
+
+const schoolDaysLeft = countSchoolDays(new Date(), endOfYear);
+
+document.getElementById("countdown4").innerText =
+    schoolDaysLeft;
