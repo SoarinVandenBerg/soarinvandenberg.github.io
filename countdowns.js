@@ -313,22 +313,54 @@ const now = new Date();
 
 const endOfYear = new Date("June 23, 2026 15:10:00");
 
-function countSchoolDays(start, end) {
-    let count = 0;
-    let d = new Date(start);
+function countSchoolDaysPrecise(now, end) {
+    let d = new Date(now);
+    let fullDays = 0;
+
+    const afterEnd =
+        d.getHours() > 15 ||
+        (d.getHours() === 15 && d.getMinutes() >= 10);
+
+    if (afterEnd) {
+        d.setDate(d.getDate() + 1);
+    }
 
     while (d <= end) {
-        const day3 = d.getDay();
-        if (day3 !== 0 && day3 !==6) {
-            count++;
+        const weekday = d.getDay();
+        if (weekday >= 1 && weekday <= 5) {
+            fullDays++;
         }
         d.setDate(d.getDate() + 1);
     }
 
-    return count;
+    let fraction = 0;
+
+    const start = new Date(now);
+    const schoolStart = new Date(start);
+    schoolStart.setHours(8, 40, 0, 0);
+
+    const schoolEnd = new Date(start);
+    schoolEnd.setHours(15, 10, 0, 0);
+
+    if (start.getDay() >= 1 && start.getDay() <= 5 && start < schoolEnd) {
+        const totalMinutes  = 390;
+
+        let minutesLeft = 0;
+
+        if (start <= schoolStart) {
+            minutesLeft = totalMinutes;
+        }
+        else {
+            minutesLeft = (schoolEnd - start) / 60000;
+        }
+
+        fraction = minutesLeft / totalMinutes;
+    }
+
+    return fullDays + fraction;
 }
 
-const schoolDaysLeft = countSchoolDays(new Date(), endOfYear);
+const precise = countSchoolDaysPrecise(new Date(), endOfYear);
 
-document.getElementById("countdown4").innerText =
-    schoolDaysLeft;
+document.getElementById("countdown4").innerText = 
+    precise.toFixed(2);
