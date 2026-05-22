@@ -55,6 +55,15 @@
       .egg:hover {
         color: #00be00;
       }
+      .egg a {
+        font-size: 14px;
+        font-family:'Departure Mono', monospace;
+        margin: 0;
+        color: black;
+      }
+      .egg a:hover {
+        color: #00be00;
+      }
       .massive {
         font-size: 200px;
         font-family:'Departure Mono', monospace;
