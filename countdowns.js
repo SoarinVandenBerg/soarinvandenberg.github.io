@@ -311,11 +311,11 @@ const now = new Date();
                     `${pad(days)}:${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
     }, 1000);
 
-const Crash = new Date("Febuary 11, 2031 19:45:00");
+const Crash = new Date("February 11, 2031 19:45:00");
     // I know this date isnt exact, becuase we dont really have a date yet, but this is the best one I could find
 
 setInterval(() => {
-              const now3 = new Date();
+              const now4 = new Date();
               const diff = Crash - now4;
 
                 if (diff <= 0) {
