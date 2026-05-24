@@ -334,6 +334,7 @@ setInterval(() => {
                     `${pad(days)}:${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
     }, 1000);
 
+
 const endOfYear = new Date("June 23, 2026 15:10:00");
 
 function countSchoolDaysPrecise(now, end) {
@@ -382,8 +383,12 @@ function countSchoolDaysPrecise(now, end) {
 
     return fullDays + fraction;
 }
-
+setInterval(() => {
 const precise = countSchoolDaysPrecise(new Date(), endOfYear);
 
-document.getElementById("countdown4").innerText = 
-    precise.toFixed(2);
+let display = precise % 1 === 0
+    ? precise.toString()
+    : precise.toFixed(2);
+
+document.getElementById("countdown4").innerText = display;
+}, 1000);
