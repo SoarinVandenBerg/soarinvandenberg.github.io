@@ -96,7 +96,7 @@ const now = new Date();
                 const currentTime = now2.getHours() * 60 + now2.getMinutes();
                 const currentSeconds = now2.getSeconds();
 
-                const nowInSeconds = currentTime * 60 + currentSeconds;
+                const nowInSeconds = Math.floor(now2.getTime() / 1000);
 
                 const endInSeconds = end * 60;
                 const diff = endInSeconds - nowInSeconds;
@@ -180,7 +180,7 @@ const now = new Date();
                 const currentTime = now2.getHours() * 60 + now2.getMinutes();
                 const currentSeconds = now2.getSeconds();
 
-                const nowInSeconds = currentTime * 60 + currentSeconds;
+                const nowInSeconds = Math.floor(now2.getTime() / 1000);
 
                 const endInSeconds = end * 60;
                 const diff = endInSeconds - nowInSeconds;
@@ -264,7 +264,7 @@ const now = new Date();
                 const currentTime = now2.getHours() * 60 + now2.getMinutes();
                 const currentSeconds = now2.getSeconds();
 
-                const nowInSeconds = currentTime * 60 + currentSeconds;
+                const nowInSeconds = Math.floor(now2.getTime() / 1000);
 
                 const endInSeconds = end * 60;
                 const diff = endInSeconds - nowInSeconds;
