@@ -20,5 +20,12 @@
       </p>
     </div>
     <script src="offline.js"></script>
+    <script>
+      document.getElementById("Egg1").addEventListener("click", function() {
+        localStorage.setItem("egg1_found", "true");
+        window.location.href = "/easter-eggs";
+    });
+
+    </script>
   </body>
 </html>

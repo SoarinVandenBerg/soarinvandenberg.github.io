@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="website_icon.png">
+    <title>Soarin's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="robots" content="noindex">
+  </head>
+  <body>
+    <p class="title">Achivements</p>
+    <p class="header" id="eggCount"></p>
+    <br><br>
+    <p class="text">Found Easter Eggs:</p>
+    <ul id="eggList" class="text" style="list-style:none; padding-left:0;"></ul>
+
+    <br><br><br>
+    <a href="https://soarinvandenberg.ca"><-- Exit</a>
+    </p>
+    <script src="offline.js"></script>
+    <script>
+      let totalEggs = 1;
+      let foundEggs = 0;
+
+      if (localStorage.getItem("egg_found")) {
+        foundEggs++;
+      }
+
+      document.getElementById("eggCount").innerText =
+      `${foundEggs}/${totalEggs} easter eggs found!`;
+
+      let list = document.getElementById("eggList");
+
+      if (localStorage.getItem("egg1_found")) {
+        let item = document.createElement("li");
+        item.innerText = "Found the bottom-right button"
+
+      }
+
+    </script>
+  </body>
+</html>
