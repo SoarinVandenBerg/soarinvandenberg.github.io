@@ -17,26 +17,6 @@
     <a href="https://soarinvandenberg.ca"><-- Exit</a>
     </p>
     <script src="offline.js"></script>
-    <script>
-      let totalEggs = 1;
-      let foundEggs = 0;
-
-      if (localStorage.getItem("egg1_found")) {
-        foundEggs++;
-      }
-
-      document.getElementById("eggCount").innerText =
-      `${foundEggs}/${totalEggs} Easter Eggs Found!`;
-
-      let list = document.getElementById("eggList");
-
-      if (localStorage.getItem("egg1_found")) {
-        let item = document.createElement("li");
-        item.innerText = "-The bottom-right button"
-        list.appendChild(item);
-
-      }
-
-    </script>
+    <script src="easter-eggs.js"></script>
   </body>
 </html>
