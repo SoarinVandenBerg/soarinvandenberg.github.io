@@ -7,7 +7,7 @@
     <meta name="robots" content="noindex">
   </head>
   <body>
-    <p class="title">Easter Eggs</p>
+    <p class="title">Easter Eggs</p><br>
     <p class="header" id="eggCount"></p>
     <br><br>
     <p class="text">Found Easter Eggs:</p>
@@ -26,13 +26,13 @@
       }
 
       document.getElementById("eggCount").innerText =
-      `${foundEggs}/${totalEggs} easter eggs found!`;
+      `${foundEggs}/${totalEggs} Easter Eggs Found!`;
 
       let list = document.getElementById("eggList");
 
       if (localStorage.getItem("egg1_found")) {
         let item = document.createElement("li");
-        item.innerText = "-Found the bottom-right button"
+        item.innerText = "-The bottom-right button"
         list.appendChild(item);
 
       }
