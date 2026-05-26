@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const ua = navigator.userAgent;
 
-  const isIOS = /iPhone|iPad|iPod/i.test(ua);
+  const isIOS = /iPad|iPod/i.test(ua);
   const isMac = /Macintosh/i.test(ua);
 
   if (isIOS || isMac) {
