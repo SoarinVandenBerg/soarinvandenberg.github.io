@@ -45,6 +45,7 @@
           "visited_index",
           "visited_pages",
           "visited_projects",
+          "visited_eggs",
         ];
 
         let allVisited = pages.every(key => localStorage.getItem(key));
