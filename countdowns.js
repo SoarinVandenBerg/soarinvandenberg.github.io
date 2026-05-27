@@ -42,9 +42,13 @@ const now = new Date();
         const day2 = now2.getDay();
         
         if (day2 === 3) {
-        const currentTime = now2.getHours() * 60 + now2.getMinutes();
 
-        let block = "";
+            setInterval(() => {
+                const now2 = new Date();
+                const currentTime = now2.getHours() * 60 + now2.getMinutes();
+                const currentSeconds = now2.getSeconds();
+
+                    let block = "";
         let end = null;
 
         if (currentTime < 8 * 60 + 40) {
@@ -91,10 +95,6 @@ const now = new Date();
             document.getElementById("countdown2").innerText = "School is not in session!";
         }
         else {
-            setInterval(() => {
-                const now2 = new Date();
-                const currentTime = now2.getHours() * 60 + now2.getMinutes();
-                const currentSeconds = now2.getSeconds();
 
                 const nowInSeconds = currentTime * 60 + currentSeconds;
 
@@ -118,9 +118,13 @@ const now = new Date();
         }
     } 
     else if (day2 === 1 || day2 === 4) {
-        const currentTime = now2.getHours() * 60 + now2.getMinutes();
+        
+            setInterval(() => {
+                const now2 = new Date();
+                const currentTime = now2.getHours() * 60 + now2.getMinutes();
+                const currentSeconds = now2.getSeconds();
 
-        let block = "";
+                let block = "";
         let end = null;
 
         if (currentTime < 8 * 60 + 40) {
@@ -175,10 +179,6 @@ const now = new Date();
             document.getElementById("countdown2").innerText = "School is not in session!";
         }
         else {
-            setInterval(() => {
-                const now2 = new Date();
-                const currentTime = now2.getHours() * 60 + now2.getMinutes();
-                const currentSeconds = now2.getSeconds();
 
                 const nowInSeconds = currentTime * 60 + currentSeconds;
 
@@ -202,9 +202,13 @@ const now = new Date();
         }
     }
     else if (day2 === 2 || day2 === 5) {
-        const currentTime = now2.getHours() * 60 + now2.getMinutes();
 
-        let block = "";
+            setInterval(() => {
+                const now2 = new Date();
+                const currentTime = now2.getHours() * 60 + now2.getMinutes();
+                const currentSeconds = now2.getSeconds();
+
+                let block = "";
         let end = null;
 
         if (currentTime < 8 * 60 + 40) {
@@ -259,10 +263,6 @@ const now = new Date();
             document.getElementById("countdown2").innerText = "School is not in session!";
         }
         else {
-            setInterval(() => {
-                const now2 = new Date();
-                const currentTime = now2.getHours() * 60 + now2.getMinutes();
-                const currentSeconds = now2.getSeconds();
 
                 const nowInSeconds = currentTime * 60 + currentSeconds;
 
