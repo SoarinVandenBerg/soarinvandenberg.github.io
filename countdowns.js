@@ -61,7 +61,7 @@ const now = new Date();
         }
         else if (currentTime <  10 * 60 + 10) {
             block = "break";
-            end = null;
+            end = 10 * 60 + 10;
         }
         else if (currentTime <  11 * 60 + 30) {
             block = "class2";
@@ -116,7 +116,7 @@ const now = new Date();
                     `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
             }, 1000);
         }
-    } 
+    
     else if (day2 === 1 || day2 === 4) {
         
             setInterval(() => {
