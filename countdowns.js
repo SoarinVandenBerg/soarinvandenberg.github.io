@@ -114,8 +114,10 @@ const now = new Date();
 
                 document.getElementById("countdown2").innerText =
                     `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
-            }, 1000);
+            }
+        }, 1000);
         }
+    
     
     else if (day2 === 1 || day2 === 4) {
         
@@ -198,9 +200,10 @@ const now = new Date();
 
                 document.getElementById("countdown2").innerText =
                     `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
+            }
             }, 1000);
         }
-    }
+    
     else if (day2 === 2 || day2 === 5) {
 
             setInterval(() => {
@@ -282,9 +285,10 @@ const now = new Date();
 
                 document.getElementById("countdown2").innerText =
                     `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
+            }
             }, 1000);
         }
-    }
+    
     else if (day2 === 0 || day2 === 6) {
         document.getElementById("countdown2").innerText = "School is not in session!";
     }
