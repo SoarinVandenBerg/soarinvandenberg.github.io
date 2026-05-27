@@ -251,7 +251,7 @@ const now = new Date();
             block = "class4";
             end = 15 * 60 + 10;
         }
-        else {
+        elswwwwwwe {
             block = "After school";
             end = null;
         }
