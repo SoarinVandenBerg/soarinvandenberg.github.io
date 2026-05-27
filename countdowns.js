@@ -99,7 +99,7 @@ const now = new Date();
                 const nowInSeconds = currentTime * 60 + currentSeconds;
 
                 const endInSeconds = end * 60;
-                const diff = endInSeconds - nowInSeconds;
+                const diff = endInSeconds - nowInSeconds - 1;
                 
                 if (diff <= 0) {
                     document.getElementById("countdown2").innerText = "School is not in session!";
@@ -185,7 +185,7 @@ const now = new Date();
                 const nowInSeconds = currentTime * 60 + currentSeconds;
 
                 const endInSeconds = end * 60;
-                const diff = endInSeconds - nowInSeconds;
+                const diff = endInSeconds - nowInSeconds - 1;
                 
                 if (diff <= 0) {
                     document.getElementById("countdown2").innerText = "School is not in session!";
@@ -270,7 +270,7 @@ const now = new Date();
                 const nowInSeconds = currentTime * 60 + currentSeconds;
 
                 const endInSeconds = end * 60;
-                const diff = endInSeconds - nowInSeconds;
+                const diff = endInSeconds - nowInSeconds - 1;
                 
                 if (diff <= 0) {
                     document.getElementById("countdown2").innerText = "School is not in session!";
@@ -279,7 +279,7 @@ const now = new Date();
 
                 const hours = Math.floor(diff / 3600);
                 const minutes = Math.floor((diff % 3600) / 60);
-                const seconds = (diff - 1) % 60;
+                const seconds = diff % 60;
 
                 const pad = (n) => String(n).padStart(2, "0");
 
