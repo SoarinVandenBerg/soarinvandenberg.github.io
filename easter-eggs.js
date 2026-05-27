@@ -33,5 +33,23 @@
 
           location.reload();
         })
+
+        const pages = [
+          "visited_about",
+          "visited_ai",
+          "visited_notes",
+          "visited_books",
+          "visited_contact",
+          "visited_countdowns",
+          "visited_esp-32",
+          "visited_index",
+          "visited_pages",
+          "visited_projects",
+        ];
+
+        let allVisited = pages.every(key => localStorage.getItem(key));
+        if (allVisited) {
+          localStorage.setItem("egg2_found", "true");
+        }
       
 
