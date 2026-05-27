@@ -342,54 +342,56 @@ setInterval(() => {
 const endOfYear = new Date("June 23, 2026 15:10:00");
 
 function countSchoolDaysPrecise(now, end) {
-    let d = new Date(now);
-    let fullDays = 0;
-
-    let fraction = 0;
-
-    d.setDate(d.getDate() + 1);
-
-    while (d <= end) {
-        const weekday = d.getDay();
-        if (weekday >= 1 && weekday <= 5) {
-            fullDays++;
-        }
-        d.setDate(d.getDate() + 1);
-    }
-
     const start = new Date(now);
+
     const schoolStart = new Date(start);
     schoolStart.setHours(8, 40, 0, 0);
 
     const schoolEnd = new Date(start);
     schoolEnd.setHours(15, 10, 0, 0);
 
+    let fraction = 0;
     const weekday = start.getDay();
+    const totalMinutes = 390;
 
     if (weekday >= 1 && weekday <= 5) {
-        const totalMinutes = 390;
-    
         if (start < schoolStart) {
             fraction = 1;
         }
         else if (start >= schoolEnd) {
-            fraction = 1;
+            fraction = 0;
         }
         else {
-            const minutesLeft = (schoolEnd - start) / 60000;
+            minutesLeft = (schoolEnd - start) / 60000;
             fraction = minutesLeft / totalMinutes;
         }
     }
 
+    let fullDays = 0;
+
+    let d = new Date(start);
+    d.setHours(0, 0, 0, 0);
+    d.setDate(d.getDate() + 1);
+
+    const endDay = new Date(end);
+    endDay.setHours(0, 0, 0, 0);
+
+    while (d <= endDay) {
+        const wd = d.getDay();
+        if (wd >= 1 && wd <= 5) {
+            fullDays++;
+        }
+        d.setDate(d.getDate() + 1);
+    }
+
     return fullDays + fraction;
 }
-
 setInterval(() => {
-    const precise = countSchoolDaysPrecise(new Date(), endOfYear);
+const precise = countSchoolDaysPrecise(new Date(), endOfYear);
 
-    let display = precise % 1 === 0
-        ? precise.toString()
-       : precise.toFixed(2);
+let display = precise % 1 === 0
+    ? precise.toString()
+    : precise.toFixed(2);
 
 document.getElementById("countdown4").innerText = display;
 }, 1000);
