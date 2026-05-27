@@ -1,5 +1,4 @@
-      localStorage.setItem("visited_eggs", "true")
-      
+    
       let totalEggs = 2;
       let foundEggs = 0;
 
