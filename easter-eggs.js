@@ -31,6 +31,17 @@
           
           localStorage.removeItem("egg1_found");
           localStorage.removeItem("egg2_found");
+          localStorage.removeItem("visited_about");
+          localStorage.removeItem("visited_ai");
+          localStorage.removeItem("visited_notes");
+          localStorage.removeItem("visited_books");
+          localStorage.removeItem("visited_contact");
+          localStorage.removeItem("visited_countdowns");
+          localStorage.removeItem("visited_esp-32");
+          localStorage.removeItem("visited_index");
+          localStorage.removeItem("visited_pages");
+          localStorage.removeItem("visited_projects");
+          localStorage.removeItem("visited_eggs");
 
           location.reload();
         })
