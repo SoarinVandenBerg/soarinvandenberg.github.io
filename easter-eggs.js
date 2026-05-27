@@ -1,10 +1,10 @@
-  let totalEggs = 2;
+      let totalEggs = 2;
       let foundEggs = 0;
 
       if (localStorage.getItem("egg1_found")) {
         foundEggs++;
       }
-      else if (localStorage.getItem("egg2_found")) {
+      if (localStorage.getItem("egg2_found")) {
         foundEggs++
       }
 
@@ -24,3 +24,14 @@
           item.innerText = "-Visit every page in the site!"
           list.appendChild(item);
         }
+
+        document.getElementById("resetEggs").addEventListener("click",() => {
+          if (!confirm("ARE YOU SURE??? :)")) return;
+          
+          localStorage.removeItem("egg1_found");
+          localStorage.removeItem("egg2_found");
+
+          location.reload();
+        })
+      
+
