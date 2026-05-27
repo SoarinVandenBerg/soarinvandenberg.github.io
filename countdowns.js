@@ -362,7 +362,7 @@ function countSchoolDaysPrecise(now, end) {
             fraction = 0;
         }
         else {
-            minutesLeft = (schoolEnd - start) / 60000;
+            let minutesLeft = (schoolEnd - start) / 60000;
             fraction = minutesLeft / totalMinutes;
         }
     }
