@@ -60,7 +60,7 @@
         ];
 
         let allVisited = pages.every(key => localStorage.getItem(key));
-        if (allVisited) {
+        if (allVisited && !localStorage.getItem("egg2_found")) {
           localStorage.setItem("egg2_found", "true");
 
           location.reload();
