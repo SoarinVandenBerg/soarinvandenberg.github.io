@@ -1,4 +1,3 @@
-    
       let totalEggs = 2;
       let foundEggs = 0;
 
@@ -63,6 +62,8 @@
         let allVisited = pages.every(key => localStorage.getItem(key));
         if (allVisited) {
           localStorage.setItem("egg2_found", "true");
+
+          location.reload();
         }
       
 
