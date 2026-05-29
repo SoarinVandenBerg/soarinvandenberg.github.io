@@ -32,7 +32,7 @@
         border-radius: 4px;
       }
       .fullCounts {
-        font-size: clamp(32px, 80vx, 150px);
+        font-size: clamp(128px, 80vx, 600px);
         text-align: center;
         color: #00be00;
       }
