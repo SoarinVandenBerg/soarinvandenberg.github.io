@@ -36,7 +36,6 @@
           localStorage.removeItem("visited_books");
           localStorage.removeItem("visited_contact");
           localStorage.removeItem("visited_countdowns");
-          localStorage.removeItem("visited_esp-32");
           localStorage.removeItem("visited_index");
           localStorage.removeItem("visited_pages");
           localStorage.removeItem("visited_projects");
@@ -52,7 +51,6 @@
           "visited_books",
           "visited_contact",
           "visited_countdowns",
-          "visited_esp-32",
           "visited_index",
           "visited_pages",
           "visited_projects",
