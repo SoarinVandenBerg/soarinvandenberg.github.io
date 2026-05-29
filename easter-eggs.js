@@ -1,6 +1,9 @@
       let totalEggs = 3;
       let foundEggs = 0;
 
+      if (foundEggs === 0) {
+        document.getElementById("eggListHead").style.display = "none";
+      }
       if (localStorage.getItem("egg1_found")) {
         foundEggs++;
       }
