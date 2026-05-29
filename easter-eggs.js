@@ -1,10 +1,13 @@
-      let totalEggs = 2;
+      let totalEggs = 3;
       let foundEggs = 0;
 
       if (localStorage.getItem("egg1_found")) {
         foundEggs++;
       }
       if (localStorage.getItem("egg2_found")) {
+        foundEggs++
+      }
+      if (localStorage.getItem("egg3_found")) {
         foundEggs++
       }
 
@@ -25,6 +28,12 @@
           list.appendChild(item);
         }
 
+        if (localStorage.getItem("egg3_found")) {
+          let item = document.createElement("li");
+          item.innerText = "-Go to every seperate countdown!"
+          list.appendChild(item);
+        }
+
         document.getElementById("resetEggs").addEventListener("click",() => {
           if (!confirm("ARE YOU SURE??? :)")) return;
           
@@ -40,11 +49,18 @@
           localStorage.removeItem("visited_pages");
           localStorage.removeItem("visited_projects");
           localStorage.removeItem("visited_eggs");
+          localStorage.removeItem("count1");
+          localStorage.removeItem("count2");
+          localStorage.removeItem("count3");
+          localStorage.removeItem("count4");
+          localStorage.removeItem("count5");
+          localStorage.removeItem("count6");
+
 
           location.reload();
         })
 
-        const pages = [
+        const sitePages = [
           "visited_about",
           "visited_ai",
           "visited_notes",
@@ -57,9 +73,25 @@
           "visited_eggs",
         ];
 
-        let allVisited = pages.every(key => localStorage.getItem(key));
-        if (allVisited && !localStorage.getItem("egg2_found")) {
+        let allSiteVisited = sitePages.every(key => localStorage.getItem(key));
+        if (allSiteVisited && !localStorage.getItem("egg2_found")) {
           localStorage.setItem("egg2_found", "true");
+
+          location.reload();
+        }
+
+        const countdownPages = [
+          "count1",
+          "count2",
+          "count3",
+          "count4",
+          "count5",
+          "count6",
+        ];
+
+        let allCountVisited = countdownPages.every(key => localStorage.getItem(key));
+        if (allCountVisited && !localStorage.getItem("egg3_found")) {
+          localStorage.setItem("egg3_found", "true");
 
           location.reload();
         }
