@@ -39,6 +39,7 @@
           
           localStorage.removeItem("egg1_found");
           localStorage.removeItem("egg2_found");
+          localStorage.removeItem("egg3_found");
           localStorage.removeItem("visited_about");
           localStorage.removeItem("visited_ai");
           localStorage.removeItem("visited_notes");
