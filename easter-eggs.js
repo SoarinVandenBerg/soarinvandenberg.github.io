@@ -1,4 +1,4 @@
-      let totalEggs = 3;
+      let totalEggs = 4;
       let foundEggs = 0;
 
       if (foundEggs === 0) {
@@ -13,6 +13,10 @@
         document.getElementById("eggListHead").style.display = "";
       }
       if (localStorage.getItem("egg3_found")) {
+        foundEggs++;
+        document.getElementById("eggListHead").style.display = "";
+      }
+      if (localStorage.getItem("egg4_found")) {
         foundEggs++;
         document.getElementById("eggListHead").style.display = "";
       }
@@ -40,12 +44,19 @@
           list.appendChild(item);
         }
 
+        if (localStorage.getItem("egg4_found")) {
+          let item = document.createElement("li");
+          item.innerText = "Find the typo in the book reviews!"
+          list.appendChild(item);
+        }
+
         document.getElementById("resetEggs").addEventListener("click",() => {
           if (!confirm("ARE YOU SURE??? :)")) return;
           
           localStorage.removeItem("egg1_found");
           localStorage.removeItem("egg2_found");
           localStorage.removeItem("egg3_found");
+          localStorage.removeItem("egg4_found");
           localStorage.removeItem("visited_about");
           localStorage.removeItem("visited_ai");
           localStorage.removeItem("visited_notes");
@@ -55,14 +66,12 @@
           localStorage.removeItem("visited_index");
           localStorage.removeItem("visited_pages");
           localStorage.removeItem("visited_projects");
-          localStorage.removeItem("visited_eggs");
           localStorage.removeItem("count1");
           localStorage.removeItem("count2");
           localStorage.removeItem("count3");
           localStorage.removeItem("count4");
           localStorage.removeItem("count5");
           localStorage.removeItem("count6");
-
 
           location.reload();
         })
@@ -77,7 +86,6 @@
           "visited_index",
           "visited_pages",
           "visited_projects",
-          "visited_eggs",
         ];
 
         let allSiteVisited = sitePages.every(key => localStorage.getItem(key));
