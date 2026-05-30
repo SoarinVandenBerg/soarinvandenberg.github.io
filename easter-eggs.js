@@ -1,4 +1,4 @@
-      let totalEggs = 6;
+      let totalEggs = 7;
       let foundEggs = 0;
       
       if (localStorage.getItem("egg1_found")) foundEggs++;
@@ -7,6 +7,7 @@
       if (localStorage.getItem("egg4_found")) foundEggs++;
       if (localStorage.getItem("egg5_found")) foundEggs++;
       if (localStorage.getItem("egg6_found")) foundEggs++;
+      if (localStorage.getItem("egg7_found")) foundEggs++;
       
       if (foundEggs === 0) {
         document.getElementById("eggListHead").style.display = "none";
@@ -27,6 +28,7 @@ let list = document.getElementById("eggList");
         { key: "egg4_found", text: "-Find the typo in the book reviews" },
         { key: "egg5_found", text: "-Beat the egg game!" },
         { key: "egg6_found", text: "-Visit the 404 page!" },
+        { key: "egg7_found", text: "-Easter egg for getting them all!" },
       ]
 
       listEggs.forEach(egg => {
@@ -37,7 +39,6 @@ let list = document.getElementById("eggList");
         }
       });
 
-
         document.getElementById("resetEggs").addEventListener("click",() => {
           if (!confirm("ARE YOU SURE??? :)")) return;
           
@@ -47,6 +48,7 @@ let list = document.getElementById("eggList");
           localStorage.removeItem("egg4_found");
           localStorage.removeItem("egg5_found");
           localStorage.removeItem("egg6_found");
+          localStorage.removeItem("egg7_found");
           localStorage.removeItem("visited_about");
           localStorage.removeItem("visited_ai");
           localStorage.removeItem("visited_notes");
@@ -95,6 +97,15 @@ let list = document.getElementById("eggList");
           "count6",
         ];
 
+        const allEggs = [
+          "egg1_found",
+          "egg2_found",
+          "egg3_found",
+          "egg4_found",
+          "egg5_found",
+          "egg6_found",
+        ]
+
         let allCountVisited = countdownPages.every(key => localStorage.getItem(key));
         if (allCountVisited && !localStorage.getItem("egg3_found")) {
           localStorage.setItem("egg3_found", "true");
@@ -107,6 +118,13 @@ let list = document.getElementById("eggList");
         let brokenVisited = brokenPage.every(key => localStorage.getItem(key));
         if (brokenVisited && !localStorage.getItem("egg6_found")) {
           localStorage.setItem("egg6_found", "true");
+
+          location.reload();
+        }
+      
+        let allEggs1 = allEggs.every(key => localStorage.getItem(key));
+        if (allEggs1 && !localStorage.getItem("egg7_found")) {
+          localStorage.setItem("egg7_found", "true");
 
           location.reload();
         }
