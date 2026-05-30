@@ -18,43 +18,25 @@
       document.getElementById("eggCount").innerText =
       `${foundEggs}/${totalEggs} Easter Eggs Found!`;
 
-      let list = document.getElementById("eggList");
+let list = document.getElementById("eggList");
 
-        if (localStorage.getItem("egg1_found")) {
-          let item = document.createElement("li");
-          item.innerText = "-The bottom-right button"
-          list.appendChild(item);
-        }
-        
-        if (localStorage.getItem("egg2_found")) {
-          let item = document.createElement("li");
-          item.innerText = "-Visit every page in the site!"
-          list.appendChild(item);
-        }
+      const listEggs = [
+        { key: "egg1_found", text: "-The bottom-right button" },
+        { key: "egg2_found", text: "-Visit every page in the site!" },
+        { key: "egg3_found", text: "-Go to every separate countdown!" },
+        { key: "egg4_found", text: "-Find the typo in the book reviews" },
+        { key: "egg5_found", text: "-Beat the egg game!" },
+        { key: "egg6_found", text: "-Visit the 404 page!" },
+      ]
 
-        if (localStorage.getItem("egg3_found")) {
+      listEggs.forEach(egg => {
+        if (localStorage.getItem(egg.key)) {
           let item = document.createElement("li");
-          item.innerText = "-Go to every seperate countdown!"
+          item.innerText = egg.text;
           list.appendChild(item);
         }
+      });
 
-        if (localStorage.getItem("egg4_found")) {
-          let item = document.createElement("li");
-          item.innerText = "-Find the typo in the book reviews"
-          list.appendChild(item);
-        }
-
-        if (localStorage.getItem("egg5_found")) {
-          let item = document.createElement("li");
-          item.innerText = "-Beat the egg game!"
-          list.appendChild(item);
-        }
-
-        if (localStorage.getItem("egg6_found")) {
-          let item = document.createElement("li");
-          item.innerText = "-Visit the 404 page!"
-          list.appendChild(item);
-        }
 
         document.getElementById("resetEggs").addEventListener("click",() => {
           if (!confirm("ARE YOU SURE??? :)")) return;
@@ -120,12 +102,10 @@
           location.reload();
         }
 
-        const brokenPage = [
-          "404"
-        ];
+        const brokenPage = ["visited_404"];
 
         let brokenVisited = brokenPage.every(key => localStorage.getItem(key));
-        if (brokenPageVisited && !localStorage.getItem("egg6_found")) {
+        if (brokenVisited && !localStorage.getItem("egg6_found")) {
           localStorage.setItem("egg6_found", "true");
 
           location.reload();
