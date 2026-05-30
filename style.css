@@ -79,6 +79,13 @@
         font-family:'Departure Mono', monospace;
         margin: 0;
         max-width: 600px;
+        z-index: 1;
+        position: relative;
+      }
+      .game-sprites {
+        position: fixed;
+        z-index: 999999 !important;
+        pointer-events: auto;
       }
       .eggButton {
         background: none;
