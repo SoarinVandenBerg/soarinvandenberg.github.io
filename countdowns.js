@@ -1,4 +1,9 @@
-const now = new Date();
+        function safeSet(id, text) {
+            const el = document.getElementById(id);
+            if (el) el.innerText = text;
+        }
+        
+        const now = new Date();
         const day = now.getDay();
 
         const startTime = new Date();
@@ -10,13 +15,14 @@ const now = new Date();
         // I know this code is probably pretty bad, but I dont really care becuase it works :D
 
         if (day === 0 || day === 6) {
-            document.getElementById("countdown1").innerText = "School is not in session!";
+            safeSet("countdown1", "School is not in session!");
         }
         else if (now < startTime) {
-            document.getElementById("countdown1").innerText = "School is not in session!";
+            safeSet("countdown1", "School is not in session!");
+
         }
         else if (now > endTime) {
-            document.getElementById("countdown1").innerText = "School is not in session!";
+            safeSet("countdown1", "School is not in session!");
         }
         else {
             setInterval(() => {
@@ -25,7 +31,7 @@ const now = new Date();
                 const diff = endTime - now;
 
                 if (diff <= 0) {
-                    document.getElementById("countdown1").innerText = "School is not in session!";
+                    safeSet("countdown1", "School is not in session!");
                     return;
                 }
 
@@ -33,8 +39,8 @@ const now = new Date();
                 const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
                 const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-                document.getElementById("countdown1").innerText =
-                `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
+                safeSet("countdown1",
+                `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`);
             }, 1000);
         }
         
@@ -48,7 +54,7 @@ const now = new Date();
                 const currentTime = now2.getHours() * 60 + now2.getMinutes();
                 const currentSeconds = now2.getSeconds();
 
-                    let block = "";
+        let block = "";
         let end = null;
 
         if (currentTime < 8 * 60 + 40) {
@@ -89,10 +95,10 @@ const now = new Date();
         }
 
         if (block === "Before school" || block === "After school") {
-            document.getElementById("countdown2").innerText = "School is not in session!";
+            safeSet("countdown2", "School is not in session!");
         }
         else if (block === "break") {
-            document.getElementById("countdown2").innerText = "School is not in session!";
+            safeSet("countdown2", "School is not in session!");
         }
         else {
 
@@ -102,7 +108,7 @@ const now = new Date();
                 const diff = endInSeconds - nowInSeconds - 1;
                 
                 if (diff <= 0) {
-                    document.getElementById("countdown2").innerText = "School is not in session!";
+                    safeSet("countdown2", "School is not in session!");
                     return;
                 }
 
@@ -112,8 +118,8 @@ const now = new Date();
 
                 const pad = (n) => String(n).padStart(2, "0");
 
-                document.getElementById("countdown2").innerText =
-                    `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
+                safeSet("countdown2",
+                    `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`);
             }
         }, 1000);
         }
@@ -175,10 +181,10 @@ const now = new Date();
         }
 
         if (block === "Before school" || block === "After school") {
-            document.getElementById("countdown2").innerText = "School is not in session!";
+            safeSet("countdown2", "School is not in session!");
         }
         else if (block === "break") {
-            document.getElementById("countdown2").innerText = "School is not in session!";
+            safeSet("countdown2", "School is not in session!");
         }
         else {
 
@@ -188,7 +194,7 @@ const now = new Date();
                 const diff = endInSeconds - nowInSeconds - 1;
                 
                 if (diff <= 0) {
-                    document.getElementById("countdown2").innerText = "School is not in session!";
+                    safeSet("countdown2", "School is not in session!");
                     return;
                 }
 
@@ -198,8 +204,8 @@ const now = new Date();
 
                 const pad = (n) => String(n).padStart(2, "0");
 
-                document.getElementById("countdown2").innerText =
-                    `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
+                safeSet("countdown2",
+                    `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`);
             }
             }, 1000);
         }
@@ -260,10 +266,10 @@ const now = new Date();
         }
 
         if (block === "Before school" || block === "After school") {
-            document.getElementById("countdown2").innerText = "School is not in session!";
+            safeSet("countdown2", "School is not in session!");
         }
         else if (block === "break") {
-            document.getElementById("countdown2").innerText = "School is not in session!";
+            safeSet("countdown2", "School is not in session!");
         }
         else {
 
@@ -273,7 +279,7 @@ const now = new Date();
                 const diff = endInSeconds - nowInSeconds - 1;
                 
                 if (diff <= 0) {
-                    document.getElementById("countdown2").innerText = "School is not in session!";
+                    safeSet("countdown2", "School is not in session!");
                     return;
                 }
 
@@ -283,14 +289,14 @@ const now = new Date();
 
                 const pad = (n) => String(n).padStart(2, "0");
 
-                document.getElementById("countdown2").innerText =
-                    `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
+                safeSet("countdown2",
+                    `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`);
             }
             }, 1000);
         }
     
     else if (day2 === 0 || day2 === 6) {
-        document.getElementById("countdown2").innerText = "School is not in session!";
+        safeSet("countdown2", "School is not in session!");
     }
 
     const Freedom = new Date("June 23, 2026 15:10:00");
@@ -300,7 +306,7 @@ const now = new Date();
                 const diff = Freedom - now3;
 
                 if (diff <= 0) {
-                    document.getElementById("countdown3").innerText = "The school year is over!";
+                    safeSet("countdown3", "The school year is over!");
                     return;
                 }
 
@@ -311,8 +317,8 @@ const now = new Date();
 
                 const pad = (n) => String(n).padStart(2, "0");
 
-                document.getElementById("countdown3").innerText =
-                    `${pad(days)}:${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
+                safeSet("countdown3",
+                    `${pad(days)}:${pad(hours)}:${pad(minutes)}:${pad(seconds)}`);
     }, 1000);
 
 const Crash = new Date("February 11, 2031 19:45:00");
@@ -323,7 +329,7 @@ setInterval(() => {
               const diff = Crash - now4;
 
                 if (diff <= 0) {
-                    document.getElementById("countdown5").innerText = "BOOOOM";
+                    safeSet("countdown5", "BOOOOM");
                     return;
                 }
 
@@ -334,8 +340,8 @@ setInterval(() => {
 
                 const pad = (n) => String(n).padStart(2, "0");
 
-                document.getElementById("countdown5").innerText =
-                    `${pad(days)}:${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
+                safeSet("countdown5",
+                    `${pad(days)}:${pad(hours)}:${pad(minutes)}:${pad(seconds)}`);
     }, 1000);
 
 
@@ -393,5 +399,5 @@ let display = precise % 1 === 0
     ? precise.toString()
     : precise.toFixed(2);
 
-document.getElementById("countdown4").innerText = display;
+safeSet("countdown4", display);
 }, 1000);
