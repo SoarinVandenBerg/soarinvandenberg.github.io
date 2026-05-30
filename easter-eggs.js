@@ -46,7 +46,7 @@
 
         if (localStorage.getItem("egg4_found")) {
           let item = document.createElement("li");
-          item.innerText = "Find the typo in the book reviews!"
+          item.innerText = "-Find the typo in the book reviews!"
           list.appendChild(item);
         }
 
