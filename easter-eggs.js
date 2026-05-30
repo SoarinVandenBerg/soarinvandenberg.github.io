@@ -26,8 +26,8 @@ let list = document.getElementById("eggList");
         { key: "egg2_found", text: "-Visit every page in the site!" },
         { key: "egg3_found", text: "-Go to every separate countdown!" },
         { key: "egg4_found", text: "-Find the typo in the book reviews" },
-        { key: "egg5_found", text: "-Beat the egg game!" },
-        { key: "egg6_found", text: "-Visit the 404 page!" },
+        { key: "egg5_found", text: "-Beat the easter egg game!" },
+        { key: "egg6_found", text: "-Visit a page that doesnt exist" },
         { key: "egg7_found", text: "-Easter egg for getting them all!" },
       ]
 
