@@ -1,31 +1,17 @@
       let totalEggs = 6;
       let foundEggs = 0;
-
+      
+      if (localStorage.getItem("egg1_found")) foundEggs++;
+      if (localStorage.getItem("egg2_found")) foundEggs++;
+      if (localStorage.getItem("egg3_found")) foundEggs++;
+      if (localStorage.getItem("egg4_found")) foundEggs++;
+      if (localStorage.getItem("egg5_found")) foundEggs++;
+      if (localStorage.getItem("egg6_found")) foundEggs++;
+      
       if (foundEggs === 0) {
         document.getElementById("eggListHead").style.display = "none";
       }
-      if (localStorage.getItem("egg1_found")) {
-        foundEggs++;
-        document.getElementById("eggListHead").style.display = "";
-      }
-      if (localStorage.getItem("egg2_found")) {
-        foundEggs++;
-        document.getElementById("eggListHead").style.display = "";
-      }
-      if (localStorage.getItem("egg3_found")) {
-        foundEggs++;
-        document.getElementById("eggListHead").style.display = "";
-      }
-      if (localStorage.getItem("egg4_found")) {
-        foundEggs++;
-        document.getElementById("eggListHead").style.display = "";
-      }
-      if (localStorage.getItem("egg5_found")) {
-        foundEggs++;
-        document.getElementById("eggListHead").style.display = "";
-      }
-      if (localStorage.getItem("egg6_found")) {
-        foundEggs++;
+      else {
         document.getElementById("eggListHead").style.display = "";
       }
 
@@ -134,12 +120,12 @@
           location.reload();
         }
 
-        const 404Page = [
+        const brokenPage = [
           "404"
         ];
 
-        let 404Visited = 404Page.every(key => localStorage.getItem(key));
-        if (404Visited && !localStorage.getItem("egg6_found")) {
+        let brokenVisited = brokenPage.every(key => localStorage.getItem(key));
+        if (brokenPageVisited && !localStorage.getItem("egg6_found")) {
           localStorage.setItem("egg6_found", "true");
 
           location.reload();
