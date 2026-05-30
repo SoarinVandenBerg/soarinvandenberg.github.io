@@ -12,8 +12,8 @@
         margin: 0;
       }
       @font-face {
-  font-family: 'Departure Mono';
-  src: url('DepartureMono-Regular.otf') format('opentype');
+        font-family: 'Departure Mono';
+        src: url('DepartureMono-Regular.otf') format('opentype');
      }
     body {
       background-color: black;
@@ -82,7 +82,7 @@
         z-index: 1;
         position: relative;
       }
-      .game-sprites {
+      .game-sprite {
         position: fixed;
         z-index: 999999 !important;
         pointer-events: auto;
