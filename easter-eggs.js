@@ -1,4 +1,4 @@
-      let totalEggs = 5;
+      let totalEggs = 6;
       let foundEggs = 0;
 
       if (foundEggs === 0) {
@@ -21,6 +21,10 @@
         document.getElementById("eggListHead").style.display = "";
       }
       if (localStorage.getItem("egg5_found")) {
+        foundEggs++;
+        document.getElementById("eggListHead").style.display = "";
+      }
+      if (localStorage.getItem("egg6_found")) {
         foundEggs++;
         document.getElementById("eggListHead").style.display = "";
       }
@@ -60,6 +64,12 @@
           list.appendChild(item);
         }
 
+        if (localStorage.getItem("egg6_found")) {
+          let item = document.createElement("li");
+          item.innerText = "-Visit the 404 page!"
+          list.appendChild(item);
+        }
+
         document.getElementById("resetEggs").addEventListener("click",() => {
           if (!confirm("ARE YOU SURE??? :)")) return;
           
@@ -68,6 +78,7 @@
           localStorage.removeItem("egg3_found");
           localStorage.removeItem("egg4_found");
           localStorage.removeItem("egg5_found");
+          localStorage.removeItem("egg6_found");
           localStorage.removeItem("visited_about");
           localStorage.removeItem("visited_ai");
           localStorage.removeItem("visited_notes");
@@ -77,6 +88,7 @@
           localStorage.removeItem("visited_index");
           localStorage.removeItem("visited_pages");
           localStorage.removeItem("visited_projects");
+          localStorage.removeItem("visited_404");
           localStorage.removeItem("count1");
           localStorage.removeItem("count2");
           localStorage.removeItem("count3");
@@ -118,6 +130,17 @@
         let allCountVisited = countdownPages.every(key => localStorage.getItem(key));
         if (allCountVisited && !localStorage.getItem("egg3_found")) {
           localStorage.setItem("egg3_found", "true");
+
+          location.reload();
+        }
+
+        const 404Page = [
+          "404"
+        ];
+
+        let 404Visited = 404Page.every(key => localStorage.getItem(key));
+        if (404Visited && !localStorage.getItem("egg6_found")) {
+          localStorage.setItem("egg6_found", "true");
 
           location.reload();
         }
