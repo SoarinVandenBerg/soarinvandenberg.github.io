@@ -1,3 +1,5 @@
+//This game was made by hank green! I didnt make the code for this, just stole it from his site :)
+
 var eggGame = { active: false, sprites: [], clicks: 0, animId: null };
 
   function startEasterEggGame() {
@@ -5,7 +7,7 @@ var eggGame = { active: false, sprites: [], clicks: 0, animId: null };
     eggGame.active = true;
     eggGame.clicks = 0;
     eggGame.sprites = [];
-    var src = 'hankhair.png';
+    var src = 'clickygame.png';
     for (var i = 0; i < 30; i++) spawnGameSprite(src);
     eggGame.animId = requestAnimationFrame(tickGame);
   }
@@ -23,7 +25,7 @@ var eggGame = { active: false, sprites: [], clicks: 0, animId: null };
     var angle = Math.random() * Math.PI * 2;
     var speed = 0.3 + Math.random() * 0.5;
 
-    var rotSpeed = (Math.random() - 0.5) * 1.2; // degrees per frame
+    var rotSpeed = (Math.random() - 0.5) * 1.2; 
     var sprite = {
       el: img, x: x, y: y,
       vx: Math.cos(angle) * speed,
@@ -57,14 +59,14 @@ var eggGame = { active: false, sprites: [], clicks: 0, animId: null };
 
     // Every 2 clicks, spawn 1 new one (if sprites remain)
     if (eggGame.clicks % 2 === 0 && eggGame.sprites.length > 0) {
-      spawnGameSprite('hankhair.png');
+      spawnGameSprite('clickygame.png');
     }
 
     // Win condition
     if (eggGame.sprites.length === 0) {
       eggGame.active = false;
       cancelAnimationFrame(eggGame.animId);
-      unlockAchievement('hank-destroyer');
+      localStorage.setItem("egg5_found", "true");
     }
   }
 

@@ -1,4 +1,4 @@
-      let totalEggs = 4;
+      let totalEggs = 5;
       let foundEggs = 0;
 
       if (foundEggs === 0) {
@@ -17,6 +17,10 @@
         document.getElementById("eggListHead").style.display = "";
       }
       if (localStorage.getItem("egg4_found")) {
+        foundEggs++;
+        document.getElementById("eggListHead").style.display = "";
+      }
+      if (localStorage.getItem("egg5_found")) {
         foundEggs++;
         document.getElementById("eggListHead").style.display = "";
       }
@@ -50,6 +54,12 @@
           list.appendChild(item);
         }
 
+        if (localStorage.getItem("egg5_found")) {
+          let item = document.createElement("li");
+          item.innerText = "-Beat the egg game!"
+          list.appendChild(item);
+        }
+
         document.getElementById("resetEggs").addEventListener("click",() => {
           if (!confirm("ARE YOU SURE??? :)")) return;
           
@@ -57,6 +67,7 @@
           localStorage.removeItem("egg2_found");
           localStorage.removeItem("egg3_found");
           localStorage.removeItem("egg4_found");
+          localStorage.removeItem("egg5_found");
           localStorage.removeItem("visited_about");
           localStorage.removeItem("visited_ai");
           localStorage.removeItem("visited_notes");
