@@ -6,12 +6,15 @@
       }
       if (localStorage.getItem("egg1_found")) {
         foundEggs++;
+        document.getElementById("eggListHead").style.display = "";
       }
       if (localStorage.getItem("egg2_found")) {
-        foundEggs++
+        foundEggs++;
+        document.getElementById("eggListHead").style.display = "";
       }
       if (localStorage.getItem("egg3_found")) {
-        foundEggs++
+        foundEggs++;
+        document.getElementById("eggListHead").style.display = "";
       }
 
       document.getElementById("eggCount").innerText =
