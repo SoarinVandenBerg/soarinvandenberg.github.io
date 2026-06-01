@@ -26,6 +26,15 @@
         localStorage.setItem("egg1_found", "true");
         window.location.href = "/easter-eggs";
     });
+    
+    let visits = Number(localStorage.getItem("visits_index") || 0);
+    visits++;
+    localStorage.setItem("visits_index", visits);
+
+    if (visits >= 10 && !localStorage.getItem("egg9_found")) {
+      localStorage.setItem("egg9_found", "true");
+      location.reload();
+    }
     </script>
     <script>localStorage.setItem("visited_index", "true");</script>
   </body>
