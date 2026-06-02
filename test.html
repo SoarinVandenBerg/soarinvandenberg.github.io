@@ -9,9 +9,11 @@
   <body>
     <div class="background">
       <div class="popup">
-        <p>Are you sure?</p>
-        <button class="yes">Yes</button>
-        <button class="no">No</button>
+        <p class="header">Are you sure?</p>
+      <div class="buttonbox">
+        <button class="text" class="popupbuttons">Yes</button>
+        <button class="text" class="popupbuttons">No</button>
+        </div>
       </div>
     </div>
     <button class="openPopup">Open Popup</button>
@@ -19,8 +21,8 @@
     <script src="offline.js"></script>
     <script>
       const overlay = document.querySelector(".background");
-const yesBtn = document.querySelector(".yes");
-const noBtn = document.querySelector(".no");
+const yesBtn = document.querySelector("yes");
+const noBtn = document.querySelector("no");
 const openBtn = document.querySelector(".openPopup");
 
 openBtn.onclick = () => {
