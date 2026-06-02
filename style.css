@@ -109,9 +109,15 @@
         gap: 10px;
       }
       .buttonbox .popupbuttons {
-        color: #777777;
         flex: 1;
+        padding: 10px;
+        background: black;
+        color: #00be00;
+        border: 2px solid #00be00;
+        border-radius: 4px;
+        font-family: 'Departure Mono', monospace;
       }
+      
       .popup {
         background: black;
         border: 2px solid #00be00;
