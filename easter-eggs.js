@@ -34,7 +34,7 @@ let list = document.getElementById("eggList");
         { key: "egg7_found", text: "-Easter egg for getting them all!" },
         { key: "egg8_found", text: "-Type the Konami code to unlock" },
         { key: "egg9_found", text: "-Visit the site 25 times!" },
-        { key: "egg10_found", text: "-The answer to everything" },
+        { key: "egg10_found", text: "-Type 42, the answer to everything" },
       ]
 
       listEggs.forEach(egg => {
