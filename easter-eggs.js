@@ -1,4 +1,4 @@
-      let totalEggs = 9;
+      let totalEggs = 10;
       let foundEggs = 0;
       
       if (localStorage.getItem("egg1_found")) foundEggs++;
@@ -10,6 +10,7 @@
       if (localStorage.getItem("egg7_found")) foundEggs++;
       if (localStorage.getItem("egg8_found")) foundEggs++;
       if (localStorage.getItem("egg9_found")) foundEggs++;
+      if (localStorage.getItem("egg10_found")) foundEggs++;
       
       if (foundEggs === 0) {
         document.getElementById("eggListHead").style.display = "none";
@@ -33,6 +34,7 @@ let list = document.getElementById("eggList");
         { key: "egg7_found", text: "-Easter egg for getting them all!" },
         { key: "egg8_found", text: "-Type the Konami code to unlock" },
         { key: "egg9_found", text: "-Visit the site 50 times!" },
+        { key: "egg10_found", text: "-The answer to everything" },
       ]
 
       listEggs.forEach(egg => {
@@ -62,6 +64,7 @@ let list = document.getElementById("eggList");
           localStorage.removeItem("egg7_found");
           localStorage.removeItem("egg8_found");
           localStorage.removeItem("egg9_found");
+          localStorage.removeItem("egg10_found");
           localStorage.removeItem("visits_index");
           localStorage.removeItem("visited_about");
           localStorage.removeItem("visited_ai");
@@ -126,6 +129,7 @@ let list = document.getElementById("eggList");
           "egg6_found",
           "egg8_found",
           "egg9_found",
+          "egg10_found",
         ]
 
         let allCountVisited = countdownPages.every(key => localStorage.getItem(key));
@@ -150,5 +154,3 @@ let list = document.getElementById("eggList");
 
           location.reload();
         }
-      
-

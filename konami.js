@@ -23,3 +23,25 @@ document.addEventListener("keydown", (e) => {
         konamiPosition = 0;
       }
  });
+
+ const ansLife = [
+    "4", "2"
+];
+
+let ansPos = 0;
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === ansLife[ansPos]) {
+        ansPos++;
+
+        if (ansPos === ansLife.length) {
+            if (!localStorage.getItem("egg10_found")) {
+                localStorage.setItem("egg10_found", "true"); 
+                    location.reload();
+            }
+            ansPos = 0;
+        }
+    } else {
+        ansPos = 0;
+      }
+ });
