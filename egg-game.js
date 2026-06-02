@@ -67,6 +67,7 @@ var eggGame = { active: false, sprites: [], clicks: 0, animId: null };
       eggGame.active = false;
       cancelAnimationFrame(eggGame.animId);
       localStorage.setItem("egg5_found", "true");
+      popup.style.display = "flex";
     }
   }
 

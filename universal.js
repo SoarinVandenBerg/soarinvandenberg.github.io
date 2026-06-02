@@ -15,6 +15,9 @@ document.addEventListener("keydown", (e) => {
         if (konamiPosition === konamiCode.length) {
             if (!localStorage.getItem("egg8_found")) {
                 localStorage.setItem("egg8_found", "true"); 
+                popup.style.display = "flex";
+
+
                     location.reload();
             }
             konamiPosition = 0;
@@ -37,6 +40,8 @@ document.addEventListener("keydown", (e) => {
         if (ansPos === ansLife.length) {
             if (!localStorage.getItem("egg10_found")) {
                 localStorage.setItem("egg10_found", "true"); 
+                popup.style.display = "flex";
+
                     location.reload();
             }
             ansPos = 0;

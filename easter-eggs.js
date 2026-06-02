@@ -107,6 +107,7 @@ let list = document.getElementById("eggList");
         let allSiteVisited = sitePages.every(key => localStorage.getItem(key));
         if (allSiteVisited && !localStorage.getItem("egg2_found")) {
           localStorage.setItem("egg2_found", "true");
+          popup.style.display = "flex";
 
           location.reload();
         }
@@ -135,6 +136,7 @@ let list = document.getElementById("eggList");
         let allCountVisited = countdownPages.every(key => localStorage.getItem(key));
         if (allCountVisited && !localStorage.getItem("egg3_found")) {
           localStorage.setItem("egg3_found", "true");
+          popup.style.display = "flex";
 
           location.reload();
         }
@@ -144,6 +146,7 @@ let list = document.getElementById("eggList");
         let brokenVisited = brokenPage.every(key => localStorage.getItem(key));
         if (brokenVisited && !localStorage.getItem("egg6_found")) {
           localStorage.setItem("egg6_found", "true");
+          popup.style.display = "flex";
 
           location.reload();
         }
@@ -151,6 +154,7 @@ let list = document.getElementById("eggList");
         let allEggs1 = allEggs.every(key => localStorage.getItem(key));
         if (allEggs1 && !localStorage.getItem("egg7_found")) {
           localStorage.setItem("egg7_found", "true");
+          popup.style.display = "flex";
 
           location.reload();
         }

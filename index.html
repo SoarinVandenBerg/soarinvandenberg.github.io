@@ -24,6 +24,7 @@
     <script>
       document.getElementById("Egg1").addEventListener("click", function() {
         localStorage.setItem("egg1_found", "true");
+        popup.style.display = "flex";
       });
     
     //different egg
@@ -33,6 +34,9 @@
 
     if (visits >= 25 && !localStorage.getItem("egg9_found")) {
       localStorage.setItem("egg9_found", "true");
+      popup.style.display = "flex";
+
+
       location.reload();
     }
     </script>
