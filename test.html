@@ -8,21 +8,24 @@
   </head>
   <body>
     <div class="background">
-      <div class="popup">
-        <p class="header">Are you sure?</p>
-      <div class="buttonbox">
-        <button class="text" class="popupbuttons">Yes</button>
-        <button class="text" class="popupbuttons">No</button>
-        </div>
-      </div>
+  <div class="popup">
+    <p class="header">Are you sure?</p>
+
+    <div class="buttonbox">
+      <button class="popupbuttons yes">Yes</button>
+      <button class="popupbuttons no">No</button>
     </div>
-    <button class="openPopup">Open Popup</button>
+
+  </div>
+</div>
+
+<button class="openPopup">Open Popup</button>
+
 
     <script src="offline.js"></script>
-    <script>
-      const overlay = document.querySelector(".background");
-const yesBtn = document.querySelector("yes");
-const noBtn = document.querySelector("no");
+    <script>const overlay = document.querySelector(".background");
+const yesBtn = document.querySelector(".yes");
+const noBtn = document.querySelector(".no");
 const openBtn = document.querySelector(".openPopup");
 
 openBtn.onclick = () => {
@@ -31,6 +34,7 @@ openBtn.onclick = () => {
 
 yesBtn.onclick = () => overlay.style.display = "none";
 noBtn.onclick = () => overlay.style.display = "none";
+
     </script>
 
   </body>
