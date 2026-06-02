@@ -18,17 +18,17 @@
 
     <script src="offline.js"></script>
     <script>
-      const overlay = document.querySelector(".overlay");
-      const yesBtn = document.querySelector(".yes");
-      const noBtn = document.querySelector(".no");
-      const openBtn = document.querySelector(".openPopup");
+      const overlay = document.querySelector(".background");
+const yesBtn = document.querySelector(".yes");
+const noBtn = document.querySelector(".no");
+const openBtn = document.querySelector(".openPopup");
 
-      openBtn.onclick = () => {
-        overlay.style.display = "flex";
-      };
+openBtn.onclick = () => {
+  overlay.style.display = "flex";
+};
 
-      yesBtn.onclick = () => overlay.style.display = "none";
-      noBtn.onclick = () => overlay.style.display = "none";
+yesBtn.onclick = () => overlay.style.display = "none";
+noBtn.onclick = () => overlay.style.display = "none";
     </script>
 
   </body>
