@@ -30,7 +30,7 @@
     visits++;
     localStorage.setItem("visits_index", visits);
 
-    if (visits >= 50 && !localStorage.getItem("egg9_found")) {
+    if (visits >= 25 && !localStorage.getItem("egg9_found")) {
       localStorage.setItem("egg9_found", "true");
       location.reload();
     }
