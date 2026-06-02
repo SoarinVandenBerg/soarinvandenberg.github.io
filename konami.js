@@ -45,3 +45,23 @@ document.addEventListener("keydown", (e) => {
         ansPos = 0;
       }
  });
+
+    function openEggPopup(eggkey) {
+        if (!localStorage.getItem(eggkey)) {
+            localStorage.setItem(eggkey, "true");
+        };
+
+    const overlay = document.querySelector(".background");
+    const yesBtn = document.querySelector("#eggPopupYes");
+    const noBtn = document.querySelector("#eggPopupNo");
+
+    overlay.style.display = "flex";
+
+    yesBtn.onclick = () => {
+        overlay.style.display = "none";
+        window.location.href = "/easter-eggs";
+    };
+    noBtn.onclick = () => {
+        overlay.style.display = "none";
+    };
+}
