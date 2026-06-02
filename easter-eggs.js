@@ -108,8 +108,6 @@ let list = document.getElementById("eggList");
         if (allSiteVisited && !localStorage.getItem("egg2_found")) {
           localStorage.setItem("egg2_found", "true");
           openEggPopup("egg2_found");
-
-          location.reload();
         }
 
         const countdownPages = [
@@ -137,8 +135,6 @@ let list = document.getElementById("eggList");
         if (allCountVisited && !localStorage.getItem("egg3_found")) {
           localStorage.setItem("egg3_found", "true");
           openEggPopup("egg3_found");
-
-          location.reload();
         }
 
         const brokenPage = ["visited_404"];
@@ -147,14 +143,10 @@ let list = document.getElementById("eggList");
         if (brokenVisited && !localStorage.getItem("egg6_found")) {
           localStorage.setItem("egg6_found", "true");
           openEggPopup("egg6_found");
-
-          location.reload();
         }
       
         let allEggs1 = allEggs.every(key => localStorage.getItem(key));
         if (allEggs1 && !localStorage.getItem("egg7_found")) {
           localStorage.setItem("egg7_found", "true");
           openEggPopup("egg7_found");
-
-          location.reload();
         }
