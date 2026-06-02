@@ -19,18 +19,8 @@
         <button id="Egg1" style="position:absolute; right:0; bottom:0; background:none; border:none;"><span class="egg">:D</span></button>
       </p>
     </div>
-    <div class="background">
-    <div class="popup">
-    <p class="header">Easter Egg Found!</p>
-
-    <div class="buttonbox">
-      <button class="popupbuttons no1">Close</button>
-      <button class="popupbuttons yes1">Go To Page</button>
-    </div>
-    </div>
-    </div>
     <script src="offline.js"></script>
-    <script src="konami.js"></script>
+    <script src="universal.js"></script>
     <script>
       document.getElementById("Egg1").addEventListener("click", function() {
         localStorage.setItem("egg1_found", "true");
@@ -47,5 +37,12 @@
     }
     </script>
     <script>localStorage.setItem("visited_index", "true");</script>
+  <div class="background">
+    <div class="popup">
+    <p class="header">Easter Egg Found!</p>
+    <div class="buttonbox">
+      <button class="popupbuttons" id="eggPopupNo">Close</button>
+      <button class="popupbuttons" id="eggPopupYes">Go To Page</button>
+    </div></div></div>
   </body>
 </html>
