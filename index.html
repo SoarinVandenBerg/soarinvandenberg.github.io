@@ -19,13 +19,37 @@
         <button id="Egg1" style="position:absolute; right:0; bottom:0; background:none; border:none;"><span class="egg">:D</span></button>
       </p>
     </div>
+    <div class="background">
+    <div class="popup">
+    <p class="header">Easter Egg Found!</p>
+
+    <div class="buttonbox">
+      <button class="popupbuttons 1yes">Go to page</button>
+      <button class="popupbuttons 1no">Close</button>
+    </div>
+  </div>
+</div>
     <script src="offline.js"></script>
     <script src="konami.js"></script>
     <script>
       document.getElementById("Egg1").addEventListener("click", function() {
         localStorage.setItem("egg1_found", "true");
-    });
+        const overlay = document.querySelector(".background");
+        const yesBtn = document.querySelector(".1yes");
+        const noBtn = document.querySelector(".1no");
+
+        overlay.style.display = "flex";
+      });
+
+      yesBtn.onclick = () => {
+        overlay.style.display = "none";
+        window.location.href = "/easter-eggs";
+      }
+      noBtn.onclick = () => {
+        overlay.style.display = "none";
+      }
     
+    //different egg
     let visits = Number(localStorage.getItem("visits_index") || 0);
     visits++;
     localStorage.setItem("visits_index", visits);
