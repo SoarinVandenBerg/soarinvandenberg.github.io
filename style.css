@@ -100,7 +100,7 @@
         position: fixed;
         inset: 0;
         z-index: 9999999 !important;
-        background: rgba(0, 0, 0);
+        background: black;
         display: none;
         justify-content: center;
         align-items: center;

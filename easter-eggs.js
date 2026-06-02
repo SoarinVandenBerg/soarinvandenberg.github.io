@@ -47,7 +47,6 @@ let list = document.getElementById("eggList");
           const overlay = document.querySelector(".background");
           const yesBtn = document.querySelector(".yes");
           const noBtn = document.querySelector(".no");
-          const openBtn = document.querySelector(".openPopup");
 
           overlay.style.display = "flex";
 
