@@ -128,6 +128,7 @@
         border: 2px solid #00be00;
         border-radius: 4px;
         font-family: 'Departure Mono', monospace;
+        cursor: pointer;
       }
 
       .eggButton:hover {
