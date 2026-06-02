@@ -104,11 +104,22 @@
         justify-content: center;
         align-items: center;
       }
+      .popup {
+        background: black;
+        border: 2px solid #00be00;
+        border-radius: 4px;
+        text-align: center;
+        padding: 20px;
+        width: 250px;
+      }
+
       .buttonbox {
         display: flex;
         gap: 10px;
+        margin-top: 15px;
       }
-      .buttonbox .popupbuttons {
+
+      .popupbuttons {
         flex: 1;
         padding: 10px;
         background: black;
@@ -117,13 +128,7 @@
         border-radius: 4px;
         font-family: 'Departure Mono', monospace;
       }
-      
-      .popup {
-        background: black;
-        border: 2px solid #00be00;
-        border-radius: 4px;
-        text-align: center;
-      }
+
       .eggButton:hover {
         color: #00be00;
       }
