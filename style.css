@@ -105,6 +105,15 @@
         justify-content: center;
         align-items: center;
       }
+      .verify {
+        position: fixed;
+        inset: 0;
+        z-index: 9999999 !important;
+        background: black;
+        display: none;
+        justify-content: center;
+        align-items: center;
+      }
       .popup {
         background: black;
         border: 2px solid #00be00;

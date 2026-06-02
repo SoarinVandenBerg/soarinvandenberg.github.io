@@ -46,7 +46,7 @@ let list = document.getElementById("eggList");
       });
 
         document.getElementById("resetEggs").addEventListener("click",() => {
-          const overlay = document.querySelector(".background");
+          const overlay = document.querySelector(".verify");
           const yesBtn = document.querySelector(".yes");
           const noBtn = document.querySelector(".no");
 
