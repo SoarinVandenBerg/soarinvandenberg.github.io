@@ -16,7 +16,17 @@
     <br><br><br>
     <a href="https://soarinvandenberg.ca"><-- Exit</a>
     </p>
-    <button id="resetEggs" style="position:absolute; right:0; bottom:0; background:none; border:none;"><span class="egg">Reset all Eggs!</span></button>
+    <div class="background">
+    <div class="popup">
+    <p class="header">Are you sure?</p>
+
+    <div class="buttonbox">
+      <button class="popupbuttons yes">Yes</button>
+      <button class="popupbuttons no">No</button>
+    </div>
+  </div>
+</div>
+    <button class="openPopup" id="resetEggs" style="position:absolute; right:0; bottom:0; background:none; border:none;"><span class="egg">Reset all Eggs!</span></button>
     <script src="offline.js"></script>
     <script src="konami.js"></script>
     <script src="easter-eggs.js"></script>

@@ -44,8 +44,16 @@ let list = document.getElementById("eggList");
       });
 
         document.getElementById("resetEggs").addEventListener("click",() => {
-          if (!confirm("ARE YOU SURE??? :)")) return;
-          
+          const overlay = document.querySelector(".background");
+          const yesBtn = document.querySelector(".yes");
+          const noBtn = document.querySelector(".no");
+          const openBtn = document.querySelector(".openPopup");
+
+          overlay.style.display = "flex";
+
+          yesBtn.onclick = () => {
+            overlay.style.display = "none";
+
           localStorage.removeItem("egg1_found");
           localStorage.removeItem("egg2_found");
           localStorage.removeItem("egg3_found");
@@ -74,8 +82,14 @@ let list = document.getElementById("eggList");
           localStorage.removeItem("count6");
 
           location.reload();
-        })
-
+          }
+        
+          
+          noBtn.onclick = () => {
+            overlay.style.display = "none";
+          }
+        });
+        
         const sitePages = [
           "visited_about",
           "visited_ai",
