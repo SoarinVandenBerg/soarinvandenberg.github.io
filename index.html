@@ -24,8 +24,8 @@
     <p class="header">Easter Egg Found!</p>
 
     <div class="buttonbox">
-      <button class="popupbuttons 1yes">Go to page</button>
-      <button class="popupbuttons 1no">Close</button>
+      <button class="popupbuttons yes1">Go to page</button>
+      <button class="popupbuttons no1">Close</button>
     </div>
   </div>
 </div>
@@ -35,11 +35,10 @@
       document.getElementById("Egg1").addEventListener("click", function() {
         localStorage.setItem("egg1_found", "true");
         const overlay = document.querySelector(".background");
-        const yesBtn = document.querySelector(".1yes");
-        const noBtn = document.querySelector(".1no");
+        const yesBtn = document.querySelector(".yes1");
+        const noBtn = document.querySelector(".no1");
 
         overlay.style.display = "flex";
-      });
 
       yesBtn.onclick = () => {
         overlay.style.display = "none";
@@ -48,6 +47,7 @@
       noBtn.onclick = () => {
         overlay.style.display = "none";
       }
+      });
     
     //different egg
     let visits = Number(localStorage.getItem("visits_index") || 0);
