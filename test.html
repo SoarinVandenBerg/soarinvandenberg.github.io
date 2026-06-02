@@ -7,25 +7,29 @@
     <meta name="robots" content="noindex">
   </head>
   <body>
-    <p class="text">
-      <div class="overlay">
-  <div class="modal">
-    <p>Are you sure?</p>
-    <button class="yes">Yes</button>
-    <button class="no">No</button>
-  </div>
-</div>
-    </p>
+    <div class="background">
+      <div class="popup">
+        <p>Are you sure?</p>
+        <button class="yes">Yes</button>
+        <button class="no">No</button>
+      </div>
+    </div>
+    <button class="openPopup">Open Popup</button>
+
     <script src="offline.js"></script>
     <script>
-        const overlay = document.querySelector(".overlay");
-const yesBtn = document.querySelector(".yes");
-const noBtn = document.querySelector(".no");
+      const overlay = document.querySelector(".overlay");
+      const yesBtn = document.querySelector(".yes");
+      const noBtn = document.querySelector(".no");
+      const openBtn = document.querySelector(".openPopup");
 
-overlay.style.display = "flex";
+      openBtn.onclick = () => {
+        overlay.style.display = "flex";
+      };
 
-yesBtn.onclick = () => overlay.style.display = "none";
-noBtn.onclick = () => overlay.style.display = "none";
+      yesBtn.onclick = () => overlay.style.display = "none";
+      noBtn.onclick = () => overlay.style.display = "none";
     </script>
+
   </body>
 </html>
