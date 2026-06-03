@@ -40,10 +40,9 @@
       document.addEventListener("DOMContentLoaded", () => {
       const ua = navigator.userAgent;
 
-      const isIOS = /iPad|iPod/i.test(ua);
-      const isMac = /Macintosh/i.test(ua);
+      const isIOS = /iPhone/i.test(ua);
 
-      if (isIOS || isMac) {
+      if (isIOS) {
         const overlay = document.querySelector(".verify");
         const yesBtn = document.querySelector(".yes");
         const noBtn = document.querySelector(".no");
