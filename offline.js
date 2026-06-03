@@ -4,7 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const isIOS = /iPad|iPod/i.test(ua);
   const isMac = /Macintosh/i.test(ua);
 
-  if (isIOS || isMac) {
+  const allowed = localStorage.getItem("deviceAllowed") === "true";
+
+  if ((isIOS || isMac) && !allowed) {
     window.location.href = "/offline";
   }
 });

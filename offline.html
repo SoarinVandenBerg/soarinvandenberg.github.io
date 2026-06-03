@@ -11,7 +11,26 @@
       503<br>
     </p><p class="text">
         This site is permanently closed.
-        <button id="nomac" style="position:absolute; right:0; bottom:0; background:none; border:none;"><span class="egg">Or is it???</span></button>
     </p>
+    <script>
+      const unlockSequence = ["4", "2"];
+      let unlockPosition = 0;
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === unlockSequence[unlockPosition]) {
+          unlockPosition++;
+
+          if (unlockPosition === unlockSequence.length) {
+            
+            localStorage.setItem("deviceAllowed", "true");
+            window.location.href = "/";
+            unlockPosition = 0;
+          }
+        } else {
+          unlockPosition = 0;
+        }
+      });
+</script>
+    </script>
   </body>
 </html>
