@@ -26,31 +26,39 @@
       <button class="popupbuttons" id="eggPopupNo">Close</button>
       <button class="popupbuttons" id="eggPopupYes">Go To Page</button>
     </div></div></div>
-    <div class="background">
+    <div class="verify">
     <div class="popup">
     <p class="header">WARNING:</p>
     <p class="text">This site isnt optimized for mobile devices. Certain elements may appear broken or behave unexpectedly.</p>
     <div class="buttonbox">
-      <button class="popupbuttons" id="eggPopupNo">Exit</button>
-      <button class="popupbuttons" id="eggPopupYes">Continue</button>
+      <button class="popupbuttons no" id="eggPopupNo">Exit</button>
+      <button class="popupbuttons yes" id="eggPopupYes">Continue</button>
     </div></div></div>
     <script src="offline.js"></script>
     <script src="universal.js"></script>
     <script>
-      const overlay = document.querySelector(".background");
-      const yesBtn = document.querySelector("#eggPopupYes");
-      const noBtn = document.querySelector("#eggPopupNo");
+      document.addEventListener("DOMContentLoaded", () => {
+      const ua = navigator.userAgent;
 
-      overlay.style.display = "flex";
+      const isIOS = /iPad|iPod/i.test(ua);
+      const isMac = /Macintosh/i.test(ua);
 
-      yesBtn.onclick = () => {
-        overlay.style.display = "none";
-        window.location.href = "/easter-eggs";
-      };
-      noBtn.onclick = () => {
-        overlay.style.display = "none";
-        window.location.href = "https://www.google.com/";
-      };
+      if (isIOS || isMac) {
+        const overlay = document.querySelector(".verify");
+        const yesBtn = document.querySelector(".yes");
+        const noBtn = document.querySelector(".no");
+
+        overlay.style.display = "flex";
+
+        yesBtn.onclick = () => {
+          overlay.style.display = "none";
+        };
+        noBtn.onclick = () => {
+          overlay.style.display = "none";
+          window.location.href = "https://www.google.com/";
+        };
+      }
+    });
     </script>
     <script>
       document.getElementById("Egg1").addEventListener("click", function() {
