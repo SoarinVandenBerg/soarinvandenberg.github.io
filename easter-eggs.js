@@ -1,4 +1,4 @@
-      let totalEggs = 12;
+      let totalEggs = 11;
       let foundEggs = 0;
       
       if (localStorage.getItem("egg1_found")) foundEggs++;
