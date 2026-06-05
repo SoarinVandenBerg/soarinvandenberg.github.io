@@ -46,6 +46,8 @@ document.addEventListener("keydown", (e) => {
       }
  });
 
+ document.addEventListener("DOMContentLoaded", () => {
+
 function openEggPopup(eggkey) {
     if (!localStorage.getItem(eggkey)) {
         localStorage.setItem(eggkey, "true");
@@ -145,6 +147,8 @@ if (allEggs1 && !localStorage.getItem("egg7_found")) {
   localStorage.setItem("egg7_found", "true");
   openEggPopup("egg7_found");
 }
+
+ });
 
 const cheatCode = [
     "1", "3",
