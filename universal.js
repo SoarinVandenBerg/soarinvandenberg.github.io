@@ -83,6 +83,8 @@ let allLinkVisited = linkPages.every(key => localStorage.getItem(key));
 if (allLinkVisited && !localStorage.getItem("egg12_found")) {
   localStorage.setItem("egg12_found", "true");
   openEggPopup("egg12_found");
+
+  location.reload();
 }
 
 const sitePages = [
@@ -130,6 +132,8 @@ let allCountVisited = countdownPages.every(key => localStorage.getItem(key));
 if (allCountVisited && !localStorage.getItem("egg3_found")) {
   localStorage.setItem("egg3_found", "true");
   openEggPopup("egg3_found");
+
+  location.reload();
 }
 
 const brokenPage = ["visited_404"];
