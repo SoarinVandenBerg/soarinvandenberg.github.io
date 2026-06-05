@@ -24,8 +24,8 @@ To do:
   <body>
     <p class="text">
       Coming Soon!
-    <br><br><br>
-    <a href="https://soarinvandenberg.ca"><-- Exit</a></p>
+    /p><br><br><br>
+    <p class="text"><a href="https://soarinvandenberg.ca"><-- Exit</a></p>
     <div class="background">
     <div class="popup">
     <p class="header">Easter Egg Found!</p>
