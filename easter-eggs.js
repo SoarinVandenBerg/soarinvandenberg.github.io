@@ -1,4 +1,4 @@
-      let totalEggs = 11;
+      let totalEggs = 12;
       let foundEggs = 0;
       
       if (localStorage.getItem("egg1_found")) foundEggs++;
@@ -12,6 +12,7 @@
       if (localStorage.getItem("egg9_found")) foundEggs++;
       if (localStorage.getItem("egg10_found")) foundEggs++;
       if (localStorage.getItem("egg11_found")) foundEggs++;
+      if (localStorage.getItem("egg12_found")) foundEggs++;
       
       if (foundEggs === 0) {
         document.getElementById("eggListHead").style.display = "none";
@@ -37,6 +38,7 @@ let list = document.getElementById("eggList");
         { key: "egg9_found", text: "-Visit the site 25 times!" },
         { key: "egg10_found", text: "-Type 42, the answer to everything" },
         { key: "egg11_found", text: "-Find the egg in the notes page" },
+        { key: "egg12_found", text: "-Click on every link in the links" },
       ]
 
       listEggs.forEach(egg => {
@@ -68,6 +70,7 @@ let list = document.getElementById("eggList");
           localStorage.removeItem("egg9_found");
           localStorage.removeItem("egg10_found");
           localStorage.removeItem("egg11_found");
+          localStorage.removeItem("egg12_found");
           localStorage.removeItem("visits_index");
           localStorage.removeItem("visited_about");
           localStorage.removeItem("visited_ai");
@@ -86,6 +89,16 @@ let list = document.getElementById("eggList");
           localStorage.removeItem("count4");
           localStorage.removeItem("count5");
           localStorage.removeItem("count6");
+          localStorage.removeItem("link1");
+          localStorage.removeItem("link2");
+          localStorage.removeItem("link3");
+          localStorage.removeItem("link4");
+          localStorage.removeItem("link5");
+          localStorage.removeItem("link6");
+          localStorage.removeItem("link7");
+          localStorage.removeItem("link8");
+          localStorage.removeItem("link9");
+          localStorage.removeItem("link10");
 
           location.reload();
           }

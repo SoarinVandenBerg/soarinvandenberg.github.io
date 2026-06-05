@@ -66,6 +66,25 @@ function openEggPopup(eggkey) {
     };
 }
 
+const linkPages = [
+    "link1",
+    "link2",
+    "link3",
+    "link4",
+    "link5",
+    "link6",
+    "link7",
+    "link8",
+    "link9",
+    "link10",
+];
+
+let allLinkVisited = linkPages.every(key => localStorage.getItem(key));
+if (allLinkVisited && !localStorage.getItem("egg12_found")) {
+  localStorage.setItem("egg12_found", "true");
+  openEggPopup("egg12_found");
+}
+
 const sitePages = [
     "visited_about",
     "visited_ai",
@@ -151,6 +170,7 @@ document.addEventListener("keydown", (e) => {
             localStorage.setItem("egg9_found", "true");
             localStorage.setItem("egg10_found", "true");
             localStorage.setItem("egg11_found", "true");
+            localStorage.setItem("egg12_found", "true");
             localStorage.setItem("visits_index", "true");
             localStorage.setItem("visited_about", "true");
             localStorage.setItem("visited_ai", "true");
@@ -169,6 +189,16 @@ document.addEventListener("keydown", (e) => {
             localStorage.setItem("count4", "true");
             localStorage.setItem("count5", "true");
             localStorage.setItem("count6", "true");
+            localStorage.setItem("link1", "true");
+            localStorage.setItem("link2", "true");
+            localStorage.setItem("link3", "true");
+            localStorage.setItem("link4", "true");
+            localStorage.setItem("link5", "true");
+            localStorage.setItem("link6", "true");
+            localStorage.setItem("link7", "true");
+            localStorage.setItem("link8", "true");
+            localStorage.setItem("link9", "true");
+            localStorage.setItem("link10", "true");
                 
             cheatPosition = 0;
         }
