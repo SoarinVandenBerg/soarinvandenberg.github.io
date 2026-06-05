@@ -12,7 +12,6 @@
       if (localStorage.getItem("egg9_found")) foundEggs++;
       if (localStorage.getItem("egg10_found")) foundEggs++;
       if (localStorage.getItem("egg11_found")) foundEggs++;
-      if (localStorage.getItem("egg12_found")) foundEggs++;
       
       if (foundEggs === 0) {
         document.getElementById("eggListHead").style.display = "none";
@@ -38,7 +37,6 @@ let list = document.getElementById("eggList");
         { key: "egg9_found", text: "-Visit the site 25 times!" },
         { key: "egg10_found", text: "-Type 42, the answer to everything" },
         { key: "egg11_found", text: "-Find the egg in the notes page" },
-        { key: "egg12_found", text: "-Write a message in the guestbook!" },
       ]
 
       listEggs.forEach(egg => {
@@ -70,7 +68,6 @@ let list = document.getElementById("eggList");
           localStorage.removeItem("egg9_found");
           localStorage.removeItem("egg10_found");
           localStorage.removeItem("egg11_found");
-          localStorage.removeItem("egg12_found");
           localStorage.removeItem("visits_index");
           localStorage.removeItem("visited_about");
           localStorage.removeItem("visited_ai");
