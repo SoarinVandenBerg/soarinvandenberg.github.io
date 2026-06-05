@@ -320,8 +320,8 @@
       <p class="blog">
         Done the popups and most bugs fixed! Now the next problem is that some easter eggs are impossible
         to do on mobile (I know I tried to block mobile a while ago but I think its better to keep it),
-        so ill make it so those easter eggs dont count if youre on mobile. Also, if you read this, heres
-        a free easter egg! Also almost finished book 3! Then imma take a lil break from the series and
+        so ill make it so those easter eggs dont count if youre on mobile. <a href="javascript:void(0)" id="Egg11">Also, if you read this, heres
+        a free easter egg!</a> Also im almost finished book 3! Then imma take a lil break from the series and
         read a different book first before continuing.
       </p>
     </div>
@@ -338,5 +338,11 @@
     <script src="offline.js"></script>
     <script src="universal.js"></script>
     <script>localStorage.setItem("visited_notes", "true");</script>
+    <script>
+      document.getElementById("Egg11").addEventListener("click", function() {
+        localStorage.setItem("egg11_found", "true");
+        openEggPopup("egg11_found");
+    });
+    </script>
   </body>
 </html>
