@@ -1,4 +1,4 @@
-      let totalEggs = 10;
+      let totalEggs = 11;
       let foundEggs = 0;
       
       if (localStorage.getItem("egg1_found")) foundEggs++;
@@ -11,6 +11,7 @@
       if (localStorage.getItem("egg8_found")) foundEggs++;
       if (localStorage.getItem("egg9_found")) foundEggs++;
       if (localStorage.getItem("egg10_found")) foundEggs++;
+      if (localStorage.getItem("egg11_found")) foundEggs++;
       
       if (foundEggs === 0) {
         document.getElementById("eggListHead").style.display = "none";
@@ -35,6 +36,7 @@ let list = document.getElementById("eggList");
         { key: "egg8_found", text: "-Type the Konami code to unlock" },
         { key: "egg9_found", text: "-Visit the site 25 times!" },
         { key: "egg10_found", text: "-Type 42, the answer to everything" },
+        { key: "egg11_found", text: "-Find the egg in the notes page" },
       ]
 
       listEggs.forEach(egg => {
@@ -65,6 +67,7 @@ let list = document.getElementById("eggList");
           localStorage.removeItem("egg8_found");
           localStorage.removeItem("egg9_found");
           localStorage.removeItem("egg10_found");
+          localStorage.removeItem("egg11_found");
           localStorage.removeItem("visits_index");
           localStorage.removeItem("visited_about");
           localStorage.removeItem("visited_ai");

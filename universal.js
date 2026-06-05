@@ -103,6 +103,7 @@ const sitePages = [
           "egg8_found",
           "egg9_found",
           "egg10_found",
+          "egg11_found",
         ]
 
         let allCountVisited = countdownPages.every(key => localStorage.getItem(key));
