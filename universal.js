@@ -203,7 +203,9 @@ document.addEventListener("keydown", (e) => {
             localStorage.setItem("link8", "true");
             localStorage.setItem("link9", "true");
             localStorage.setItem("link10", "true");
-                
+            
+            location.reload();
+
             cheatPosition = 0;
         }
     } else {
