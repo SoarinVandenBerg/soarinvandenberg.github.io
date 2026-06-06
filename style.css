@@ -156,7 +156,7 @@
         color: #00be00;
       }
       .game-frame {
-        width: 500px;
+        width: 600px;
         height: 600px;
         margin: 20px auto;
 
@@ -170,7 +170,7 @@
         height: 600px;
         border: none;
 
-        transform: translateX(-350px);
+        transform: translateX(-300px);
       }
 
       .pages {
