@@ -1,10 +1,29 @@
+document.addEventListener("DOMContentLoaded", () => {
+
 if (localStorage.getItem("popupReload")) {
     const key = localStorage.getItem("popupReload");
     localStorage.removeItem("popupReload");
-    
-    document.addEventListener("DOMContentLoaded", () => {
-        openEggPopup(key);
-    }); 
+    openEggPopup(key);
+}
+
+function openEggPopup(eggkey) {
+    if (!localStorage.getItem(eggkey)) {
+        localStorage.setItem(eggkey, "true");
+    };
+
+    const overlay = document.querySelector(".background");
+    const yesBtn = document.querySelector("#eggPopupYes");
+    const noBtn = document.querySelector("#eggPopupNo");
+
+    overlay.style.display = "flex";
+
+    yesBtn.onclick = () => {
+        overlay.style.display = "none";
+        window.location.href = "/easter-eggs";
+    };
+    noBtn.onclick = () => {
+        overlay.style.display = "none";
+    };
 }
 
 const konamiCode = [
@@ -55,26 +74,6 @@ document.addEventListener("keydown", (e) => {
       }
  });
 
-function openEggPopup(eggkey) {
-    if (!localStorage.getItem(eggkey)) {
-        localStorage.setItem(eggkey, "true");
-    };
-
-    const overlay = document.querySelector(".background");
-    const yesBtn = document.querySelector("#eggPopupYes");
-    const noBtn = document.querySelector("#eggPopupNo");
-
-    overlay.style.display = "flex";
-
-    yesBtn.onclick = () => {
-        overlay.style.display = "none";
-        window.location.href = "/easter-eggs";
-    };
-    noBtn.onclick = () => {
-        overlay.style.display = "none";
-    };
-}
-
 const linkPages = [
     "link1",
     "link2",
@@ -91,7 +90,7 @@ const linkPages = [
 let allLinkVisited = linkPages.every(key => localStorage.getItem(key));
 if (allLinkVisited && !localStorage.getItem("egg12_found")) {
   localStorage.setItem("egg12_found", "true");
-  localStorage.setItem("showPopupAfterReload", "egg12_found");
+  localStorage.setItem("popupReload", "egg12_found");
   location.reload();
 }
 
@@ -139,7 +138,7 @@ const allEggs = [
 let allCountVisited = countdownPages.every(key => localStorage.getItem(key));
 if (allCountVisited && !localStorage.getItem("egg3_found")) {
   localStorage.setItem("egg3_found", "true");
-  localStorage.setItem("showPopupAfterReload", "egg3_found");
+  localStorage.setItem("popupReload", "egg3_found");
   location.reload();
 }
 
@@ -148,7 +147,7 @@ const brokenPage = ["visited_404"];
 let brokenVisited = brokenPage.every(key => localStorage.getItem(key));
 if (brokenVisited && !localStorage.getItem("egg6_found")) {
   localStorage.setItem("egg6_found", "true");
-  localStorage.setItem("showPopupAfterReload", "egg6_found");
+  localStorage.setItem("popupReload", "egg6_found");
   location.reload();
 }
       
@@ -157,6 +156,8 @@ if (allEggs1 && !localStorage.getItem("egg7_found")) {
   localStorage.setItem("egg7_found", "true");
   openEggPopup("egg7_found");
 }
+
+});
 
 const cheatCode = [
     "1", "3",
