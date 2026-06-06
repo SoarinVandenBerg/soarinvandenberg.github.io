@@ -1,3 +1,12 @@
+if (localStorage.getItem("popupReload")) {
+    const key = localStorage.getItem("popupReload");
+    localStorage.removeItem("popupReload");
+    
+    document.addEventListener("DOMContentLoaded", () => {
+        openEggPopup(key);
+    }); 
+}
+
 const konamiCode = [
     "ArrowUp", "ArrowUp",
     "ArrowDown", "ArrowDown",
@@ -46,8 +55,6 @@ document.addEventListener("keydown", (e) => {
       }
  });
 
- document.addEventListener("DOMContentLoaded", () => {
-
 function openEggPopup(eggkey) {
     if (!localStorage.getItem(eggkey)) {
         localStorage.setItem(eggkey, "true");
@@ -84,7 +91,8 @@ const linkPages = [
 let allLinkVisited = linkPages.every(key => localStorage.getItem(key));
 if (allLinkVisited && !localStorage.getItem("egg12_found")) {
   localStorage.setItem("egg12_found", "true");
-  openEggPopup("egg12_found");
+  localStorage.setItem("showPopupAfterReload", "egg12_found");
+  location.reload();
 }
 
 const sitePages = [
@@ -131,7 +139,8 @@ const allEggs = [
 let allCountVisited = countdownPages.every(key => localStorage.getItem(key));
 if (allCountVisited && !localStorage.getItem("egg3_found")) {
   localStorage.setItem("egg3_found", "true");
-  openEggPopup("egg3_found");
+  localStorage.setItem("showPopupAfterReload", "egg3_found");
+  location.reload();
 }
 
 const brokenPage = ["visited_404"];
@@ -139,7 +148,8 @@ const brokenPage = ["visited_404"];
 let brokenVisited = brokenPage.every(key => localStorage.getItem(key));
 if (brokenVisited && !localStorage.getItem("egg6_found")) {
   localStorage.setItem("egg6_found", "true");
-  openEggPopup("egg6_found");
+  localStorage.setItem("showPopupAfterReload", "egg6_found");
+  location.reload();
 }
       
 let allEggs1 = allEggs.every(key => localStorage.getItem(key));
@@ -147,8 +157,6 @@ if (allEggs1 && !localStorage.getItem("egg7_found")) {
   localStorage.setItem("egg7_found", "true");
   openEggPopup("egg7_found");
 }
-
- });
 
 const cheatCode = [
     "1", "3",
