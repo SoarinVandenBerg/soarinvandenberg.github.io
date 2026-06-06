@@ -155,6 +155,19 @@
       .eggButton:hover {
         color: #00be00;
       }
+      .game-wrapper {
+        max-width: 1100px;
+        margin: 20px auto;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      #gameFrame {
+        width: 100%;
+        height: 600px;
+        border: none;
+        display: block;
+      } 
       .pages {
         font-size: 14px;
         font-family:'Departure Mono', monospace;
