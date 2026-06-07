@@ -1,7 +1,7 @@
 //I DID NOT MAKE THIS FILE'S CODE. I dont know how to do this stuff so this file is made by Claude
 
 const API_KEY = "AIzaSyD1zP0euN0zVChL9i8rSumRRZmwIcRKywo";
-const HANK_CHANNEL_ID1 = "UCOT2iLov0V7Re7ku_3UBtcQ";
+const HANK_CHANNEL_ID1 = "UUOT2iLov0V7Re7ku_3UBtcQ";
 
 async function getLatestTen() {
   const url =
