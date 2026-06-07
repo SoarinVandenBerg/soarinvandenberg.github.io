@@ -1,13 +1,13 @@
 const API_KEY = "AIzaSyD1zP0euN0zVChL9i8rSumRRZmwIcRKywo";
 const VLOG_UPLOADS = "UUGaVdbSav8xWuFWTadK6loA";
 
-async function getLatestVlogTen() {
+async function getLatestVlogTwelve() {
   const url =
     `https://www.googleapis.com/youtube/v3/playlistItems?` +
     `key=${API_KEY}` +
     `&playlistId=${VLOG_UPLOADS}` +
     `&part=snippet` +
-    `&maxResults=10`;
+    `&maxResults=12`;
 
   const response = await fetch(url);
   const data = await response.json();
@@ -31,4 +31,4 @@ async function getLatestVlogTen() {
   });
 }
 
-getLatestVlogTen();
+getLatestVlogTwelve();
