@@ -3,13 +3,13 @@
 const API_KEY = "AIzaSyD1zP0euN0zVChL9i8rSumRRZmwIcRKywo";
 const HANK_CHANNEL_ID1 = "UUOT2iLov0V7Re7ku_3UBtcQ";
 
-async function getLatestTen() {
+async function getLatestTwelve() {
   const url =
     `https://www.googleapis.com/youtube/v3/playlistItems?` +
     `key=${API_KEY}` +
     `&playlistId=${HANK_CHANNEL_ID1}` +
     `&part=snippet` +
-    `&maxResults=10`;
+    `&maxResults=12`;
 
   const response = await fetch(url);
   const data = await response.json();
@@ -33,4 +33,4 @@ async function getLatestTen() {
   });
 }
 
-getLatestTen();
+getLatestTwelve();
