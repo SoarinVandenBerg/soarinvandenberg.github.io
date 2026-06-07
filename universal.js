@@ -85,6 +85,7 @@ const linkPages = [
     "link8",
     "link9",
     "link10",
+    "link11",
 ];
 
 let allLinkVisited = linkPages.every(key => localStorage.getItem(key));
