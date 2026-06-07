@@ -1,7 +1,7 @@
 //I DID NOT MAKE THIS FILE'S CODE. I dont know how to do this stuff so this file is made by Claude
 
 const API_KEY = "AIzaSyD1zP0euN0zVChL9i8rSumRRZmwIcRKywo";
-const HANK_CHANNEL_ID = "UCDsO-0Yo5zpJk575nKXgMVA";
+const HANK_CHANNEL_ID = "UCOT2iLov0V7Re7ku_3UBtcQ";
 const VLOG_CHANNEL_ID = "UCGaVdbSav8xWuFWTadK6loA";
 
 async function getLatestHankVideo() {
