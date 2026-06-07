@@ -20,7 +20,7 @@ async function getLatestHankVideo() {
   const latest = data.items[0];
   const videoId = latest.id.videoId;
 
-  document.getElementById("hankvideo").href = `https://yout-ube.com/watch?v=${videoId}`;
+  document.getElementById("hankvideo").src = `https://yout-ube.com/watch?v=${videoId}`;
 }
 
 getLatestHankVideo();
@@ -41,7 +41,7 @@ async function getLatestVlogVideo() {
   const latest = data.items[0];
   const videoId = latest.id.videoId;
 
-  document.getElementById("vlogvideo").href = `https://yout-ube.com/watch?v=${videoId}`;
+  document.getElementById("vlogvideo").src = `https://yout-ube.com/watch?v=${videoId}`;
 }
 
 getLatestVlogVideo();
