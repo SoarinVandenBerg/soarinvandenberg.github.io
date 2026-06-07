@@ -24,7 +24,8 @@ To do:
   <body>
     <p class="text">
       Coming Soon!
-    </p><br><br><br>
+    </p>
+    <br><br><br>
     <p class="text"><a href="https://soarinvandenberg.ca"><-- Exit</a></p>
     <div class="background">
     <div class="popup">
