@@ -213,6 +213,7 @@ document.addEventListener("keydown", (e) => {
             localStorage.setItem("link8", "true");
             localStorage.setItem("link9", "true");
             localStorage.setItem("link10", "true");
+            localStorage.setItem("link11", "true");
             
             location.reload();
 
