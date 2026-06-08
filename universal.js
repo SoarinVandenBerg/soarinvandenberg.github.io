@@ -1,11 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-
-if (localStorage.getItem("popupReload")) {
-    const key = localStorage.getItem("popupReload");
-    localStorage.removeItem("popupReload");
-    openEggPopup(key);
-}
-
 function openEggPopup(eggkey) {
     if (!localStorage.getItem(eggkey)) {
         localStorage.setItem(eggkey, "true");
@@ -24,6 +16,14 @@ function openEggPopup(eggkey) {
     noBtn.onclick = () => {
         overlay.style.display = "none";
     };
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+
+if (localStorage.getItem("popupReload")) {
+    const key = localStorage.getItem("popupReload");
+    localStorage.removeItem("popupReload");
+    openEggPopup(key);
 }
 
 const konamiCode = [
