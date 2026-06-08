@@ -27,7 +27,8 @@
       .searchbox {
         border: 2px solid #00be00;
         border-radius: 4px;
-        background: #1e1e1e
+        background: #1e1e1e;
+        color: white;
       }
       .pixel {
         image-rendering: pixelated;
