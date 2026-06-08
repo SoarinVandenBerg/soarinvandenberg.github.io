@@ -25,10 +25,13 @@
         image-rendering: pixelated;
       }
       .searchbox {
-        border: 2px solid #00be00;
-        border-radius: 4px;
-        background: #1e1e1e;
-        color: white;
+        background: none;
+        border: none;
+        outline: none;
+        color: #00be00;
+        caret-color: #00be00;
+        font-family: monospace;
+        padding: 8px;
       }
       .pixel {
         image-rendering: pixelated;
