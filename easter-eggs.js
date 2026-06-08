@@ -99,6 +99,7 @@ let list = document.getElementById("eggList");
           localStorage.removeItem("link8");
           localStorage.removeItem("link9");
           localStorage.removeItem("link10");
+          localStorage.removeItem("link11");
 
           location.reload();
           }
