@@ -114,6 +114,15 @@ if (allSiteVisited && !localStorage.getItem("egg2_found")) {
   openEggPopup("egg2_found");
 }
 
+const brokenPage = ["visited_404"];
+
+let brokenVisited = brokenPage.every(key => localStorage.getItem(key));
+if (brokenVisited && !localStorage.getItem("egg6_found")) {
+  localStorage.setItem("egg6_found", "true");
+  localStorage.setItem("popupReload", "egg6_found");
+  location.reload();
+}
+
 const countdownPages = [
   "count1",
   "count2",
@@ -122,6 +131,13 @@ const countdownPages = [
   "count5",
   "count6",
 ];
+
+let allCountVisited = countdownPages.every(key => localStorage.getItem(key));
+if (allCountVisited && !localStorage.getItem("egg3_found")) {
+  localStorage.setItem("egg3_found", "true");
+  localStorage.setItem("popupReload", "egg3_found");
+  location.reload();
+}
 
 const allEggs = [
     "egg1_found",
@@ -134,28 +150,28 @@ const allEggs = [
     "egg9_found",
     "egg10_found",
     "egg11_found",
+    "egg12_found",
+    "egg13_found",
 ]
 
-let allCountVisited = countdownPages.every(key => localStorage.getItem(key));
-if (allCountVisited && !localStorage.getItem("egg3_found")) {
-  localStorage.setItem("egg3_found", "true");
-  localStorage.setItem("popupReload", "egg3_found");
-  location.reload();
-}
-
-const brokenPage = ["visited_404"];
-
-let brokenVisited = brokenPage.every(key => localStorage.getItem(key));
-if (brokenVisited && !localStorage.getItem("egg6_found")) {
-  localStorage.setItem("egg6_found", "true");
-  localStorage.setItem("popupReload", "egg6_found");
-  location.reload();
-}
-      
-let allEggs1 = allEggs.every(key => localStorage.getItem(key));
-if (allEggs1 && !localStorage.getItem("egg7_found")) {
+let allEggsFound = allEggs.every(key => localStorage.getItem(key));
+if (allEggsFound && !localStorage.getItem("egg7_found")) {
   localStorage.setItem("egg7_found", "true");
   openEggPopup("egg7_found");
+}
+
+const allVideos = [
+    "visited_hankschannel",
+    "visited_vlogbrothers",
+    "visited_videofinder",
+    "visited_videos",
+]
+
+let allVideosVisited = allVideos.every(key => localStorage.getItem(key));
+if (allVideosVisited && !localStorage.getItem("egg12_found")) {
+  localStorage.setItem("egg12_found", "true");
+  localStorage.setItem("popupReload", "egg12_found");
+  location.reload();
 }
 
 });
@@ -185,11 +201,16 @@ document.addEventListener("keydown", (e) => {
             localStorage.setItem("egg10_found", "true");
             localStorage.setItem("egg11_found", "true");
             localStorage.setItem("egg12_found", "true");
+            localStorage.setItem("egg13_found", "true");
             localStorage.setItem("visits_index", "true");
             localStorage.setItem("visited_about", "true");
             localStorage.setItem("visited_ai", "true");
             localStorage.setItem("visited_notes", "true");
             localStorage.setItem("visited_books", "true");
+            localStorage.setItem("visited_hankschannel", "true");
+            localStorage.setItem("visited_vlogbrothers", "true");
+            localStorage.setItem("visited_videofinder", "true");
+            localStorage.setItem("visited_videos", "true");
             localStorage.setItem("visited_contact", "true");
             localStorage.setItem("visited_guestbook", "true");
             localStorage.setItem("visited_countdowns", "true");

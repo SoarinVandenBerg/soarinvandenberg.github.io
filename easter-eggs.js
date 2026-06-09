@@ -1,4 +1,4 @@
-      let totalEggs = 12;
+      let totalEggs = 13;
       let foundEggs = 0;
       
       if (localStorage.getItem("egg1_found")) foundEggs++;
@@ -13,6 +13,7 @@
       if (localStorage.getItem("egg10_found")) foundEggs++;
       if (localStorage.getItem("egg11_found")) foundEggs++;
       if (localStorage.getItem("egg12_found")) foundEggs++;
+      if (localStorage.getItem("egg13_found")) foundEggs++;
       
       if (foundEggs === 0) {
         document.getElementById("eggListHead").style.display = "none";
@@ -39,6 +40,7 @@ let list = document.getElementById("eggList");
         { key: "egg10_found", text: "-Type 42, the answer to everything" },
         { key: "egg11_found", text: "-Find the egg in the notes page" },
         { key: "egg12_found", text: "-Click on every link in the links" },
+        { key: "egg13_found", text: "-Visit every videos page on the site!" },
       ]
 
       listEggs.forEach(egg => {
@@ -71,6 +73,7 @@ let list = document.getElementById("eggList");
           localStorage.removeItem("egg10_found");
           localStorage.removeItem("egg11_found");
           localStorage.removeItem("egg12_found");
+          localStorage.removeItem("egg13_found");
           localStorage.removeItem("visits_index");
           localStorage.removeItem("visited_about");
           localStorage.removeItem("visited_ai");
@@ -83,6 +86,10 @@ let list = document.getElementById("eggList");
           localStorage.removeItem("visited_pages");
           localStorage.removeItem("visited_projects");
           localStorage.removeItem("visited_404");
+          localStorage.removeItem("visited_hankschannel");
+          localStorage.removeItem("visited_vlogbrothers");
+          localStorage.removeItem("visited_videofinder");
+          localStorage.removeItem("visited_videos");
           localStorage.removeItem("count1");
           localStorage.removeItem("count2");
           localStorage.removeItem("count3");
