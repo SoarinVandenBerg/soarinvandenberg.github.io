@@ -168,9 +168,9 @@ const allVideos = [
 ]
 
 let allVideosVisited = allVideos.every(key => localStorage.getItem(key));
-if (allVideosVisited && !localStorage.getItem("egg12_found")) {
-  localStorage.setItem("egg12_found", "true");
-  localStorage.setItem("popupReload", "egg12_found");
+if (allVideosVisited && !localStorage.getItem("egg13_found")) {
+  localStorage.setItem("egg13_found", "true");
+  localStorage.setItem("popupReload", "egg13_found");
   location.reload();
 }
 
