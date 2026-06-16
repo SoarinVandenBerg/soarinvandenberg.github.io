@@ -61,3 +61,7 @@ async function getLatestDearHankVideo() {
 
   document.getElementById("dearhankvideo").src = `https://yout-ube.com/watch?v=${videoId}`;
 }
+
+if (document.getElementById("waveformvideo")) getLatestWaveformVideo();
+if (document.getElementById("dearhankvideo")) getLatestDearHankVideo();
+if (document.getElementById("humanvideo")) getLatestHumanVideo();
