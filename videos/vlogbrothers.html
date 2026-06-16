@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="icon" href="website_icon.png">
-    <title>Video Finder - Soarin's Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../website_icon.png">
+    <title>Vlogbrothers - Soarin's Website</title>
+    <link rel="stylesheet" href="../style.css">
     <meta name="robots" content="noindex">
   </head>
   <body>
     <p class="title">
-      Video Finder!
+      Vlogbrothers
     </p><br>
-
-    <p class="text">
-    <input class="searchbox" id="searchBox" type="text" placeholder="Search...">
-    </p><div id="results"></div>
+    <p class="text">Here's the 12 latest Vlogbrothers videos!</p>
+    <div id="vlog-list"></div>
     <br><br><br>
     <p class="text"><a href="https://soarinvandenberg.ca"><-- Exit</a></p>
     <div class="background">
@@ -23,9 +21,9 @@
       <button class="popupbuttons" id="eggPopupNo">Close</button>
       <button class="popupbuttons" id="eggPopupYes">Go To Page</button>
     </div></div></div>
-    <script src="offline.js"></script>
-    <script src="universal.js"></script>
-    <script src="searchengine.js"></script>
-    <script>localStorage.setItem("visited_videofinder", "true");</script>
+    <script src="../offline.js"></script>
+    <script src="../universal.js"></script>
+    <script src="video-finder.js"></script>
+    <script>localStorage.setItem("visited_vlogbrothers", "true");</script>
   </body>
 </html>
