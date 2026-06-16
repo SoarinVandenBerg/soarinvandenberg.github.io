@@ -87,6 +87,7 @@ const linkPages = [
     "link10",
     "link11",
     "link12",
+    "link13",
 ];
 
 let allLinkVisited = linkPages.every(key => localStorage.getItem(key));
@@ -237,6 +238,7 @@ document.addEventListener("keydown", (e) => {
             localStorage.setItem("link10", "true");
             localStorage.setItem("link11", "true");
             localStorage.setItem("link12", "true");
+            localStorage.setItem("link13", "true");
             
             location.reload();
 
