@@ -50,7 +50,7 @@ async function getLatestVlogVideo() {
 
 //Vlogbrothers latest 12 code
 
-const VLOG_UPLOADS = "UU7QrGBQ7DGv47UXJobHmL1Q";
+const VLOG_UPLOADS = "UUGaVdbSav8xWuFWTadK6loA";
 
 async function getLatestVlogTwelve() {
   const url =
