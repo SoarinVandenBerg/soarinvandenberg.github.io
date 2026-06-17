@@ -68,10 +68,12 @@ async function getLatestDearHankVideo() {
 
 async function getLatestTwelveHumans() {
   const url =
-    `https://www.googleapis.com/youtube/v3/playlistItems?` +
+    `https://www.googleapis.com/youtube/v3/search?` +
     `key=${API_KEY}` +
-    `&playlistId=${POD_HUMANS_CHANNEL_ID1}` +
+    `&channelId=${POD_HUMANS_CHANNEL_ID}` +
+    `&order=date` +
     `&part=snippet` +
+    `&type=video` +
     `&maxResults=12`;
 
   const response = await fetch(url);
@@ -83,57 +85,29 @@ async function getLatestTwelveHumans() {
   container.innerHTML = "";
 
   data.items.forEach(item => {
-    const videoId = item.snippet.resourceId.videoId;
+    const videoId = item.id.videoId;
 
     const iframe = document.createElement("iframe");
     iframe.width = "560";
     iframe.height = "315";
     iframe.allowFullscreen = true;
     iframe.style = "border:2px solid #00be00;border-radius:4px;margin-bottom:20px;";
-    iframe.src = `https://yout-ube.com/watch?v=${videoId}`;
+    iframe.src = `https://www.youtube.com/embed/${videoId}`;
 
     container.appendChild(iframe);
   });
 }
 
-
-async function getLatestTwelveDearHank() {
-  const url =
-    `https://www.googleapis.com/youtube/v3/playlistItems?` +
-    `key=${API_KEY}` +
-    `&playlistId=${POD_DEARHANKANDJOHN_CHANNEL_ID1}` +
-    `&part=snippet` +
-    `&maxResults=12`;
-
-  const response = await fetch(url);
-  const data = await response.json();
-
-  if (!data.items || data.items.length === 0) return;
-
-  const container = document.getElementById("dearhank-list");
-  container.innerHTML = "";
-
-  data.items.forEach(item => {
-    const videoId = item.snippet.resourceId.videoId;
-
-    const iframe = document.createElement("iframe");
-    iframe.width = "560";
-    iframe.height = "315";
-    iframe.allowFullscreen = true;
-    iframe.style = "border:2px solid #00be00;border-radius:4px;margin-bottom:20px;";
-    iframe.src = `https://yout-ube.com/watch?v=${videoId}`;
-
-    container.appendChild(iframe);
-  });
-}
 
 
 async function getLatestTwelveWaveform() {
   const url =
-    `https://www.googleapis.com/youtube/v3/playlistItems?` +
+    `https://www.googleapis.com/youtube/v3/search?` +
     `key=${API_KEY}` +
-    `&playlistId=${POD_WAVEFORM_CHANNEL_ID1}` +
+    `&channelId=${POD_WAVEFORM_CHANNEL_ID}` +
+    `&order=date` +
     `&part=snippet` +
+    `&type=video` +
     `&maxResults=12`;
 
   const response = await fetch(url);
@@ -145,18 +119,19 @@ async function getLatestTwelveWaveform() {
   container.innerHTML = "";
 
   data.items.forEach(item => {
-    const videoId = item.snippet.resourceId.videoId;
+    const videoId = item.id.videoId;
 
     const iframe = document.createElement("iframe");
     iframe.width = "560";
     iframe.height = "315";
     iframe.allowFullscreen = true;
     iframe.style = "border:2px solid #00be00;border-radius:4px;margin-bottom:20px;";
-    iframe.src = `https://yout-ube.com/watch?v=${videoId}`;
+    iframe.src = `https://www.youtube.com/embed/${videoId}`;
 
     container.appendChild(iframe);
   });
 }
+
 
 
 if (document.getElementById("waveformvideo")) getLatestWaveformVideo();
