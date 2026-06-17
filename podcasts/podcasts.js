@@ -5,8 +5,6 @@ const POD_HUMANS_CHANNEL_ID = "UC7QrGBQ7DGv47UXJobHmL1Q";
 const POD_WAVEFORM_CHANNEL_ID = "UCEcrRXW3oEYfUctetZTAWLw";
 const POD_DEARHANKANDJOHN_CHANNEL_ID = "UCldoL0vMV7hkUPIauUY4IjA";
 
-// const POD_DEARHANKANDJOHN_CHANNEL_ID1 = "UUldoL0vMV7hkUPIauUY4IjA";
-
 async function getLatestHumanVideo() {
   const url =
     `https://www.googleapis.com/youtube/v3/search?` +
@@ -131,8 +129,42 @@ async function getLatestWaveformTwelve() {
 }
 
 
+const DEARHANK_UPLOADS = "UUldoL0vMV7hkUPIauUY4IjA";
+
+async function getLatestDearHankTwelve() {
+  const url =
+    `https://www.googleapis.com/youtube/v3/playlistItems?` +
+    `key=${API_KEY}` +
+    `&playlistId=${DEARHANK_UPLOADS}` +
+    `&part=snippet` +
+    `&maxResults=12`;
+
+  const response = await fetch(url);
+  const data = await response.json();
+
+  if (!data.items || data.items.length === 0) return;
+
+  const container = document.getElementById("dearhank-list");
+  container.innerHTML = "";
+
+  data.items.forEach(item => {
+    const videoId = item.snippet.resourceId.videoId;
+
+    const iframe = document.createElement("iframe");
+    iframe.width = "560";
+    iframe.height = "315";
+    iframe.allowFullscreen = true;
+    iframe.style = "border:2px solid #00be00;border-radius:4px;margin-bottom:20px;";
+    iframe.src = `https://yout-ube.com/watch?v=${videoId}`;
+
+    container.appendChild(iframe);
+  });
+}
+
+
 if (document.getElementById("humans-list")) getLatestHumansTwelve();
 if (document.getElementById("waveform-list")) getLatestWaveformTwelve();
+if (document.getElementById("dearhank-list")) getLatestDearHankTwelve();
 
 
 
