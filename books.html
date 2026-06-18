@@ -374,5 +374,17 @@
         openEggPopup("egg4_found");
     });
     </script>
+    <script>
+      window.addEventListener("scroll", function() {
+      const scrolledTo = window.scrollY + window.innerHeight;
+      const pageHeight = document.documentElement.scrollHeight;
+
+      if (scrolledTo >= pageHeight - 50) {
+        if (!localStorage.getItem("egg15_found")) {
+            openEggPopup("egg15_found");
+        }
+      }
+      });
+    </script>
   </body>
 </html>
