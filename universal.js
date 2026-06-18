@@ -154,6 +154,7 @@ const allEggs = [
     "egg11_found",
     "egg12_found",
     "egg13_found",
+    "egg14_found",
 ]
 
 let allEggsFound = allEggs.every(key => localStorage.getItem(key));
@@ -204,6 +205,7 @@ document.addEventListener("keydown", (e) => {
             localStorage.setItem("egg11_found", "true");
             localStorage.setItem("egg12_found", "true");
             localStorage.setItem("egg13_found", "true");
+            localStorage.setItem("egg14_found", "true");
             localStorage.setItem("visits_index", "true");
             localStorage.setItem("visited_about", "true");
             localStorage.setItem("visited_ai", "true");

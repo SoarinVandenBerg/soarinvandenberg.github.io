@@ -36,7 +36,7 @@
       -<a href="/notes">Notes</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Random stuff<br>
       -<a href="/countdowns">Countdowns</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Timers counting down<br>
       -<a href="/guestbook">Guestbook</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-A place for people to write<br>
-      <span class="egg"><a href="/easter-eggs">-Easter Eggs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Things hidden around the site!</a></span>
+      <span class="egg"><a href="/easter-eggs" id="Egg14">-Easter Eggs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Things hidden around the site!</a></span>
       
     <br><br></p>
     <p class="text"><a href="https://soarinvandenberg.ca"><-- Exit</a></p>
@@ -50,5 +50,11 @@
     <script src="offline.js"></script>
     <script src="universal.js"></script>
     <script>localStorage.setItem("visited_pages", "true");</script>
+    <script>
+      document.getElementById("Egg14").addEventListener("click", function() {
+        localStorage.setItem("egg14_found", "true");
+        openEggPopup("egg14_found");
+    });
+    </script>
   </body>
 </html>
