@@ -42,7 +42,7 @@ let list = document.getElementById("eggList");
         { key: "egg11_found", text: "-Find the egg in the notes page" },
         { key: "egg12_found", text: "-Click on every link in the links" },
         { key: "egg13_found", text: "-Visit every videos page on the site!" },
-        { key: "egg13_found", text: "-Find the original link to this page" },
+        { key: "egg14_found", text: "-Find the original link to this page" },
       ]
 
       listEggs.forEach(egg => {
