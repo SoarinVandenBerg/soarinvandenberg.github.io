@@ -7,7 +7,7 @@ var eggGame = { active: false, sprites: [], clicks: 0, animId: null };
     eggGame.active = true;
     eggGame.clicks = 0;
     eggGame.sprites = [];
-    var src = 'clickygame.png';
+    var src = 'clutter/clickygame.png';
     for (var i = 0; i < 30; i++) spawnGameSprite(src);
     eggGame.animId = requestAnimationFrame(tickGame);
   }
@@ -59,7 +59,7 @@ var eggGame = { active: false, sprites: [], clicks: 0, animId: null };
 
     // Every 2 clicks, spawn 1 new one (if sprites remain)
     if (eggGame.clicks % 2 === 0 && eggGame.sprites.length > 0) {
-      spawnGameSprite('clickygame.png');
+      spawnGameSprite('clutter/clickygame.png');
     }
 
     // Win condition

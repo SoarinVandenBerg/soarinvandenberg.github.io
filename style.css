@@ -13,7 +13,7 @@
       }
       @font-face {
         font-family: 'Departure Mono';
-        src: url('DepartureMono-Regular.otf') format('opentype');
+        src: url('clutter/DepartureMono-Regular.otf') format('opentype');
       }
       body {
       background-color: black;
