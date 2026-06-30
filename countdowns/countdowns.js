@@ -19,3 +19,28 @@ setInterval(() => {
     document.getElementById("countdown01").innerText =
         `${pad(days)}:${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
 }, 1000);
+
+
+
+
+const Grad = new Date("June 20, 2028 15:10:00");
+
+setInterval(() => {
+    const now = new Date();
+    const diff = Grad - now;
+
+    if (diff <= 0) {
+        document.getElementById("countdown02").innerText = "We're free!";
+        return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    const pad = (n) => String(n).padStart(2, "0");
+
+    document.getElementById("countdown02").innerText =
+        `${pad(days)}:${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
+}, 1000);
