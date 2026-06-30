@@ -5,7 +5,7 @@ setInterval(() => {
     const diff = Crash - now;
 
     if (diff <= 0) {
-        document.getElementById("countdown501").innerText = "BOOOOM";
+        document.getElementById("countdown01").innerText = "BOOOOM";
         return;
     }
 
