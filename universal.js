@@ -131,10 +131,6 @@ const countdownPages = [
   "count03",
   "count04",
   "count05",
-  "count06",
-  "count07",
-  "count08",
-  "count09",
 ];
 
 let allCountVisited = countdownPages.every(key => localStorage.getItem(key));
