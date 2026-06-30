@@ -126,12 +126,15 @@ if (brokenVisited && !localStorage.getItem("egg6_found")) {
 }
 
 const countdownPages = [
-  "count1",
-  "count2",
-  "count3",
-  "count4",
-  "count5",
-  "count6",
+  "count01",
+  "count02",
+  "count03",
+  "count04",
+  "count05",
+  "count06",
+  "count07",
+  "count08",
+  "count09",
 ];
 
 let allCountVisited = countdownPages.every(key => localStorage.getItem(key));
@@ -224,12 +227,15 @@ document.addEventListener("keydown", (e) => {
             localStorage.setItem("visited_pages", "true");
             localStorage.setItem("visited_projects", "true");
             localStorage.setItem("visited_404", "true");
-            localStorage.setItem("count1", "true");
-            localStorage.setItem("count2", "true");
-            localStorage.setItem("count3", "true");
-            localStorage.setItem("count4", "true");
-            localStorage.setItem("count5", "true");
-            localStorage.setItem("count6", "true");
+            localStorage.setItem("count01", "true");
+            localStorage.setItem("count02", "true");
+            localStorage.setItem("count03", "true");
+            localStorage.setItem("count04", "true");
+            localStorage.setItem("count05", "true");
+            localStorage.setItem("count06", "true");
+            localStorage.setItem("count07", "true");
+            localStorage.setItem("count08", "true");
+            localStorage.setItem("count09", "true");
             localStorage.setItem("link1", "true");
             localStorage.setItem("link2", "true");
             localStorage.setItem("link3", "true");

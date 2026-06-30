@@ -131,14 +131,14 @@ setInterval(() => {
         // I know this code is probably pretty bad, but I dont really care becuase it works :D
 
         if (day === 0 || day === 6) {
-            safeSet("countdown1", "School is not in session!");
+            safeSet("countdown06", "School is not in session!");
         }
         else if (now < startTime) {
-            safeSet("countdown1", "School is not in session!");
+            safeSet("countdown06", "School is not in session!");
 
         }
         else if (now > endTime) {
-            safeSet("countdown1", "School is not in session!");
+            safeSet("countdown06", "School is not in session!");
         }
         else {
             setInterval(() => {
@@ -147,7 +147,7 @@ setInterval(() => {
                 const diff = endTime - now;
 
                 if (diff <= 0) {
-                    safeSet("countdown1", "School is not in session!");
+                    safeSet("countdown06", "School is not in session!");
                     return;
                 }
 
@@ -155,7 +155,7 @@ setInterval(() => {
                 const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
                 const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-                safeSet("countdown1",
+                safeSet("countdown06",
                 `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`);
             }, 1000);
         }
@@ -211,10 +211,10 @@ setInterval(() => {
         }
 
         if (block === "Before school" || block === "After school") {
-            safeSet("countdown2", "School is not in session!");
+            safeSet("countdown07", "School is not in session!");
         }
         else if (block === "break") {
-            safeSet("countdown2", "School is not in session!");
+            safeSet("countdown07", "School is not in session!");
         }
         else {
 
@@ -224,7 +224,7 @@ setInterval(() => {
                 const diff = endInSeconds - nowInSeconds - 1;
                 
                 if (diff <= 0) {
-                    safeSet("countdown2", "School is not in session!");
+                    safeSet("countdown07", "School is not in session!");
                     return;
                 }
 
@@ -234,7 +234,7 @@ setInterval(() => {
 
                 const pad = (n) => String(n).padStart(2, "0");
 
-                safeSet("countdown2",
+                safeSet("countdown07",
                     `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`);
             }
         }, 1000);
@@ -297,10 +297,10 @@ setInterval(() => {
         }
 
         if (block === "Before school" || block === "After school") {
-            safeSet("countdown2", "School is not in session!");
+            safeSet("countdown07", "School is not in session!");
         }
         else if (block === "break") {
-            safeSet("countdown2", "School is not in session!");
+            safeSet("countdown07", "School is not in session!");
         }
         else {
 
@@ -310,7 +310,7 @@ setInterval(() => {
                 const diff = endInSeconds - nowInSeconds - 1;
                 
                 if (diff <= 0) {
-                    safeSet("countdown2", "School is not in session!");
+                    safeSet("countdown07", "School is not in session!");
                     return;
                 }
 
@@ -320,7 +320,7 @@ setInterval(() => {
 
                 const pad = (n) => String(n).padStart(2, "0");
 
-                safeSet("countdown2",
+                safeSet("countdown07",
                     `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`);
             }
             }, 1000);
@@ -382,10 +382,10 @@ setInterval(() => {
         }
 
         if (block === "Before school" || block === "After school") {
-            safeSet("countdown2", "School is not in session!");
+            safeSet("countdown07", "School is not in session!");
         }
         else if (block === "break") {
-            safeSet("countdown2", "School is not in session!");
+            safeSet("countdown07", "School is not in session!");
         }
         else {
 
@@ -395,7 +395,7 @@ setInterval(() => {
                 const diff = endInSeconds - nowInSeconds - 1;
                 
                 if (diff <= 0) {
-                    safeSet("countdown2", "School is not in session!");
+                    safeSet("countdown07", "School is not in session!");
                     return;
                 }
 
@@ -405,14 +405,14 @@ setInterval(() => {
 
                 const pad = (n) => String(n).padStart(2, "0");
 
-                safeSet("countdown2",
+                safeSet("countdown07",
                     `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`);
             }
             }, 1000);
         }
     
     else if (day2 === 0 || day2 === 6) {
-        safeSet("countdown2", "School is not in session!");
+        safeSet("countdown07", "School is not in session!");
     }
 
     const Freedom = new Date("June 23, 2026 15:10:00");
@@ -422,7 +422,7 @@ setInterval(() => {
                 const diff = Freedom - now3;
 
                 if (diff <= 0) {
-                    safeSet("countdown3", "The school year is over!");
+                    safeSet("countdown08", "The school year is over!");
                     return;
                 }
 
@@ -433,7 +433,7 @@ setInterval(() => {
 
                 const pad = (n) => String(n).padStart(2, "0");
 
-                safeSet("countdown3",
+                safeSet("countdown08",
                     `${pad(days)}:${pad(hours)}:${pad(minutes)}:${pad(seconds)}`);
     }, 1000);
 
@@ -493,5 +493,5 @@ let display = precise % 1 === 0
     ? precise.toString()
     : precise.toFixed(2);
 
-safeSet("countdown4", display);
+safeSet("countdown09", display);
 }, 1000);
