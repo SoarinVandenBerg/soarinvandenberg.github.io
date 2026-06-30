@@ -76,7 +76,7 @@ setInterval(() => {
     const target = new Date(now.getFullYear(), now.getMonth() + 1, 1);
     target.setSeconds(-1);
 
-    const diff = target - now;
+    const diff = (target - now) + 1000;
 
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
     const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
@@ -96,7 +96,7 @@ setInterval(() => {
 
     const target = new Date(now.getFullYear(), 11, 31, 23, 59, 59);
 
-    const diff = target - now;
+    const diff = (target - now) + 1000;
 
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
     const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
