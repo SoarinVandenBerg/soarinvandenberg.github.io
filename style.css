@@ -19,9 +19,13 @@
         background-color: black;
         color: white;
       }
-      .puzzles { 
-        border: 2px solid #00be00 !important; 
+      .puzzles {
+        width: 560px !important;
+        height: 315px !important;
+        border: 2px solid #00be00 !important;
         border-radius: 4px !important;
+        transform: scale(1.5) !important;
+        transform-origin: top left !important;
       }
       #globe {
         width: 290px;
