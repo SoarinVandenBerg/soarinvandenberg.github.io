@@ -415,7 +415,7 @@ setInterval(() => {
         safeSet("countdown07", "School is not in session!");
     }
 
-    const Freedom = new Date("June 23, 2026 15:10:00");
+    const Freedom = new Date("June 22, 2027 15:10:00");
 
     setInterval(() => {
                 const now3 = new Date();
