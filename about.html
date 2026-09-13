@@ -19,6 +19,8 @@
       other stuff like <button id="eggGameStart" class="eggButton">this</button>. Also, im using no AI at all for the making the site.
     <br><br>
       <a href="https://github.com/SoarinVandenBerg/soarinvandenberg.github.io" target="_blank">Here's the link to this website's code</a>
+
+      <p class="text">Total page visits: <span id="visitCount"></span></p>
     <br><br><br>
       <a href="https://soarinvandenberg.ca"><-- Exit</a>
     </p>
@@ -38,5 +40,12 @@
         startEasterEggGame();
       });
     </script>
+    <script>
+      fetch("https://visit-counter.svberg07.workers.dev")
+        .then(r => r.text())
+        .then(count => {
+        document.getElementById("visitCount").innerText = count;
+      });
+  </script>
   </body>
 </html>
