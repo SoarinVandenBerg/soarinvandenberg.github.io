@@ -99,7 +99,6 @@ if (allLinkVisited && !localStorage.getItem("egg12_found")) {
 
 const sitePages = [
     "visited_about",
-    "visited_ai",
     "visited_notes",
     "visited_books",
     "visited_contact",
@@ -107,7 +106,6 @@ const sitePages = [
     "visited_index",
     "visited_pages",
     "visited_projects",
-    "visited_guestbook",
 ];
 
 let allSiteVisited = sitePages.every(key => localStorage.getItem(key));
