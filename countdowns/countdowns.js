@@ -495,3 +495,17 @@ let display = precise % 1 === 0
 
 safeSet("countdown09", display);
 }, 1000);
+
+setInterval(() => {
+    const now = new Date();
+    const startOfYear = new Date(now.getFullYear(), 0, 1);
+    
+    const diff = now - startOfYear;
+    const weeks = diff / (1000 * 60 * 60 * 24 * 7);
+    
+    const display = weeks % 1 === 0
+        ? weeks.toString()
+        : weeks.toFixed(2);
+    
+    document.getElementById("countdown10").innerText = display;
+}, 1000);
