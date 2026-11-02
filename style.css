@@ -7,6 +7,15 @@ a:hover {
   text-decoration:none;
   color: #00be00;
 }
+.blog {
+  font-size: 14px;
+  font-family:'Departure Mono', monospace;
+  margin: 0;
+}
+body {
+  background-color: black;
+  color: white;
+}
 p {
   font-family: 'Departure Mono', Monospace;
   margin: 0;
@@ -14,10 +23,6 @@ p {
 @font-face {
   font-family: 'Departure Mono';
   src: url('clutter/DepartureMono-Regular.otf') format('opentype');
-}
-body {
-  background-color: black;
-  color: white;
 }
 .puzzles {
   width: 300px !important;
@@ -188,11 +193,6 @@ iframe {
   transform: translateX(-300px);
 }
 .pages {
-  font-size: 14px;
-  font-family:'Departure Mono', monospace;
-  margin: 0;
-}
-.blog {
   font-size: 14px;
   font-family:'Departure Mono', monospace;
   margin: 0;
