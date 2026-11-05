@@ -104,7 +104,7 @@ iframe {
   font-size: 14px;
   font-family:'Departure Mono', monospace;
   margin: 0;
-  max-width: 75%;
+  max-width: 50%;
   z-index: 1;
   position: relative;
 }
