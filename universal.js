@@ -112,6 +112,23 @@ if (allLinkVisited && !localStorage.getItem("egg12_found")) {
   location.reload();
 }
 
+
+
+const OldPages = [
+    "OldIndex",
+    "OldAI",
+    "OldESP-32",
+];
+
+let allOldVisited = OldPages.every(key => localStorage.getItem(key));
+if (allOldVisited && !localStorage.getItem("egg16_found")) {
+  localStorage.setItem("egg16_found", "true");
+  localStorage.setItem("popupReload", "egg16_found");
+  location.reload();
+}
+
+
+
 const sitePages = [
     "visited_about",
     "visited_notes",
@@ -168,6 +185,7 @@ const allEggs = [
     "egg13_found",
     "egg14_found",
     "egg15_found",
+    "egg16_found",
 ]
 
 let allEggsFound = allEggs.every(key => localStorage.getItem(key));
@@ -191,6 +209,9 @@ if (allVideosVisited && !localStorage.getItem("egg13_found")) {
 }
 
 });
+
+    // This cheatcode is for testing only! It gives you all of the eggs :D
+
 
 const cheatCode = [
     "1", "3",
@@ -220,6 +241,7 @@ document.addEventListener("keydown", (e) => {
             localStorage.setItem("egg13_found", "true");
             localStorage.setItem("egg14_found", "true");
             localStorage.setItem("egg15_found", "true");
+            localStorage.setItem("egg16_found", "true");
             localStorage.setItem("visits_index", "true");
             localStorage.setItem("visited_about", "true");
             localStorage.setItem("visited_ai", "true");
