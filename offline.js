@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
+ /* REMOVE THIS TO REACTIVATE BLOCK
+  document.addEventListener("DOMContentLoaded", () => {
   const ua = navigator.userAgent;
 
   const isIOS = /iPad|iPod/i.test(ua);
@@ -10,3 +11,5 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.href = "/offline";
   }
 });
+
+*/
