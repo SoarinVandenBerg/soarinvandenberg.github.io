@@ -28,21 +28,17 @@ if (localStorage.getItem("popupReload")) {
     
     const easterEggs = document.querySelectorAll('.egg a');
 
-    if (localStorage.getItem('foundEgg14')) {
-
         easterEggs.forEach(egg => {
-            egg.parentElement.style.display = 'none';
-        });
-    } else {
-        easterEggs.forEach(egg => {
-            egg.addEventListener('click', () => {
+            egg.addEventListener('click', (e) => {
 
-                localStorage.setItem('foundEgg14', 'true');
-
-                document.querySelectorAll('.egg').forEach(e => e.style.display = 'none');
+                if (!localStorage.getItem('egg14_found')) {
+                    e.preventDefault();
+                    openEggPopup('egg14_found');
+                }
             });
         });
-    }
+
+
 
 
 const konamiCode = [
