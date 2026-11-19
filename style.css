@@ -54,7 +54,7 @@ body {
   margin: 0;
   color: black;
   }
-.egg:hover {
+.egg a:hover {
   color: #00be00;
 }
 .egg a {
