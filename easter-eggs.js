@@ -1,4 +1,4 @@
-      let totalEggs = 16;
+      let totalEggs = 16    ;
       let foundEggs = 0;
       
       if (localStorage.getItem("egg1_found")) foundEggs++;
@@ -121,7 +121,8 @@ let list = document.getElementById("eggList");
           localStorage.removeItem("link11");
           localStorage.removeItem("link12");
           localStorage.removeItem("link13");
-
+          localStorage.removeItem("foundEgg14");
+            
           location.reload();
           }
         
