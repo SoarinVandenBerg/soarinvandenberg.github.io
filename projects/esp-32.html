@@ -30,42 +30,117 @@
     -A 3.7V Lithium battery
     -<a href="https://thonny.org/" target="_blank">Thronny</a>
     -A USB-C transfer cable
+<br>
+  Once you have all of the materials set up, follow these steps to make it look like
+  the one I've been working on. To help, there's an file on the github repository with
+  more detailed instrustions on how to flash it, and load files. Contact me if you need
+  any help setting it up.
+<br><br>  
+  Step 1: Install the battery. It should be pretty easy, as it's just connecting the
+  cables, and unscrewing the bottom.
+<br><br>
+  Step 2: Turn it on by holding the button on the bottom for ~10s, and the base
+  software that comes with it should be there. Turn it off once you make sure it
+  works, and you dont need to return it.
+<br><br>
+  Step 3: Factory reset the ESP-32. You'll need the cable I talked about earlier
+  for this step. I dont really remember how to do this part, as it's been a while.
+  There's lots of good tutorials on youtube, just look up "resetting ESP-32 to
+  factory" or "wiping an ESP-32".
+<br><br>
+  Step 4: Install my software (or make your own!!). To port it onto the device,
+  install and setup Thronny, the download link is above. It's pretty intuitive but
+  make sure to watch some videos on the topic as it is possible to brick the device.
+  It doesnt take that long to transfer over the files, but it is pretty slow.
+  For the first time with all of them it should be like 20mins but no more. If
+  it's more than an hour use another port in your computer or a different cable.
+<br><br>
+  Step 5: Set up the date, time, etc. It's all in the device's settings so it
+  should be pretty intuitive. It has an internal clock so it'll keep time even
+  when it's off.
+<br><br>
+  Step 6: Set up a Micro-SD card. This is useful if you want to store books,
+  pictures, or any type of text file on the device. To set this up, first
+  create 3 folders called "Books", and "Pics". The books need to be .txt
+  files, and the pictures can have multiple folders inside of the main folder
+  if you want. Only one layer deep though. The only available type of image you
+  can do is .jpg, i'm not sure what happens if you test this and it doesnt work,
+  but its not worth trying. To convert your images to .jpg's use the link on the
+  "pages" part of my site. 
+<br></p> <p class="header">
+  Some more tricks/shortcuts:
+</p><p class="text"><br><br>
+  Thronny shortcuts:<br>
+  -CTRL+D: Use when plugging the ESP-32 into your computer and boot it up.<br>
+  -CTRL+C: Reboots the device. Use sparingly, CTRL+D is more useful.<br><br>
 
-<br><br></p>
+  General UI info:<br>
+  -Holding the bottom button for ~10s turns the device on.<br>
+  -Holding both side buttons at the same time until the screen flashes with green lines turns it off.<br>
+  -To exit to the homepage, click the top button, and then press the screen when the globe appears.<br>
+  -If you ever run into any problems/if it crashes, just restart it and it should be fixed.<br><br>
 
-  Step 1: Buy the device. It costs around 50$ canadian depending on where you
-  buy it, but if you get it on the waveshare website, it comes with a battery.
-  Anywhere else i've found you have to buy it seperately which is usually around
-  10$ canadian.
+  Known Bugs (ill get around to fixing these eventually):<br>
+  -Winning a wordsearch completely crashes it, with the only way to fix is restarting.<br>
+  -The wordle app's scoring is broken, but still playable.<br>
+  -Some display elements get cut off by the rounded corners of the display.<br>
+  -There is no way to reset the stats without going to the text files.<br>
+  -Geometry dash is not even close to being done and is impossible to win.<br>
+  -The medium and hard checkers bots are literally impossible to beat.<br>
+  -Touch sensitivity only works one spot at a time, which is annoying for mulitplayer games.<br>
+  -The ball version of the drawing program gets glitchy quickly whjen the number if balls goes up.<br><br>
+
+  Secret passwords in the calculator app:<br>
+  -54321: Enables drive mode, which toggles the notes, books, and photos apps.<br>
+  -3.14159: Shows the time stats of each app.<br>
+  -[IDK]: Hides all games that arent "educational".<br>
+  -[IDK]: Toggles the lazer app (if installed)<br>
+  -If you get a perfect score against the highest level AI in pong, it takes you to "Impossible Mode",
+  where the ball speeds up 2x the normal amount, and only your paddle shrinks. I've only beat this once
+  with a lot of luck, so have fun!<br>
+</p><p class="header">
+  Included Features/apps:
+</p><br><br><p class="text">
+  -2048<br>
+  -Battleship<br>
+  -Books<br>
+  -Brick Breaker<br>
+  -Calculator<br>
+  -Checkers<br>
+  -Chess<br>
+  -Clock<br>
+  -Connect Four<br>
+  -Draw<br>
+ - Flappy Bird<br>
+  -Game of Life<br>
+  -Geometry Dash<br>
+  -Gyro Level<br>
+  -Laser<br>
+  -Mastermind<br>
+  -Maze<br>
+  -Minesweeper<br>
+  -Notes<br>
+  -Photos<br>
+  -Pong<br>
+  -Sliding Puzzle<br>
+  -Snake<br>
+  -Space Invaders<br>
+  -Sudoku<br>
+  -Tic-Tac-Toe<br>
+  -Unfair Flips<br>
+  -Word Search<br>
+  -Wordle<br>
+  -Settings<br>
 <br><br>
-  Step 2: Install <a href="https://thonny.org/" target="_blank">Thronny</a> and also download all the code (below) for the project.
-  Then put the bootloader file onto it using a python script (I completely forget
-  how to do this part, and im too lazy rn to re-learn so I asked Claude to make a
-  file of instructions, (its in the project files) just contact me if you need help).
-<br><br>
-  Step 3: Connect the ESP-32 via USB-C to whatever computer you're using for
-  this. To make it connect, just look in the setup instructions file in the Github
-  repository. Then, put the rest of the files in thronny (this should be pretty
-  easy to figure out). It does take a while to transfer the files, but it
-  shouldnt be too long.
-<br><br>
-  Step 4: Press CTRL+D to restart the device and boot it up. CTRL+C reboots it.
-  Make sure to look up a tutorial for how to use thronny first. Once you unplug
-  it from your computer, press and hold both buttons for ~10s until the screen
-  flashes, then hold the PWR button until you see the idle screen.
-<br><br>
-  Now if everything has worked so far (very unlikely), you should see an idle
-  screen (a globe) and if you tap the screen, you should see a list of apps! The
-  touch controls are pretty finnicky, but everything should be pretty intuitive.
-  If you need any help, feel free to <a href="https://soarinvandenberg.ca/contact">contact me!</a>
-<br><br>
+
+
+
+
   That should be it! To do this project, you do need to be familliar with
   thronny or coding, and you will most likely encounter problems with stuff as
   ive only done this twice and each time different problems occured. If I havent
   said it already, DO THIS AT YOUR OWN RISK!! There's probably a buncha stuff I
-  left out here, so ask if needed. I don't think anyone will ever use this
-  anyway, but im just using this page as a spot to keep all the info in one
-  place for future me :)
+  left out here, so ask if needed.
   <br><br>
   About the making of this, as explained in my <a href="https://soarinvandenberg.ca/ai">"thoughts about AI page"</a>, I used
   AI, specifically claude code (Opus 4.7) heavily on this project. It did most
