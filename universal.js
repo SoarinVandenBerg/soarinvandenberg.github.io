@@ -25,6 +25,25 @@ if (localStorage.getItem("popupReload")) {
     localStorage.removeItem("popupReload");
     openEggPopup(key);
 }
+    
+    const easterEggs = document.querySelectorAll('.egg a');
+
+    if (localStorage.getItem('foundEgg14')) {
+
+        easterEggs.forEach(egg => {
+            egg.parentElement.style.display = 'none';
+        });
+    } else {
+        easterEggs.forEach(egg => {
+            egg.addEventListener('click', () => {
+
+                localStorage.setItem('foundEgg14', 'true');
+
+                document.querySelectorAll('.egg').forEach(e => e.style.display = 'none');
+            });
+        });
+    }
+
 
 const konamiCode = [
     "ArrowUp", "ArrowUp",
