@@ -22,7 +22,7 @@ One of the main bits of the site is the easter egg system. I've built it up over
 -Visit every videos page on the site!\
 -Find the original link to this page\
 -Scroll to the end of the books\
--Archivist! Explore the forgotten pages\
+-Archivist! Explore the forgotten pages
 
 Alternatively, you can type 132435 in the easter eggs page to unlock them all at once! The reset button is in the bottom right corner.
 
@@ -64,11 +64,11 @@ It's kinda build like a maze. I originally just linked a few pages together, but
 8: [End of Class](https://soarinvandenberg.ca/countdowns/class-time)
 
 ## Other pages not part of the main tree
-These aernt attached for various reasons, but here's a list of all of them.
+These arent attached for various reasons, but here's a list of all of them.\
 -The 404 Page\
 -Ideas\
 -The archive system\
--A broken guestbook\
+-A broken guestbook
 
 ## Pixel art
 For this project, Ive done a few peices of pixel art, but the biggest one is the spinning globe on the main page. I wanted something like it, and I couldnt find anything online, so I manually drew every frame of the globe spinning so it looked right! There's a few errors here and there like misplaced pixels. Ill get around to fixing it eventually.\
