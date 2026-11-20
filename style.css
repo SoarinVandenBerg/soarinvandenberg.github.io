@@ -154,14 +154,6 @@ p {
 .pixel {
   image-rendering: pixelated;
 }
-.puzzles {
-  width: 300px !important;
-  height: 400px !important;
-  border: 2px solid #00be00 !important;
-  border-radius: 4px !important;
-  transform: scale(1.5) !important;
-  transform-origin:transfrom originnow top left !important;
-}
 .searchbox {
   background: none;
   border: none;
@@ -216,12 +208,6 @@ body.rogue-theme {
   color: #ff3333
 }
 
-body.rogue-theme .title,
-body.rogue-theme .text,
-body.rogue-theme .header {
-  color: #ff3333;
-}
-
 body.rogue-theme a {
   color: #ff3333;
   text-decoration: none;
@@ -232,14 +218,28 @@ body.rogue-theme a:hover {
   text-decoration: none;
 }
 
-body.rogue-theme .popup {
-  background-color: #1a0000;
-  border: 2px solid #ff3333;
+body.rogue-theme .countdown {
+  font-size: 30px;
+  color: #ff3333;
 }
 
-body.rogue-theme .notes {
-  border: 2px solid #780606;
+body.rogue-theme .fullCounts {
+  font-size: clamp(20px, 50vw, 150px);
+  text-align: center;
+  color: #780606;
+}
+
+body.rogue-theme .game-frame {
+  width: 600px;
+  height: 600px;
+  margin: 20px auto;
+  border: 4px solid #780606;
   border-radius: 4px;
+  overflow: hidden;
+}
+
+body.rogue-theme .header {
+  color: #ff3333;
 }
 
 body.rogue-theme .popup {
@@ -261,10 +261,6 @@ body.rogue-theme .popupbuttons {
   cursor: pointer;
 }
 
-body.rogue-theme .text-btn:hover {
-  color: #780606;
-}
-
 body.rogue-theme .searchbox {
   background: none;
   border: none;
@@ -276,11 +272,22 @@ body.rogue-theme .searchbox {
   width: 90%;
 }
 
-body.rogue-theme .game-frame {
-  width: 600px;
-  height: 600px;
-  margin: 20px auto;
-  border: 4px solid #780606;
-  border-radius: 4px;
-  overflow: hidden;
+body.rogue-theme .title {
+  color: #ff3333;
 }
+
+
+body.rogue-theme .text {
+  color: #ff3333;
+}
+
+body.rogue-theme .text-btn:hover {
+  color: #780606;
+}
+
+
+
+
+
+
+
