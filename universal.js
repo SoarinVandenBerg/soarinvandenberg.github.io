@@ -19,7 +19,48 @@ function openEggPopup(eggkey) {
 }
 
 
+const themeToggle = document.getElementById("themeToggle");
 
+const normalGlobe = "clutter/globe.gif";
+const redGlobe = "clutter/redglobe.gif";
+
+const globeGif = document.querySelector("#globe");
+
+if (localStorage.getItem("rogueModeToggle") === "enabled") {
+    document.body.classList.add("rogue-theme");
+    if (globeGif) globeGif.src = redGlobe;
+}
+
+const rogueMode = [
+    "r", "o",
+    "g", "u",
+    "e"
+];
+
+let roguePosition = 0;
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === rogueMode[roguePosition]) {
+        roguePosition++;
+
+        if (roguePosition === rogueMode.length) {
+            
+
+            document.body.classList.toggle("rogue-theme");
+
+                if (document.body.classList.contains("rogue-theme")) {
+                    localStorage.setItem("rogueModeToggle", "enabled");
+                    if (globeGif) globeGif.src = redGlobe;
+                } else {
+                    localStorage.removeItem("rogueModeToggle");
+                    if (globeGif) globeGif.src = normalGlobe;
+                }
+            roguePosition = 0;
+        }
+    } else {
+        roguePosition = 0;
+      }
+ });
 
 
 document.addEventListener("DOMContentLoaded", () => {
