@@ -25,9 +25,9 @@ if (localStorage.getItem("rogueModeToggle") === "enabled") {
 }
 
 const rogueMode = [
-    "R", "O",
-    "G", "U",
-    "E"
+    "r", "o",
+    "g", "u",
+    "e"
 ];
 
 let roguePosition = 0;
@@ -38,12 +38,14 @@ document.addEventListener("keydown", (e) => {
 
         if (roguePosition === rogueMode.length) {
             
-            if (rogueIndex === rogueMode.length) {
+
+            document.body.classList.toggle("rogue-theme");
+
                 if (document.body.classList.contains("rogue-theme")) {
+                    localStorage.setItem("rogueModeToggle", "enabled");
                 } else {
                     localStorage.removeItem("rogueModeToggle");
                 }
-            }
             roguePosition = 0;
         }
     } else {
