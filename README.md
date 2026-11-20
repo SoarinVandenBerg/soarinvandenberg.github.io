@@ -6,7 +6,7 @@ I coded it in javascript, and the pages are in html. I've also coded all of this
 
 ## Navigation
 It's kinda build like a maze. I originally just linked a few pages together, but after a while of doing that I thought it was kinda cool that the links to the next part you have to search for! They only appear on hover. Here's a flowchart style map to the main branch of the site. 
-![flowchart](https://soarinvandenberg.ca/clutter/Flowchart.png)
+  ![flowchart](https://soarinvandenberg.ca/clutter/Flowchart.png)
 ### First line:
 1: [The Homepage!](https://soarinvandenberg.ca)
 ### Second line:
