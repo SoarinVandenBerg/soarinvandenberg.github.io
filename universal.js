@@ -1,3 +1,5 @@
+// Popup logic
+
 function openEggPopup(eggkey) {
     if (!localStorage.getItem(eggkey)) {
         localStorage.setItem(eggkey, "true");
@@ -18,6 +20,9 @@ function openEggPopup(eggkey) {
     };
 }
 
+
+
+// Rogue mode toggle
 
 const themeToggle = document.getElementById("themeToggle");
 
@@ -63,28 +68,84 @@ document.addEventListener("keydown", (e) => {
  });
 
 
-document.addEventListener("DOMContentLoaded", () => {
+// Egg 2
 
-if (localStorage.getItem("popupReload")) {
-    const key = localStorage.getItem("popupReload");
-    localStorage.removeItem("popupReload");
-    openEggPopup(key);
+const sitePages = [
+    "visited_about",
+    "visited_notes",
+    "visited_books",
+    "visited_contact",
+    "visited_countdowns",
+    "visited_index",
+    "visited_pages",
+    "visited_projects",
+];
+
+let allSiteVisited = sitePages.every(key => localStorage.getItem(key));
+if (allSiteVisited && !localStorage.getItem("egg2_found")) {
+  localStorage.setItem("egg2_found", "true");
+  openEggPopup("egg2_found");
 }
-    
-    const easterEggs = document.querySelectorAll('.egg a');
-
-        easterEggs.forEach(egg => {
-            egg.addEventListener('click', (e) => {
-
-                if (!localStorage.getItem('egg14_found')) {
-                    e.preventDefault();
-                    openEggPopup('egg14_found');
-                }
-            });
-        });
 
 
+// Egg 3
 
+const countdownPages = [
+  "count01",
+  "count02",
+  "count03",
+  "count04",
+  "count05",
+];
+
+let allCountVisited = countdownPages.every(key => localStorage.getItem(key));
+if (allCountVisited && !localStorage.getItem("egg3_found")) {
+  localStorage.setItem("egg3_found", "true");
+  localStorage.setItem("popupReload", "egg3_found");
+  location.reload();
+}
+
+
+// Egg 6
+
+const brokenPage = ["visited_404"];
+
+let brokenVisited = brokenPage.every(key => localStorage.getItem(key));
+if (brokenVisited && !localStorage.getItem("egg6_found")) {
+  localStorage.setItem("egg6_found", "true");
+  localStorage.setItem("popupReload", "egg6_found");
+  location.reload();
+}
+
+
+// Egg 7
+
+const allEggs = [
+    "egg1_found",
+    "egg2_found",
+    "egg3_found",
+    "egg4_found",
+    "egg5_found",
+    "egg6_found",
+    "egg8_found",
+    "egg9_found",
+    "egg10_found",
+    "egg11_found",
+    "egg12_found",
+    "egg13_found",
+    "egg14_found",
+    "egg15_found",
+    "egg16_found",
+]
+
+let allEggsFound = allEggs.every(key => localStorage.getItem(key));
+if (allEggsFound && !localStorage.getItem("egg7_found")) {
+  localStorage.setItem("egg7_found", "true");
+  openEggPopup("egg7_found");
+}
+
+
+// Egg 8
 
 const konamiCode = [
     "ArrowUp", "ArrowUp",
@@ -112,7 +173,10 @@ document.addEventListener("keydown", (e) => {
       }
  });
 
- const ansLife = [
+
+ // Egg 10
+
+const ansLife = [
     "4", "2"
 ];
 
@@ -134,7 +198,10 @@ document.addEventListener("keydown", (e) => {
       }
  });
 
-const linkPages = [
+
+ // Egg 12
+
+ const linkPages = [
     "link1",
     "link2",
     "link3",
@@ -158,6 +225,47 @@ if (allLinkVisited && !localStorage.getItem("egg12_found")) {
 }
 
 
+// Egg 13
+
+const allVideos = [
+    "visited_hankschannel",
+    "visited_vlogbrothers",
+    "visited_videofinder",
+    "visited_videos",
+]
+
+let allVideosVisited = allVideos.every(key => localStorage.getItem(key));
+if (allVideosVisited && !localStorage.getItem("egg13_found")) {
+  localStorage.setItem("egg13_found", "true");
+  localStorage.setItem("popupReload", "egg13_found");
+  location.reload();
+}
+
+
+// Egg 14
+
+document.addEventListener("DOMContentLoaded", () => {
+
+if (localStorage.getItem("popupReload")) {
+    const key = localStorage.getItem("popupReload");
+    localStorage.removeItem("popupReload");
+    openEggPopup(key);
+}
+    
+const easterEggs = document.querySelectorAll('.egg a');
+
+    easterEggs.forEach(egg => {
+        egg.addEventListener('click', (e) => {
+            if (!localStorage.getItem('egg14_found')) {
+                e.preventDefault();
+                openEggPopup('egg14_found');
+            }
+        });
+    });
+});
+
+
+// Egg 16
 
 const OldPages = [
     "OldIndex",
@@ -174,89 +282,7 @@ if (allOldVisited && !localStorage.getItem("egg16_found")) {
 
 
 
-const sitePages = [
-    "visited_about",
-    "visited_notes",
-    "visited_books",
-    "visited_contact",
-    "visited_countdowns",
-    "visited_index",
-    "visited_pages",
-    "visited_projects",
-];
-
-let allSiteVisited = sitePages.every(key => localStorage.getItem(key));
-if (allSiteVisited && !localStorage.getItem("egg2_found")) {
-  localStorage.setItem("egg2_found", "true");
-  openEggPopup("egg2_found");
-}
-
-const brokenPage = ["visited_404"];
-
-let brokenVisited = brokenPage.every(key => localStorage.getItem(key));
-if (brokenVisited && !localStorage.getItem("egg6_found")) {
-  localStorage.setItem("egg6_found", "true");
-  localStorage.setItem("popupReload", "egg6_found");
-  location.reload();
-}
-
-const countdownPages = [
-  "count01",
-  "count02",
-  "count03",
-  "count04",
-  "count05",
-];
-
-let allCountVisited = countdownPages.every(key => localStorage.getItem(key));
-if (allCountVisited && !localStorage.getItem("egg3_found")) {
-  localStorage.setItem("egg3_found", "true");
-  localStorage.setItem("popupReload", "egg3_found");
-  location.reload();
-}
-
-const allEggs = [
-    "egg1_found",
-    "egg2_found",
-    "egg3_found",
-    "egg4_found",
-    "egg5_found",
-    "egg6_found",
-    "egg8_found",
-    "egg9_found",
-    "egg10_found",
-    "egg11_found",
-    "egg12_found",
-    "egg13_found",
-    "egg14_found",
-    "egg15_found",
-    "egg16_found",
-]
-
-let allEggsFound = allEggs.every(key => localStorage.getItem(key));
-if (allEggsFound && !localStorage.getItem("egg7_found")) {
-  localStorage.setItem("egg7_found", "true");
-  openEggPopup("egg7_found");
-}
-
-const allVideos = [
-    "visited_hankschannel",
-    "visited_vlogbrothers",
-    "visited_videofinder",
-    "visited_videos",
-]
-
-let allVideosVisited = allVideos.every(key => localStorage.getItem(key));
-if (allVideosVisited && !localStorage.getItem("egg13_found")) {
-  localStorage.setItem("egg13_found", "true");
-  localStorage.setItem("popupReload", "egg13_found");
-  location.reload();
-}
-
-});
-
-    // This cheatcode is for testing only! It gives you all of the eggs :D
-
+// This cheatcode is for testing only! It gives you all of the eggs :D
 
 const cheatCode = [
     "1", "3",
