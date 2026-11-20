@@ -24,7 +24,7 @@ const themeToggle = document.getElementById("themeToggle");
 const normalGlobe = "clutter/globe.gif";
 const redGlobe = "clutter/redglobe.gif";
 
-const globeGif = document.querySelector(".globe");
+const globeGif = document.querySelector("#globe");
 
 if (localStorage.getItem("rogueModeToggle") === "enabled") {
     document.body.classList.add("rogue-theme");
