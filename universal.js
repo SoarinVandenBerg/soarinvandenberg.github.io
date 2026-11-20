@@ -18,10 +18,17 @@ function openEggPopup(eggkey) {
     };
 }
 
+
 const themeToggle = document.getElementById("themeToggle");
+
+const normalGlobe = "clutter/globe.gif";
+const redGlobe = "clutter/redglobe.gif";
+
+const globeGif = document.querySelector(".globe");
 
 if (localStorage.getItem("rogueModeToggle") === "enabled") {
     document.body.classList.add("rogue-theme");
+    if (globeGif) globeGif.src = redGlobe;
 }
 
 const rogueMode = [
@@ -43,8 +50,10 @@ document.addEventListener("keydown", (e) => {
 
                 if (document.body.classList.contains("rogue-theme")) {
                     localStorage.setItem("rogueModeToggle", "enabled");
+                    if (globeGif) globeGif.src = redGlobe;
                 } else {
                     localStorage.removeItem("rogueModeToggle");
+                    if (globeGif) globeGif.src = normalGlobe;
                 }
             roguePosition = 0;
         }
@@ -52,14 +61,6 @@ document.addEventListener("keydown", (e) => {
         roguePosition = 0;
       }
  });
-
-
-
-
-
-
-
-
 
 
 document.addEventListener("DOMContentLoaded", () => {
