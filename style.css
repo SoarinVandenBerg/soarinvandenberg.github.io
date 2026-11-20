@@ -223,6 +223,11 @@ body.rogue-theme .header {
 }
 
 body.rogue-theme a {
+  color: #ff3333;
+  text-decoration: none;
+}
+
+body.rogue-theme a:hover {
   color: #780606;
   text-decoration: none;
 }
