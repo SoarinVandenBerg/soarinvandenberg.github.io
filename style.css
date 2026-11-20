@@ -206,3 +206,28 @@ p {
   justify-content: center;
   align-items: center;
 }
+
+
+/* Rogue mode! */
+
+
+body.rogue-theme {
+  background-color: #0a0000;
+  color: #ff3333
+}
+
+body.rogue-theme .title,
+body.rogue-theme .text,
+body.rogue-theme .header {
+  color: #ff3333;
+}
+
+body.rogue-theme a {
+  color: #780606;
+  text-decoration: none;
+}
+
+body.rogue-theme .popup {
+  background-color: #1a0000;
+  border: 2px solid #ff3333;
+}

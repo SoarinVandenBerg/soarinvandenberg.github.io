@@ -18,6 +18,48 @@ function openEggPopup(eggkey) {
     };
 }
 
+const themeToggle = document.getElementById("themeToggle");
+
+if (localStorage.getItem("rogueModeToggle") === "enabled") {
+    document.body.classList.add("rogue-theme");
+}
+
+const rogueMode = [
+    "R", "O",
+    "G", "U",
+    "E"
+];
+
+let roguePosition = 0;
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === rogueMode[roguePosition]) {
+        roguePosition++;
+
+        if (roguePosition === rogueMode.length) {
+            
+            if (rogueIndex === rogueMode.length) {
+                if (document.body.classList.contains("rogue-theme")) {
+                } else {
+                    localStorage.removeItem("rogueModeToggle");
+                }
+            }
+            roguePosition = 0;
+        }
+    } else {
+        roguePosition = 0;
+      }
+ });
+
+
+
+
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
 
 if (localStorage.getItem("popupReload")) {
