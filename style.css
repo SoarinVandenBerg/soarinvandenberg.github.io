@@ -236,3 +236,27 @@ body.rogue-theme .popup {
   background-color: #1a0000;
   border: 2px solid #ff3333;
 }
+
+body.rogue-theme .notes {
+  border: 2px solid #780606;
+  border-radius: 4px;
+}
+
+body.rogue-theme .popup {
+  background: #1a0000;
+  border: 2px solid #780606;
+  border-radius: 4px;
+  text-align: center;
+  padding: 20px;
+  width: 250px;
+}
+body.rogue-theme .popupbuttons {
+  flex: 1;
+  padding: 10px;
+  background: #1a0000;
+  color: #780606;
+  border: 2px solid #780606;
+  border-radius: 4px;
+  font-family: 'Departure Mono', monospace;
+  cursor: pointer;
+}
