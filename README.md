@@ -5,7 +5,7 @@ This website is a project of mine, and the original goal of it was to get better
 I coded it in javascript, and the pages are in html. I've also coded all of this by hand, without the use of AI! I tried to give it a very hacker-y vibe with the green, white and black but idk if that worked out good.
 
 ## Navigation
-It's kinda build like a maze. I originally just linked a few pages together, but after a while of doing that I thought it was kinda cool that the links to the next part you have to search for! They only appear on hover. Here's a flowchart style map to the main branch of the site. 
+It's kinda build like a maze. I originally just linked a few pages together, but after a while of doing that I thought it was kinda cool that the links to the next part you have to search for! They only appear on hover. Here's a flowchart style map to the main branch of the site.\
   ![flowchart](https://soarinvandenberg.ca/clutter/Flowchart.png)
 ### First line:
 1: [The Homepage!](https://soarinvandenberg.ca)
