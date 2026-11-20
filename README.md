@@ -32,18 +32,18 @@ It's kinda build like a maze. I originally just linked a few pages together, but
 ### First line:
 1: [The Homepage!](https://soarinvandenberg.ca)
 ### Second line:
-1: [About](https://soarinvandenberg.ca/about)
+1: [About](https://soarinvandenberg.ca/about)\
 2: [Pages](https://soarinvandenberg.ca/pages)\
-3: [Contact](https://soarinvandenberg.ca/contact)\
+3: [Contact](https://soarinvandenberg.ca/contact)
 ### Third line:
-1: [About](https://soarinvandenberg.ca/about)
+1: [About](https://soarinvandenberg.ca/about)\
 2: [Projects](https://soarinvandenberg.ca/projects)\
 3: [Books](https://soarinvandenberg.ca/books)\
 4: [Notes](https://soarinvandenberg.ca/notes)\
 5: [Contact](https://soarinvandenberg.ca/contact)\
 6: [Countdowns](https://soarinvandenberg.ca/countdowns)\
 7: [Easter Eggs](https://soarinvandenberg.ca/easter-eggs)\
-8: [More Tools](https://soarinvandenberg.ca/links)\
+8: [More Tools](https://soarinvandenberg.ca/links)
 ### Fourth line:
 1: [ESP-32](https://soarinvandenberg.ca/projects/ESP-32)\
 2: [This Website!](https://soarinvandenberg.ca)\
@@ -52,16 +52,16 @@ It's kinda build like a maze. I originally just linked a few pages together, but
 5: [Video Finder](https://soarinvandenberg.ca/videos/searchengine)\
 6: [Podcasts](https://soarinvandenberg.ca/podcasts/)\
 7: [Videos](https://soarinvandenberg.ca/videos/)\
-8: [File Converter](https://p2r3.github.io/convert/)\
+8: [File Converter](https://p2r3.github.io/convert/)
 ### Fifth line:
-1: [Yearly Weeks Left](https://soarinvandenberg.ca/countdowns/weeks)
+1: [Yearly Weeks Left](https://soarinvandenberg.ca/countdowns/weeks)\
 2: [End of Month](https://soarinvandenberg.ca/countdowns/month-end)\
 3: [End of Year](https://soarinvandenberg.ca/countdowns/year-end)\
 4: [Days Until Grad](https://soarinvandenberg.ca/countdowns/graduation)\
 5: [School Day](https://soarinvandenberg.ca/countdowns/school-day)\
 6: [Time School Year](https://soarinvandenberg.ca/countdowns/time-left)\
 7: [Days Left In School](https://soarinvandenberg.ca/countdowns/days-left)\
-8: [End of Class](https://soarinvandenberg.ca/countdowns/class-time)\
+8: [End of Class](https://soarinvandenberg.ca/countdowns/class-time)
 
 ## Other pages not part of the main tree
 These aernt attached for various reasons, but here's a list of all of them.
@@ -72,7 +72,7 @@ These aernt attached for various reasons, but here's a list of all of them.
 
 ## Pixel art
 For this project, Ive done a few peices of pixel art, but the biggest one is the spinning globe on the main page. I wanted something like it, and I couldnt find anything online, so I manually drew every frame of the globe spinning so it looked right! There's a few errors here and there like misplaced pixels. Ill get around to fixing it eventually.\
-![globe](https://soarinvandenberg.ca/clutter/globe.gif)
+![globe](https://soarinvandenberg.ca/clutter/globeforreadme.gif)
 
 ## What I'm working on now
 I'm in the process of cleaning up the code as my skills have improved over the months of making this, but it's still pretty goofy code. It's definitely not the most efficient way of doing anything but I understand it and it works so I think that's all that matters.
