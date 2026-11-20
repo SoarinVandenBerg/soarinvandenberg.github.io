@@ -78,3 +78,6 @@ For this project, Ive done a few peices of pixel art, but the biggest one is the
 I'm in the process of cleaning up the code as my skills have improved over the months of making this, but it's still pretty goofy code. It's definitely not the most efficient way of doing anything but I understand it and it works so I think that's all that matters.
 
 Some pages I update frequently like the books page, where I do weekly book reviews and put them there. Another one is the notes page, which basically acts like a blog or an update log for this website. It dates pretty far back so you can see the history of everything here.
+
+
+
