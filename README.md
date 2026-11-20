@@ -79,5 +79,8 @@ I'm in the process of cleaning up the code as my skills have improved over the m
 
 Some pages I update frequently like the books page, where I do weekly book reviews and put them there. Another one is the notes page, which basically acts like a blog or an update log for this website. It dates pretty far back so you can see the history of everything here.
 
+## Some other cool stuff
+The most recent thing is "rogue" mode! It's based off the murderbot book series, and if you type rogue into your keyboard, it makes the whole site red instead of the normal green! Type it again to toggle.
+
 
 
