@@ -260,3 +260,27 @@ body.rogue-theme .popupbuttons {
   font-family: 'Departure Mono', monospace;
   cursor: pointer;
 }
+
+body.rogue-theme .text-btn:hover {
+  color: #780606;
+}
+
+body.rogue-theme .searchbox {
+  background: none;
+  border: none;
+  outline: none;
+  color: #780606;
+  caret-color: #780606;
+  font-family: monospace;
+  padding: 8px;
+  width: 90%;
+}
+
+body.rogue-theme .game-frame {
+  width: 600px;
+  height: 600px;
+  margin: 20px auto;
+  border: 4px solid #780606;
+  border-radius: 4px;
+  overflow: hidden;
+}
