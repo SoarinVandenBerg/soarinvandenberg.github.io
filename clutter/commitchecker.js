@@ -2,7 +2,7 @@
 
 async function getCommitStatus() {
     const owner = "SoarinVandenBerg";
-    const repo = "soarinvandenberg";
+    const repo = "soarinvandenberg.github.io";
     const branch = "main";
 
     try {
