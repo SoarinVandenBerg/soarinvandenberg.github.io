@@ -6,6 +6,7 @@ The original goal of this website was to get better at coding! I started working
 I coded it in javascript, and the pages are in html. I've also coded all of this by hand, without the use of AI! I tried to give it a very hacker-y vibe with the green, white and black but idk if that worked out good.
 
 ## Github repo navigation
+The Github repository for this website is a bit wonky as I have no one to go off of. The commit count for this website is over 700 which I've rarely seen anywhere else so I must be doing something differently but it works for me! For the actual files, the main pages are in the root, but everything else is sorted into folders. The JS for the pages is stored in the "code" folder. Most of the files have universal.js connected to it, which just has all of the base stuff that needs to be on every page like cheat codes, settings, or easter eggs.
 
 ## Easter eggs:
 One of the main bits of the site is the easter egg system. I've built it up over time, and now I'm at 16 total! Easter Eggs are things that you find in the site, and then a popup appears, taking you to the page! Here's a list of all of them so you get the idea:
