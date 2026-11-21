@@ -1,4 +1,4 @@
-//this one only a little bit of ai help! 
+//I looked up how to do this one so credit to google!!
 
 const API_KEY = "AIzaSyD1zP0euN0zVChL9i8rSumRRZmwIcRKywo";
 const POD_HUMANS_CHANNEL_ID = "UC7QrGBQ7DGv47UXJobHmL1Q";

@@ -21,6 +21,11 @@
       <a href="https://github.com/SoarinVandenBerg/soarinvandenberg.github.io" target="_blank">Here's the link to this website's code</a>
 
       <br><br><p class="text">Total page visits: <span id="visitCount"></span></p>
+      <div id="githubStatusContainer">
+        <span>Github Build Status: </span>
+        <span id="github-status">Loading...</span>
+      </div>
+
     <br><br><br>
       <a href="https://soarinvandenberg.ca"><-- Exit</a>
     </p>
@@ -34,6 +39,7 @@
     <script src="offline.js"></script>
     <script src="clutter/egg-game.js"></script>
     <script src="universal.js"></script>
+    <script src="clutter/commitchecker.js"></script>
     <script>localStorage.setItem("visited_about", "true");</script>
     <script>
       document.getElementById("eggGameStart").addEventListener("click", () => {

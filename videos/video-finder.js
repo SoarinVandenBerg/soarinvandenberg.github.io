@@ -1,4 +1,4 @@
-//I DID NOT MAKE THIS FILE'S CODE. I dont know how to do this stuff so this file is made by Claude
+//I looked up how to do this one so credit to google!!
 
 
 //Finding latest video multiple channels code
