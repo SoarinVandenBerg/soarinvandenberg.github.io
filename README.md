@@ -1,6 +1,6 @@
 # Soarin's Website!
 ![Homepage](https://soarinvandenberg.ca/clutter/homepage.png)\
-The original goal of this website was to get better at coding! I started working on it in march of this year, and have been updating it ever since. It has grown to a total of 31 pages. It's hosted at soarinvandenberg.ca, so go check it out!
+The original goal of this website was to get better at coding! I started working on it in march of this year, and have been updating it ever since. It has grown to a total of 41 pages. It's hosted at soarinvandenberg.ca, so go check it out!
 
 ## How I made the site
 I coded it in javascript, and the pages are in html. I've also coded all of this by hand, without the use of AI! I tried to give it a very hacker-y vibe with the green, white and black but idk if that worked out good.
