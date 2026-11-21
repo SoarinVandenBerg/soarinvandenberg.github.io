@@ -2,7 +2,7 @@
 
 async function getCommitStatus() {
     const owner = "SoarinVandenBerg";
-    const repo = "soarinvandenberg";
+    const repo = "soarinvandenberg.github.io";
     const branch = "main";
 
     try {
@@ -27,7 +27,7 @@ async function getCommitStatus() {
             }
         });
 
-        document.getElementById("github-status").innerText = `${passedChecks} / ${totalChecks} Passed`;
+        document.getElementById("github-status").innerText = `${passedChecks}/${totalChecks} Passed`;
 
     } catch (error) {
         console.error("ERROR: Failed to get Github Status:", error);
