@@ -30,7 +30,7 @@ const normalGlobe = "clutter/globe.gif";
 const redGlobe = "clutter/redglobe.gif";
 const normalHuman = "clutter/human-made.png";
 const redHuman = "clutter/redhuman-made.png";
-const normalIcon = "clutter/website-icon.png";
+const normalIcon = "clutter/website_icon.png";
 const redIcon = "clutter/redwebsite-icon.png";
 
 const globeGif = document.querySelector("#globe");
@@ -41,7 +41,7 @@ if (localStorage.getItem("rogueModeToggle") === "enabled") {
     document.body.classList.add("rogue-theme");
     if (globeGif) globeGif.src = redGlobe;
     if (humanPNG) humanPNG.src = redHuman;
-    if (websiteIcon) websiteIcon.src = redIcon;
+    if (websiteIcon) websiteIcon.href = redIcon;
 }
 
 const rogueMode = [
