@@ -261,15 +261,21 @@ body.rogue-theme .countdown {
   color: #780606;
 }
 
-.egg a:hover {
+body.rogue-theme .egg a:hover {
   color: #780606;
 }
 
-.egg a {
+body.rogue-theme .egg a {
   font-size: 14px;
   font-family:'Departure Mono', monospace;
   margin: 0;
   color: black;
+}
+
+body.rogue-theme .eggButton:hover {
+  color: #780606;
+  font-size: 14px;
+  font-family:'Departure Mono', monospace;
 }
 
 body.rogue-theme .fullCounts {
