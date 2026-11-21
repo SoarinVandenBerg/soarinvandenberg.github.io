@@ -72,12 +72,16 @@ document.addEventListener("keydown", (e) => {
                     if (humanPNG) humanPNG.src = normalHuman;
                     if (websiteIcon) websiteIcon.src = normalIcon;
                 }
+
+            window.location.reload();
+
             roguePosition = 0;
         }
     } else {
         roguePosition = 0;
       }
  });
+
 
 
 // Egg 2
