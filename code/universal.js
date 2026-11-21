@@ -70,7 +70,7 @@ document.addEventListener("keydown", (e) => {
                     localStorage.removeItem("rogueModeToggle");
                     if (globeGif) globeGif.src = normalGlobe;
                     if (humanPNG) humanPNG.src = normalHuman;
-                    if (websiteIcon) websiteIcon.src = websiteIcon;
+                    if (websiteIcon) websiteIcon.src = normalIcon;
                 }
             roguePosition = 0;
         }
