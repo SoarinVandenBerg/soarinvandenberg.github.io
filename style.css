@@ -268,10 +268,6 @@ body.rogue-theme .countdown {
   color: black;
 }
 
-.eggButton:hover {
-  color: #780606;
-}
-
 body.rogue-theme .fullCounts {
   font-size: clamp(20px, 50vw, 150px);
   text-align: center;

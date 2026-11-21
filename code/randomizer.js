@@ -49,6 +49,6 @@ if (randomButton) {
 
         const randomIndex = Math.floor(Math.random() * allPages.length);
 
-        window.open(allPages[randomIndex], "_blank");
+        window.location.href = allPages[randomIndex];
     });
 }
