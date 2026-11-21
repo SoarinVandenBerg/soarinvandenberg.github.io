@@ -78,6 +78,7 @@ It's kinda build like a maze. I originally just linked a few pages together, but
 
 ## Other pages not part of the main tree
 These arent attached for various reasons, but here's a list of all of them.\
+
 -The 404 Page\
 -Ideas\
 -The archive system\
