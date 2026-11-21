@@ -7,21 +7,21 @@ function getTime(dateString) {
     const seconds = Math.floor((new Date() - new Date(dateString)) / 1000);
 
     let interval = seconds / 31536000;
-    if (interval >= 1) return Math.floor(interval) + " years ago";
+    if (interval >= 1) return Math.floor(interval) + " years";
 
     interval = seconds / 2592000;
-    if (interval >= 1) return Math.floor(interval) + " months ago";
+    if (interval >= 1) return Math.floor(interval) + " months";
 
     interval = seconds / 86400;
-    if (interval >= 1) return Math.floor(interval) + " days ago";
+    if (interval >= 1) return Math.floor(interval) + " days";
 
     interval = seconds / 3600;
-    if (interval >= 1) return Math.floor(interval) + " hours ago";
+    if (interval >= 1) return Math.floor(interval) + " hours";
 
     interval = seconds / 60;
-    if (interval >= 1) return Math.floor(interval) + " minutes ago";
+    if (interval >= 1) return Math.floor(interval) + " minutes";
 
-    return Math.floor(seconds) + " seconds ago"; 
+    return Math.floor(seconds) + " seconds"; 
 }
 
 
@@ -37,7 +37,7 @@ async function getCommitStatus() {
         const commitResponse = await fetch (`https://api.github.com/repos/${owner}/${repo}/commits/${branch}`);
 
         if (!checksResponse.ok || !commitResponse.ok) {
-            throw new Error(`ERROR: ${response.status}`);
+            throw new Error(`ERROR: ${checksResponse.status}`);
         }
 
         const data = await checksResponse.json();
@@ -64,8 +64,8 @@ async function getCommitStatus() {
 
 } catch (error) {
         console.error("ERROR: Failed to get Github Status:", error);
-        document.getElementById("github-status").innerText = "ERROR: Status unavailable";
-        document.getElementById("github-time").innerText = "ERROR: Time unavailable";
+        document.getElementById("github-status").innerText = "ERROR: Unavailable";
+        document.getElementById("github-time").innerText = "ERROR: Unavailable";
     }
 }
 
