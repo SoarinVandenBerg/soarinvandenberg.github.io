@@ -30,14 +30,18 @@ const normalGlobe = "clutter/globe.gif";
 const redGlobe = "clutter/redglobe.gif";
 const normalHuman = "clutter/human-made.png";
 const redHuman = "clutter/redhuman-made.png";
+const normalIcon = "clutter/website-icon.png";
+const redIcon = "clutter/redwebsite-icon.png";
 
 const globeGif = document.querySelector("#globe");
 const humanPNG = document.querySelector("#human-made");
+const websiteIcon = document.querySelector("#favicon");
 
 if (localStorage.getItem("rogueModeToggle") === "enabled") {
     document.body.classList.add("rogue-theme");
     if (globeGif) globeGif.src = redGlobe;
     if (humanPNG) humanPNG.src = redHuman;
+    if (websiteIcon) websiteIcon.src = redIcon;
 }
 
 const rogueMode = [
@@ -61,10 +65,12 @@ document.addEventListener("keydown", (e) => {
                     localStorage.setItem("rogueModeToggle", "enabled");
                     if (globeGif) globeGif.src = redGlobe;
                     if (humanPNG) humanPNG.src = redHuman;
+                    if (websiteIcon) websiteIcon.src = redIcon;
                 } else {
                     localStorage.removeItem("rogueModeToggle");
                     if (globeGif) globeGif.src = normalGlobe;
                     if (humanPNG) humanPNG.src = normalHuman;
+                    if (websiteIcon) websiteIcon.src = websiteIcon;
                 }
             roguePosition = 0;
         }
