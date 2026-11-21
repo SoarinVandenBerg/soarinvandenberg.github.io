@@ -85,8 +85,8 @@ These arent attached for various reasons, but here's a list of all of them.\
 -A broken guestbook
 
 ## Pixel art
-For this project, Ive done a few peices of pixel art, but the biggest one is the spinning globe on the main page. I wanted something like it, and I couldnt find anything online, so I manually drew every frame of the globe spinning so it looked right! There's a few errors here and there like misplaced pixels. Ill get around to fixing it eventually.\
-![globe](https://soarinvandenberg.ca/clutter/globeforreadme.gif)\
+For this project, Ive done a few peices of pixel art, but the biggest one is the spinning globe on the main page. I wanted something like it. I couldnt find anything online so I manually drew every frame of the globe spinning so it looked right! There's a few errors here and there like misplaced pixels. Ill get around to fixing it eventually.\
+![globe](https://soarinvandenberg.ca/clutter/globeforreadme.gif)
 
 ## What I'm working on now
 I'm in the process of cleaning up the code as my skills have improved over the months of making this, but it's still pretty goofy code. It's definitely not the most efficient way of doing anything but I understand it and it works so I think that's all that matters.
