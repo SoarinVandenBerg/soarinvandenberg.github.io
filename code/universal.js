@@ -28,12 +28,16 @@ const themeToggle = document.getElementById("themeToggle");
 
 const normalGlobe = "clutter/globe.gif";
 const redGlobe = "clutter/redglobe.gif";
+const normalHuman = "clutter/human-made.gif";
+const redHuman = "clutter/redhuman-made.gif";
 
 const globeGif = document.querySelector("#globe");
+const humanGif = document.querySelector("#human-made");
 
 if (localStorage.getItem("rogueModeToggle") === "enabled") {
     document.body.classList.add("rogue-theme");
     if (globeGif) globeGif.src = redGlobe;
+    if (humanGif) humanGif.src = redHuman;
 }
 
 const rogueMode = [
@@ -56,9 +60,11 @@ document.addEventListener("keydown", (e) => {
                 if (document.body.classList.contains("rogue-theme")) {
                     localStorage.setItem("rogueModeToggle", "enabled");
                     if (globeGif) globeGif.src = redGlobe;
+                    if (humanGif) humanGif.src = redHuman;
                 } else {
                     localStorage.removeItem("rogueModeToggle");
                     if (globeGif) globeGif.src = normalGlobe;
+                    if (humanGif) humanGif.src = normalHuman;
                 }
             roguePosition = 0;
         }
