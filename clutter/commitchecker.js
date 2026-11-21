@@ -64,8 +64,8 @@ async function getCommitStatus() {
 
 } catch (error) {
         console.error("ERROR: Failed to get Github Status:", error);
-        document.getElementById("github-status").innerText = "ERROR: Unavailable";
-        document.getElementById("github-time").innerText = "ERROR: Unavailable";
+        document.getElementById("github-status").innerText = "ERROR: You're being rate limited!";
+        document.getElementById("github-time").innerText = "ERROR: You're being rate limited!";
     }
 }
 
