@@ -27,7 +27,7 @@ async function getCommitStatus() {
             }
         });
 
-        document.getElementById("github-status").innerText = `${passedChecks}/${totalChecks} Passed`;
+        document.getElementById("github-status").innerText = `${passedChecks} / ${totalChecks} Passed`;
 
     } catch (error) {
         console.error("ERROR: Failed to get Github Status:", error);
