@@ -1,8 +1,11 @@
 # Soarin's Website!
-This website is a project of mine, and the original goal of it was to get better at coding! I started working on it in march of this year, and have been updating it ever since. It has grown to a total of 31 pages. It's hosted at soarinvandenberg.ca, so go check it out!
+![Homepage](https://soarinvandenberg.ca/clutter/homepage.png)\
+The original goal of this website was to get better at coding! I started working on it in march of this year, and have been updating it ever since. It has grown to a total of 31 pages. It's hosted at soarinvandenberg.ca, so go check it out!
 
 ## How I made the site
 I coded it in javascript, and the pages are in html. I've also coded all of this by hand, without the use of AI! I tried to give it a very hacker-y vibe with the green, white and black but idk if that worked out good.
+
+## Github repo navigation
 
 ## Easter eggs:
 One of the main bits of the site is the easter egg system. I've built it up over time, and now I'm at 16 total! Easter Eggs are things that you find in the site, and then a popup appears, taking you to the page! Here's a list of all of them so you get the idea:
