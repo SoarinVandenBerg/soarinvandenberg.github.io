@@ -8,6 +8,15 @@ I coded it in javascript, and the pages are in html. I've also coded all of this
 ## Github repo navigation
 The Github repository for this website is a bit wonky as I have no one to go off of. The commit count for this website is over 700 which I've rarely seen anywhere else so I must be doing something differently but it works for me! For the actual files, the main pages are in the root, but everything else is sorted into folders. The JS for the pages is stored in the "code" folder. Most of the files have universal.js connected to it, which just has all of the base stuff that needs to be on every page like cheat codes, settings, or easter eggs.
 
+The only languages I've used for the website are JavaScript, CSS, and HTML (does html even count as a language?). Also Markdown ofc
+
+## How to run it locally
+1. Clone the repository:
+```sh
+git clone [https://github.com/SoarinVandenBerg/soarinvandenberg.git](https://github.com/SoarinVandenBerg/soarinvandenberg.git)
+```
+2. Open the folder and double click index.html to open it in your browser. The navigation might be broken because the project relies on links.
+
 ## Easter eggs:
 One of the main bits of the site is the easter egg system. I've built it up over time, and now I'm at 16 total! Easter Eggs are things that you find in the site, and then a popup appears, taking you to the page! Here's a list of all of them so you get the idea:
 
@@ -77,7 +86,6 @@ These arent attached for various reasons, but here's a list of all of them.\
 ## Pixel art
 For this project, Ive done a few peices of pixel art, but the biggest one is the spinning globe on the main page. I wanted something like it, and I couldnt find anything online, so I manually drew every frame of the globe spinning so it looked right! There's a few errors here and there like misplaced pixels. Ill get around to fixing it eventually.\
 ![globe](https://soarinvandenberg.ca/clutter/globeforreadme.gif)\
-(also if there's anyone from Hack Club reading this, it took 7h to draw all the frames so if you added that to the time tracking that would be nice :)
 
 ## What I'm working on now
 I'm in the process of cleaning up the code as my skills have improved over the months of making this, but it's still pretty goofy code. It's definitely not the most efficient way of doing anything but I understand it and it works so I think that's all that matters.
