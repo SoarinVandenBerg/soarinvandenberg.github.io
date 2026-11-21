@@ -3,24 +3,29 @@ a {
   text-decoration: none;
   font-family: 'Departure Mono', Monospace;
 }
+
 a:hover {
   text-decoration:none;
   color: #00be00;
 }
+
 .blog {
   font-size: 14px;
   font-family:'Departure Mono', monospace;
   margin: 0;
 }
+
 body {
   background-color: black;
   color: white;
 }
+
 .book {
   width: 300px;
   height: auto;
   image-rendering: pixelated;
 }
+
 .background {
   position: fixed;
   inset: 0;
@@ -30,15 +35,18 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .buttonbox {
   display: flex;
   gap: 10px;
   margin-top: 15px;
 }
+
 .countdown {
   font-size: 30px;
   color: #00be00;
 }
+
 .eggButton {
   background: none;
   border: none;
@@ -48,43 +56,52 @@ body {
   font: inherit;
   cursor: pointer;
 }
+
 .egg {
   font-size: 14px;
   font-family:'Departure Mono', monospace;
   margin: 0;
   color: black;
-  }
+}
+
 .egg a:hover {
   color: #00be00;
 }
+
 .egg a {
   font-size: 14px;
   font-family:'Departure Mono', monospace;
   margin: 0;
   color: black;
 }
+
 .eggButton:hover {
   color: #00be00;
 }
+
 @font-face {
   font-family: 'Departure Mono';
   src: url('clutter/DepartureMono-Regular.otf') format('opentype');
 }
+
 .fullCounts {
   font-size: clamp(20px, 50vw, 150px);
   text-align: center;
   color: #00be00;
 }
+
 #globe {
   width: 290px;
   filter: brightness(2);
   image-rendering: pixelated;
 }
+
 .game-sprite {
   position: fixed;
   z-index: 999999 !important;
   pointer-events: auto;
 }
+
 .game-frame {
   width: 600px;
   height: 600px;
@@ -93,25 +110,30 @@ body {
   border-radius: 4px;
   overflow: hidden;
 }
+
 .game-frame iframe {
   width: 1200px;
   height: 600px;
   border: none;
   transform: translateX(-300px);
 }
+
 .header {
   font-size: 20px;
   font-family:'Departure Mono', monospace;
   margin: 0;
 }
+
 iframe {
   margin-right: 20px;
 }
+
 .massive {
   font-size: 200px;
   font-family:'Departure Mono', monospace;
   margin: 0;
 }
+
 .mobilewarning {
   font-size: 14px;
   font-family:'Departure Mono', monospace;
@@ -120,10 +142,12 @@ iframe {
   z-index: 1;
   position: relative;
 }
+
 .notes {
   border: 2px solid #00be00;
   border-radius: 4px;
 }
+
 .popup {
   background: black;
   border: 2px solid #00be00;
@@ -132,6 +156,7 @@ iframe {
   padding: 20px;
   width: 250px;
 }
+
 .popupbuttons {
   flex: 1;
   padding: 10px;
@@ -142,18 +167,22 @@ iframe {
   font-family: 'Departure Mono', monospace;
   cursor: pointer;
 }
+
 .pages {
   font-size: 14px;
   font-family:'Departure Mono', monospace;
   margin: 0;
 }
+
 p {
   font-family: 'Departure Mono', Monospace;
   margin: 0;
 }
+
 .pixel {
   image-rendering: pixelated;
 }
+
 .searchbox {
   background: none;
   border: none;
@@ -164,11 +193,13 @@ p {
   padding: 8px;
   width: 90%;
 }
+
 .title {
   font-size: 40px;
   font-family:'Departure Mono', monospace;
   margin: 0;
 }
+
 .text {
   font-size: 14px;
   font-family:'Departure Mono', monospace;
@@ -177,6 +208,7 @@ p {
   z-index: 1;
   position: relative;
 }
+
 .text-btn {
   background: none;
   border: none;
@@ -186,9 +218,11 @@ p {
   font: inherit;
   cursor: pointer;
 }
+
 .text-btn:hover {
   color: #00be00;
 }
+
 .verify {
   position: fixed;
   inset: 0;
@@ -220,6 +254,21 @@ body.rogue-theme a:hover {
 
 body.rogue-theme .countdown {
   font-size: 30px;
+  color: #780606;
+}
+
+.egg a:hover {
+  color: #780606;
+}
+
+.egg a {
+  font-size: 14px;
+  font-family:'Departure Mono', monospace;
+  margin: 0;
+  color: black;
+}
+
+.eggButton:hover {
   color: #780606;
 }
 
