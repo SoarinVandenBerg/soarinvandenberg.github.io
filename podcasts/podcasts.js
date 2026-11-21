@@ -85,10 +85,10 @@ async function getLatestHumansTwelve() {
     const videoId = item.snippet.resourceId.videoId;
 
     const iframe = document.createElement("iframe");
-    iframe.width = "560";
-    iframe.height = "315";
+    
+    iframe.classList.add("video-frame");
     iframe.allowFullscreen = true;
-    iframe.style = "border:2px solid #00be00;border-radius:4px;margin-bottom:20px;";
+
     iframe.src = `https://yout-ube.com/watch?v=${videoId}`;
 
     container.appendChild(iframe);
@@ -118,10 +118,10 @@ async function getLatestWaveformTwelve() {
     const videoId = item.snippet.resourceId.videoId;
 
     const iframe = document.createElement("iframe");
-    iframe.width = "560";
-    iframe.height = "315";
+    
+    iframe.classList.add("video-frame");
     iframe.allowFullscreen = true;
-    iframe.style = "border:2px solid #00be00;border-radius:4px;margin-bottom:20px;";
+
     iframe.src = `https://yout-ube.com/watch?v=${videoId}`;
 
     container.appendChild(iframe);
@@ -151,10 +151,10 @@ async function getLatestDearHankTwelve() {
     const videoId = item.snippet.resourceId.videoId;
 
     const iframe = document.createElement("iframe");
-    iframe.width = "560";
-    iframe.height = "315";
+
+    iframe.classList.add("video-frame");
     iframe.allowFullscreen = true;
-    iframe.style = "border:2px solid #00be00;border-radius:4px;margin-bottom:20px;";
+    
     iframe.src = `https://yout-ube.com/watch?v=${videoId}`;
 
     container.appendChild(iframe);

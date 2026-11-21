@@ -237,6 +237,13 @@ p {
   align-items: center;
 }
 
+.video-frame {
+  width: 560px;
+  height: 315px;
+  border: 2px solid #00be00;
+  border-radius: 4px;
+}
+
 
 /* Rogue mode! */
 
@@ -338,6 +345,13 @@ body.rogue-theme .text {
 
 body.rogue-theme .text-btn:hover {
   color: #780606;
+}
+
+body.rogue-theme .video-frame {
+  width: 560px;
+  height: 315px;
+  border: 2px solid #780606;
+  border-radius: 4px;
 }
 
 
