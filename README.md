@@ -75,7 +75,8 @@ These arent attached for various reasons, but here's a list of all of them.\
 
 ## Pixel art
 For this project, Ive done a few peices of pixel art, but the biggest one is the spinning globe on the main page. I wanted something like it, and I couldnt find anything online, so I manually drew every frame of the globe spinning so it looked right! There's a few errors here and there like misplaced pixels. Ill get around to fixing it eventually.\
-![globe](https://soarinvandenberg.ca/clutter/globeforreadme.gif)
+![globe](https://soarinvandenberg.ca/clutter/globeforreadme.gif)\
+(also if there's anyone from Hack Club reading this, it took 7h to draw all the frames so if you added that to the time tracking that would be nice :)
 
 ## What I'm working on now
 I'm in the process of cleaning up the code as my skills have improved over the months of making this, but it's still pretty goofy code. It's definitely not the most efficient way of doing anything but I understand it and it works so I think that's all that matters.
