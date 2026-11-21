@@ -65,12 +65,12 @@ document.addEventListener("keydown", (e) => {
                     localStorage.setItem("rogueModeToggle", "enabled");
                     if (globeGif) globeGif.src = redGlobe;
                     if (humanPNG) humanPNG.src = redHuman;
-                    if (websiteIcon) websiteIcon.src = redIcon;
+                    if (websiteIcon) websiteIcon.href = redIcon;
                 } else {
                     localStorage.removeItem("rogueModeToggle");
                     if (globeGif) globeGif.src = normalGlobe;
                     if (humanPNG) humanPNG.src = normalHuman;
-                    if (websiteIcon) websiteIcon.src = normalIcon;
+                    if (websiteIcon) websiteIcon.href = normalIcon;
                 }
 
             window.location.reload();
