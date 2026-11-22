@@ -58,8 +58,16 @@ var eggGame = { active: false, sprites: [], clicks: 0, animId: null };
     eggGame.clicks++;
 
     // Every 2 clicks, spawn 1 new one (if sprites remain)
+    const normalSprite = "https://soarinvandenberg.ca/clutter/clickygame.png";
+    const redSprite = "https://soarinvandenberg.ca/clutter/redclickygame.png";
+
     if (eggGame.clicks % 2 === 0 && eggGame.sprites.length > 0) {
-      spawnGameSprite('https://soarinvandenberg.ca/clutter/clickygame.png');
+
+      const isRogue = localStorage.getItem("rogueModeToggle") === "enabled";
+
+      const chosenSprite = isRogue ? redSprite : normalSprite;
+
+      spawnGameSprite(chosenSprite)
     }
 
     // Win condition
