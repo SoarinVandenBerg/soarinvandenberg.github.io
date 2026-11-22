@@ -43,6 +43,8 @@ const allPages = [
     "https://soarinvandenberg.ca/pages",
     "https://soarinvandenberg.ca/cheatcodes",
     "https://soarinvandenberg.ca/guide",
+    "https://soarinvandenberg.ca/template",
+    "https://soarinvandenberg.ca/projects/codesprint",
 ];
 
 if (randomButton) {

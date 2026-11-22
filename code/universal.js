@@ -34,11 +34,14 @@ const normalIcon = "clutter/website_icon.png";
 const redIcon = "clutter/redwebsite-icon.png";
 const normalFlowchart = "clutter/Flowchart.png";
 const redFlowchart = "clutter/redFlowchart.png";
+const normalBattery = "clutter/battery.png";
+const redBattery = "clutter/redbattery.png";
 
 const globeGif = document.querySelector("#globe");
 const humanPNG = document.querySelector("#human-made");
 const websiteIcon = document.querySelector("#favicon");
 const flowchartPNG = document.querySelector("#flowchart");
+const batteryPNG = document.querySelector("#battery");
 
 if (localStorage.getItem("rogueModeToggle") === "enabled") {
     document.body.classList.add("rogue-theme");
@@ -46,6 +49,7 @@ if (localStorage.getItem("rogueModeToggle") === "enabled") {
     if (humanPNG) humanPNG.src = redHuman;
     if (websiteIcon) websiteIcon.href = redIcon;
     if (flowchartPNG) flowchartPNG.src = redFlowchart;
+    if (batteryPNG) batteryPNG.src = redBattery;
 }
 
 const rogueMode = [
@@ -71,12 +75,14 @@ document.addEventListener("keydown", (e) => {
                     if (humanPNG) humanPNG.src = redHuman;
                     if (websiteIcon) websiteIcon.href = redIcon;
                     if (flowchartPNG) flowchartPNG.src = redFlowchart;
+                    if (batteryPNG) batteryPNG.src = redBattery;
                 } else {
                     localStorage.removeItem("rogueModeToggle");
                     if (globeGif) globeGif.src = normalGlobe;
                     if (humanPNG) humanPNG.src = normalHuman;
                     if (websiteIcon) websiteIcon.href = normalIcon;
                     if (flowchartPNG) flowchartPNG.src = normalFlowchart;
+                    if (batteryPNG) batteryPNG.src = normalBattery;
                 }
 
             window.location.reload();
