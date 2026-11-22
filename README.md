@@ -41,7 +41,7 @@ Alternatively, you can type 132435 in the easter eggs page to unlock them all at
 
 ## Navigation
 It's kinda build like a maze. I originally just linked a few pages together, but after a while of doing that I thought it was kinda cool that the links to the next part you have to search for! They only appear on hover. Here's a flowchart style map to the main branch of the site.\
-  ![flowchart](https://soarinvandenberg.ca/clutter/Flowchart0.png)
+  ![flowchart](https://soarinvandenberg.ca/clutter/Flowchart10x.png)
 ### First line:
 1: [The Homepage!](https://soarinvandenberg.ca)
 ### Second line:
