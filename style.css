@@ -70,7 +70,7 @@ body {
   color: #00be00;
 }
 
-#resetEggs:hover .egg 
+#resetEggs:hover .egg,
 #Egg1:hover .egg {
   color: #00be00;
 }
