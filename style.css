@@ -66,7 +66,7 @@ body {
   color: black;
 }
 
-.egg a:hover {
+#resetEggs:hover .egg {
   color: #00be00;
 }
 
@@ -279,6 +279,10 @@ body.rogue-theme .egg a {
   color: black;
 }
 
+body.rogue-theme #resetEggs:hover .egg {
+  color: #00be00;
+}
+
 body.rogue-theme .eggButton:hover {
   color: #780606;
   font-size: 14px;
@@ -302,11 +306,6 @@ body.rogue-theme .game-frame {
 
 body.rogue-theme .header {
   color: #ff3333;
-}
-
-body.rogue-theme .notes {
-  border: 2px solid #780606;
-  border-radius: 4px;
 }
 
 body.rogue-theme .popup {
