@@ -64,8 +64,8 @@ It's kinda build like a maze. I originally just linked a few pages together, but
 4: [Ult. Tic Tac Toe](https://www.thingiverse.com/thing:6916426)\
 5: [Video Finder](https://soarinvandenberg.ca/videos/searchengine)\
 6: [Podcasts](https://soarinvandenberg.ca/podcasts/)\
-7: [Videos](https://soarinvandenberg.ca/videos/)\
-8: [File Converter](https://p2r3.github.io/convert/)
+7: [Videos](https://soarinvandenberg.ca/videos)\
+8: [Guide](https://soarinvandenberg.ca/guide)
 ### Fifth line:
 1: [Yearly Weeks Left](https://soarinvandenberg.ca/countdowns/weeks)\
 2: [End of Month](https://soarinvandenberg.ca/countdowns/month-end)\
