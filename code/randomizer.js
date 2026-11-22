@@ -42,6 +42,7 @@ const allPages = [
     "https://soarinvandenberg.ca/notes",
     "https://soarinvandenberg.ca/pages",
     "https://soarinvandenberg.ca/cheatcodes",
+    "https://soarinvandenberg.ca/guide",
 ];
 
 if (randomButton) {
