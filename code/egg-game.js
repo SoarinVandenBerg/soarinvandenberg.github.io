@@ -7,7 +7,14 @@ var eggGame = { active: false, sprites: [], clicks: 0, animId: null };
     eggGame.active = true;
     eggGame.clicks = 0;
     eggGame.sprites = [];
-    var src = 'https://soarinvandenberg.ca/clutter/clickygame.png';
+
+const isRogue = localStorage.getItem("rogueModeToggle") === "enabled";
+
+const normalSprite = "https://soarinvandenberg.ca/clutter/clickygame.png";
+const redSprite = "https://soarinvandenberg.ca/clutter/redclickygame.png";
+
+    var src = isRogue ? redSprite : normalSprite;
+    
     for (var i = 0; i < 30; i++) spawnGameSprite(src);
     eggGame.animId = requestAnimationFrame(tickGame);
   }
