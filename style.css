@@ -66,7 +66,8 @@ body {
   color: black;
 }
 
-#resetEggs:hover .egg {
+#resetEggs:hover .egg 
+#Egg1:hover .egg {
   color: #00be00;
 }
 
@@ -279,7 +280,8 @@ body.rogue-theme .egg a {
   color: black;
 }
 
-body.rogue-theme #resetEggs:hover .egg {
+body.rogue-theme #resetEggs:hover .egg,
+body.rogue-theme #Egg1:hover .egg { 
   color: #780606;
 }
 
