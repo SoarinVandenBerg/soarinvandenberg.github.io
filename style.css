@@ -66,6 +66,10 @@ body {
   color: black;
 }
 
+.egg a:hover {
+  color: #00be00;
+}
+
 #resetEggs:hover .egg 
 #Egg1:hover .egg {
   color: #00be00;
@@ -289,6 +293,10 @@ body.rogue-theme .eggButton:hover {
   color: #780606;
   font-size: 14px;
   font-family:'Departure Mono', monospace;
+}
+
+body.rogue-theme .egg a:hover {
+  color: #780606;
 }
 
 body.rogue-theme .fullCounts {
