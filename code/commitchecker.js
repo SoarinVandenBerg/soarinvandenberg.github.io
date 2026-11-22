@@ -7,21 +7,26 @@ function getTime(dateString) {
     const seconds = Math.floor((new Date() - new Date(dateString)) / 1000);
 
     let interval = seconds / 31536000;
-    if (interval >= 1) return Math.floor(interval) + " years";
+    let count = Math.floor(interval)
+    if (count >= 1) return count + (count === 1 ? " year" : " years");
 
     interval = seconds / 2592000;
-    if (interval >= 1) return Math.floor(interval) + " months";
+    count = Math.floor(interval);
+    if (count >= 1) return count +(count === 1 ? " month" : " months");
 
     interval = seconds / 86400;
-    if (interval >= 1) return Math.floor(interval) + " days";
+    count = Math.floor(interval);
+    if (count >= 1) return count + (count === 1 ? " day" : " days");
 
     interval = seconds / 3600;
-    if (interval >= 1) return Math.floor(interval) + " hours";
+    count = Math.floor(interval);
+    if (count >= 1) return count + (count === 1 ? " hour" : " hours");
 
     interval = seconds / 60;
-    if (interval >= 1) return Math.floor(interval) + " minutes";
+    count = Math.floor(interval);
+    if (count >= 1) return count + (count === 1 ? " minute" : " minutes");
 
-    return Math.floor(seconds) + " seconds"; 
+    return Math.floor(seconds) + (count === 1 ? " second" : " seconds");
 }
 
 
@@ -55,7 +60,7 @@ async function getCommitStatus() {
             }
         });
 
-        document.getElementById("github-status").innerText = `${passedChecks}/${totalChecks} Passed`;
+        document.getElementById("github-status").innerText = `${passedChecks}/${totalChecks} passed`;
 
     const commitData = await commitResponse.json();
     const commitDate = commitData.commit.author.date;
