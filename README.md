@@ -6,7 +6,7 @@
 It's hosted at [soarinvandenberg.ca](https://soarinvandenberg.ca), so go check it out!
 
 ## How/why I made the site
-The original goal of this website was to get better at coding! I started working on it in march of this year, and have been updating it ever since. It has grown to a total of 42 pages.
+The original goal of this website was to get better at coding! I started working on it in march of this year, and have been updating it ever since. It has grown to a total of 44 pages.
 
 I coded it in javascript, and the pages are in html. I've also coded all of this by hand, without the use of AI! I tried to give it a very hacker-y vibe with the green, white and black but idk if that worked out good. I started this project not good at coding at all, so the page looked pretty simple. I got used to the asthetic, so I haven't changed it.
 
@@ -85,7 +85,7 @@ It's kinda build like a maze. I originally just linked a few pages together, but
 8. [More Tools](https://soarinvandenberg.ca/links)
 ### Fourth line:
 1. [ESP-32](https://soarinvandenberg.ca/projects/ESP-32)
-2. [This Website!](https://soarinvandenberg.ca)
+2. [This Website!](https://soarinvandenberg.ca/projects/codingsprint)
 3. [Knucklebones Board](https://www.thingiverse.com/thing:7350194)
 4. [Ult. Tic Tac Toe](https://www.thingiverse.com/thing:6916426)
 5. [Video Finder](https://soarinvandenberg.ca/videos/searchengine)
