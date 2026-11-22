@@ -1,5 +1,5 @@
 # Soarin's Website!
-![Homepage](https://soarinvandenberg.ca/clutter/homepage.png)\
+![Homepage](https://soarinvandenberg.ca/clutter/homepage.png)
 
 ### LINK!
 
