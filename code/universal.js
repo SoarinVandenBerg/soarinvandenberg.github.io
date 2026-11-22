@@ -101,6 +101,7 @@ const sitePages = [
     "visited_index",
     "visited_pages",
     "visited_projects",
+    "visited_guide",
 ];
 
 let allSiteVisited = sitePages.every(key => localStorage.getItem(key));
@@ -351,6 +352,7 @@ document.addEventListener("keydown", (e) => {
             localStorage.setItem("visited_pages", "true");
             localStorage.setItem("visited_projects", "true");
             localStorage.setItem("visited_404", "true");
+            localStorage.setItem("visited_guide", "true");
             localStorage.setItem("count01", "true");
             localStorage.setItem("count02", "true");
             localStorage.setItem("count03", "true");
