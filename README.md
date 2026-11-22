@@ -108,7 +108,10 @@ These arent attached for various reasons, but here's a list of all of them.\
 -The 404 Page\
 -Ideas\
 -The archive system\
--A broken guestbook
+-A broken guestbook\
+-404\
+-Conway's game of life\
+-A site template
 
 ## Pixel art
 For this project, Ive done a few peices of pixel art, but the biggest one is the spinning globe on the main page. I wanted something like it. I couldnt find anything online so I manually drew every frame of the globe spinning so it looked right! There's a few errors here and there like misplaced pixels. Ill get around to fixing it eventually.\
