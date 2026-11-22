@@ -45,7 +45,7 @@ if (localStorage.getItem("rogueModeToggle") === "enabled") {
     if (globeGif) globeGif.src = redGlobe;
     if (humanPNG) humanPNG.src = redHuman;
     if (websiteIcon) websiteIcon.href = redIcon;
-    if (flowchartPNG) flowchartPNG.href = redFlowchart;
+    if (flowchartPNG) flowchartPNG.src = redFlowchart;
 }
 
 const rogueMode = [
@@ -70,13 +70,13 @@ document.addEventListener("keydown", (e) => {
                     if (globeGif) globeGif.src = redGlobe;
                     if (humanPNG) humanPNG.src = redHuman;
                     if (websiteIcon) websiteIcon.href = redIcon;
-                    if (flowchartPNG) flowchartPNG.href = redFlowchart;
+                    if (flowchartPNG) flowchartPNG.src = redFlowchart;
                 } else {
                     localStorage.removeItem("rogueModeToggle");
                     if (globeGif) globeGif.src = normalGlobe;
                     if (humanPNG) humanPNG.src = normalHuman;
                     if (websiteIcon) websiteIcon.href = normalIcon;
-                    if (flowchartPNG) flowchartPNG.href = normalFlowchart;
+                    if (flowchartPNG) flowchartPNG.src = normalFlowchart;
                 }
 
             window.location.reload();
