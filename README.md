@@ -1,7 +1,7 @@
 # Soarin's Website!
 ![Homepage](https://soarinvandenberg.ca/clutter/homepage.png)
 
-### LINK!
+## LINK!
 
 It's hosted at [soarinvandenberg.ca](https://soarinvandenberg.ca), so go check it out!
 
