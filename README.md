@@ -1,21 +1,46 @@
 # Soarin's Website!
 ![Homepage](https://soarinvandenberg.ca/clutter/homepage.png)\
-The original goal of this website was to get better at coding! I started working on it in march of this year, and have been updating it ever since. It has grown to a total of 42 pages. It's hosted at soarinvandenberg.ca, so go check it out!
 
-## How I made the site
+### LINK!
+
+It's hosted at [soarinvandenberg.ca](https://soarinvandenberg.ca), so go check it out!
+
+## How/why I made the site
+The original goal of this website was to get better at coding! I started working on it in march of this year, and have been updating it ever since. It has grown to a total of 42 pages.
+
 I coded it in javascript, and the pages are in html. I've also coded all of this by hand, without the use of AI! I tried to give it a very hacker-y vibe with the green, white and black but idk if that worked out good. I started this project not good at coding at all, so the page looked pretty simple. I got used to the asthetic, so I haven't changed it.
 
 ## Github repo navigation
 The Github repository for this website is a bit wonky as I have no one to go off of. The commit count for this website is over 700 which I've rarely seen anywhere else so I must be doing something differently but it works for me! For the actual files, the main pages are in the root, but everything else is sorted into folders. The JS for the pages is stored in the "code" folder. Most of the files have universal.js connected to it, which just has all of the base stuff that needs to be on every page like cheat codes, settings, or easter eggs.
 
-The only languages I've used for the website are JavaScript, CSS, and HTML (does html even count as a language?). Also Markdown ofc
+The only languages I've used for the website are JavaScript, CSS, and HTML (does html even count as a language?). 
+Also Markdown ofc
+
+## AI DISCLOSURE
+I used NO AI for the making of this site! As I said before, this website's original goal was for me to get better at coding!
+
 
 ## How to run it locally
+
+For the absolute BEST experience (and to make sure that all the navigation links work properly), visit the live site at [soarinvandenberg.ca](https://soarinvandenberg.ca).
+
+If you need to run it locally, follow these steps:
+
 1. Clone the repository:
 ```sh
-git clone [https://github.com/SoarinVandenBerg/soarinvandenberg.git](https://github.com/SoarinVandenBerg/soarinvandenberg.git)
+git clone https://github.com/SoarinVandenBerg/soarinvandenberg.git
 ```
-2. Open the folder and double click index.html to open it in your browser. The navigation might be broken because the project relies on links.
+2. Navigate to the folder
+```sh
+cd soarinvandenberg
+```
+
+3. Start a local server. If you have python installed use:
+```sh
+python -m http.server 8000
+```
+
+4. Open your browser and go to [http://localhost:8000](http://localhost:8000)
 
 ## Easter eggs:
 One of the main bits of the site is the easter egg system. I've built it up over time, and now I'm at 16 total! Easter Eggs are things that you find in the site, and then a popup appears, taking you to the page! Here's a list of all of them so you get the idea:
