@@ -1,4 +1,4 @@
-const Crash = new Date("February 11, 2031 19:45:00");
+const Crash = new Date("January 11, 2031 19:45:00");
 
 setInterval(() => {
     const now = new Date();
