@@ -41,6 +41,7 @@ python -m http.server 8000
 ```
 
 4. Open your browser and go to [http://localhost:8000](http://localhost:8000)
+(Becuase this site relies on Github Pages, Python's local server doesnt recognize filenames. If you want to test the routing locally, you will need to manually type .html at the end of the URL in your browser.)
 
 ## Easter eggs:
 One of the main bits of the site is the easter egg system. I've built it up over time, and now I'm at 16 total! Easter Eggs are things that you find in the site, and then a popup appears, taking you to the page! Here's a list of all of them so you get the idea:
