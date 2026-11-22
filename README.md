@@ -28,11 +28,11 @@ If you need to run it locally, follow these steps:
 
 1. Clone the repository:
 ```sh
-git clone https://github.com/SoarinVandenBerg/soarinvandenberg.git
+git clone https://github.com/SoarinVandenBerg/soarinvandenberg.github.io.git
 ```
 2. Navigate to the folder
 ```sh
-cd soarinvandenberg
+cd soarinvandenberg.github.io
 ```
 
 3. Start a local server. If you have python installed use:
