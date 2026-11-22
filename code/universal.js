@@ -101,7 +101,6 @@ const sitePages = [
     "visited_index",
     "visited_pages",
     "visited_projects",
-    "visited_guide",
 ];
 
 let allSiteVisited = sitePages.every(key => localStorage.getItem(key));
@@ -238,6 +237,7 @@ document.addEventListener("keydown", (e) => {
     "link11",
     "link12",
     "link13",
+    "link14",
 ];
 
 let allLinkVisited = linkPages.every(key => localStorage.getItem(key));
