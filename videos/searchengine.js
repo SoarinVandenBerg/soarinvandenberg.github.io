@@ -1,3 +1,8 @@
+//I looked up how to do this one so credit to google!!
+
+
+// Search engine
+
 const API_KEY = "AIzaSyD1zP0euN0zVChL9i8rSumRRZmwIcRKywo";
 
 let nextPageToken = null;
@@ -23,7 +28,7 @@ async function loadSearchPage(pageToken) {
     `&type=video` +
     `&maxResults=6` +
     `&q=${encodeURIComponent(lastQuery)}` +
-    `&pageToken=${pageToken}`;
+    `&pageToken=${pageToken}`; 
 
   const response = await fetch(url);
   const data = await response.json();
