@@ -154,6 +154,46 @@ document.addEventListener("keydown", (e) => {
 
  // Egg 12
 
+        document.getElementById("site1").addEventListener("click", function() {
+          localStorage.setItem("link1", "true");
+        });
+        document.getElementById("site2").addEventListener("click", function() {
+          localStorage.setItem("link2", "true");
+        });
+        document.getElementById("site3").addEventListener("click", function() {
+          localStorage.setItem("link3", "true");
+        });
+        document.getElementById("site4").addEventListener("click", function() {
+          localStorage.setItem("link4", "true");
+        });
+        document.getElementById("site5").addEventListener("click", function() {
+          localStorage.setItem("link5", "true");
+        });
+        document.getElementById("site6").addEventListener("click", function() {
+          localStorage.setItem("link6", "true");
+        });
+        document.getElementById("site7").addEventListener("click", function() {
+          localStorage.setItem("link7", "true");
+        });
+        document.getElementById("site8").addEventListener("click", function() {
+          localStorage.setItem("link8", "true");
+        });
+        document.getElementById("site9").addEventListener("click", function() {
+          localStorage.setItem("link9", "true");
+        });
+        document.getElementById("site10").addEventListener("click", function() {
+          localStorage.setItem("link10", "true");
+        });
+        document.getElementById("site11").addEventListener("click", function() {
+          localStorage.setItem("link11", "true");
+        });
+        document.getElementById("site12").addEventListener("click", function() {
+          localStorage.setItem("link12", "true");
+        });
+        document.getElementById("site13").addEventListener("click", function() {
+          localStorage.setItem("link13", "true");
+        });
+
  const linkPages = [
     "link1",
     "link2",
