@@ -342,8 +342,6 @@ document.addEventListener("keydown", (e) => {
 
         if (gavriilPosition === gavriilCode.length) {
 
-          document.body.innerHTML = document.body.innerHTML.replace (/soarin is stupid/gi, "soarin is stew pid");
-
             if (!localStorage.getItem("egg17_found")) {
                 localStorage.setItem("egg17_found", "true"); 
                 openEggPopup("egg17_found");
