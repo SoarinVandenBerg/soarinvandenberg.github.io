@@ -1,23 +1,23 @@
 // Popup logic
 
 function openEggPopup(eggkey) {
-    if (!localStorage.getItem(eggkey)) {
-        localStorage.setItem(eggkey, "true");
-    };
+  if (!localStorage.getItem(eggkey)) {
+    localStorage.setItem(eggkey, "true");
+  };
 
-    const overlay = document.querySelector(".background");
-    const yesBtn = document.querySelector("#eggPopupYes");
-    const noBtn = document.querySelector("#eggPopupNo");
+  const overlay = document.querySelector(".background");
+  const yesBtn = document.querySelector("#eggPopupYes");
+  const noBtn = document.querySelector("#eggPopupNo");
 
-    overlay.style.display = "flex";
+  overlay.style.display = "flex";
 
-    yesBtn.onclick = () => {
-        overlay.style.display = "none";
-        window.location.href = "/easter-eggs";
-    };
-    noBtn.onclick = () => {
-        overlay.style.display = "none";
-    };
+  yesBtn.onclick = () => {
+    overlay.style.display = "none";
+    window.location.href = "/easter-eggs";
+  };
+  noBtn.onclick = () => {
+    overlay.style.display = "none";
+  };
 }
 
 
@@ -32,14 +32,14 @@ document.getElementById("Egg1")?.addEventListener("click", function() {
 // Egg 2
 
 const sitePages = [
-    "visited_about",
-    "visited_notes",
-    "visited_books",
-    "visited_contact",
-    "visited_countdowns",
-    "visited_index",
-    "visited_pages",
-    "visited_projects",
+  "visited_about",
+  "visited_notes",
+  "visited_books",
+  "visited_contact",
+  "visited_countdowns",
+  "visited_index",
+  "visited_pages",
+  "visited_projects",
 ];
 
 let allSiteVisited = sitePages.every(key => localStorage.getItem(key));
@@ -90,21 +90,22 @@ if (brokenVisited && !localStorage.getItem("egg6_found")) {
 // Egg 7
 
 const allEggs = [
-    "egg1_found",
-    "egg2_found",
-    "egg3_found",
-    "egg4_found",
-    "egg5_found",
-    "egg6_found",
-    "egg8_found",
-    "egg9_found",
-    "egg10_found",
-    "egg11_found",
-    "egg12_found",
-    "egg13_found",
-    "egg14_found",
-    "egg15_found",
-    "egg16_found",
+  "egg1_found",
+  "egg2_found",
+  "egg3_found",
+  "egg4_found",
+  "egg5_found",
+  "egg6_found",
+  "egg8_found",
+  "egg9_found",
+  "egg10_found",
+  "egg11_found",
+  "egg12_found",
+  "egg13_found",
+  "egg14_found",
+  "egg15_found",
+  "egg16_found",
+  "egg17_found",
 ]
 
 let allEggsFound = allEggs.every(key => localStorage.getItem(key));
