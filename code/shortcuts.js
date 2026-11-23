@@ -70,6 +70,44 @@ document.addEventListener("keydown", (e) => {
       }
  });
 
+ // Visible Links
+
+ const linksToggle = document.getElementById("linksToggle");
+
+if (localStorage.getItem("visibleLinksToggle") === "enabled") {
+    document.body.classList.add("visible-links");
+}
+
+const visibleLinks = [
+    "l"
+];
+
+let linksPosition = 0;
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === rogueMode[linksPosition]) {
+        linksPosition++;
+
+        if (linksPosition === visibleLinks.length) {
+            
+
+            document.body.classList.toggle("visible-links");
+
+                if (document.body.classList.contains("visible-links")) {
+                    localStorage.setItem("visiblelinkToggle", "enabled");
+                } else {
+                    localStorage.removeItem("visibleLinkToggle");
+                }
+
+            window.location.reload();
+
+            linksPosition = 0;
+        }
+    } else {
+        linksPosition = 0;
+      }
+ });
+
 
  //Keyboard shortcuts
 
