@@ -1,4 +1,4 @@
-      let totalEggs = 16    ;
+      let totalEggs = 17;
       let foundEggs = 0;
       
       if (localStorage.getItem("egg1_found")) foundEggs++;
@@ -17,6 +17,7 @@
       if (localStorage.getItem("egg14_found")) foundEggs++;
       if (localStorage.getItem("egg15_found")) foundEggs++;
       if (localStorage.getItem("egg16_found")) foundEggs++;
+      if (localStorage.getItem("egg17_found")) foundEggs++;
       
       if (foundEggs === 0) {
         document.getElementById("eggListHead").style.display = "none";
@@ -47,6 +48,7 @@ let list = document.getElementById("eggList");
         { key: "egg14_found", text: "-Find the original link to this page" },
         { key: "egg15_found", text: "-Scroll to the end of the books" },
         { key: "egg16_found", text: "-Archivist! Explore the forgotten pages" },
+        { key: "egg17_found", text: "-It should say soarin is stew pid instead" },
       ]
 
       listEggs.forEach(egg => {
@@ -83,6 +85,7 @@ let list = document.getElementById("eggList");
           localStorage.removeItem("egg14_found");
           localStorage.removeItem("egg15_found");
           localStorage.removeItem("egg16_found");
+          localStorage.removeItem("egg17_found");
           localStorage.removeItem("visits_index");
           localStorage.removeItem("visited_about");
           localStorage.removeItem("visited_ai");

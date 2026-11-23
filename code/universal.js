@@ -325,6 +325,38 @@ if (allOldVisited && !localStorage.getItem("egg16_found")) {
 }
 
 
+// Egg 17
+
+const gavriilCode = [
+    "g", "a",
+    "v", "r",
+    "i", "i",
+    "l", "i",
+    "s", "s",
+    "t", "u",
+    "p", "i",
+    "d"
+];
+
+let gavriilPosition = 0;
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === gavriilCode[gavriilPosition]) {
+        gavriilPosition++;
+
+        if (gavriilPosition === gavriilCode.length) {
+            if (!localStorage.getItem("egg17_found")) {
+                localStorage.setItem("egg17_found", "true"); 
+                openEggPopup("egg17_found");
+            }
+            gavriilPosition = 0;
+        }
+    } else {
+        gavriilPosition = 0;
+      }
+ });
+
+
 
 // This cheatcode is for testing only! It gives you all of the eggs :D
 
@@ -357,6 +389,7 @@ document.addEventListener("keydown", (e) => {
             localStorage.setItem("egg14_found", "true");
             localStorage.setItem("egg15_found", "true");
             localStorage.setItem("egg16_found", "true");
+            localStorage.setItem("egg17_found", "true");
             localStorage.setItem("visits_index", "true");
             localStorage.setItem("visited_about", "true");
             localStorage.setItem("visited_ai", "true");
