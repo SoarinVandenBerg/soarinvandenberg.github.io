@@ -23,7 +23,7 @@ function openEggPopup(eggkey) {
 
 // Egg 1
 
-document.getElementById("Egg1").addEventListener("click", function() {
+document.getElementById("Egg1")?.addEventListener("click", function() {
   localStorage.setItem("egg1_found", "true");
   openEggPopup("egg1_found");
 });
@@ -69,7 +69,7 @@ if (allCountVisited && !localStorage.getItem("egg3_found")) {
 
 // Egg 4
 
-document.getElementById("Egg4").addEventListener("click", function() {
+document.getElementById("Egg4")?.addEventListener("click", function() {
   localStorage.setItem("egg4_found", "true");
   openEggPopup("egg4_found");
 });
@@ -182,7 +182,7 @@ document.addEventListener("keydown", (e) => {
 
  // Egg 11
 
-document.getElementById("Egg11").addEventListener("click", function() {
+document.getElementById("Egg11")?.addEventListener("click", function() {
   localStorage.setItem("egg11_found", "true");
   openEggPopup("egg11_found");
 });
@@ -190,43 +190,43 @@ document.getElementById("Egg11").addEventListener("click", function() {
 
  // Egg 12
 
-        document.getElementById("site1").addEventListener("click", function() {
+        document.getElementById("site1")?.addEventListener("click", function() {
           localStorage.setItem("link1", "true");
         });
-        document.getElementById("site2").addEventListener("click", function() {
+        document.getElementById("site2")?.addEventListener("click", function() {
           localStorage.setItem("link2", "true");
         });
-        document.getElementById("site3").addEventListener("click", function() {
+        document.getElementById("site3")?.addEventListener("click", function() {
           localStorage.setItem("link3", "true");
         });
-        document.getElementById("site4").addEventListener("click", function() {
+        document.getElementById("site4")?.addEventListener("click", function() {
           localStorage.setItem("link4", "true");
         });
-        document.getElementById("site5").addEventListener("click", function() {
+        document.getElementById("site5")?.addEventListener("click", function() {
           localStorage.setItem("link5", "true");
         });
-        document.getElementById("site6").addEventListener("click", function() {
+        document.getElementById("site6")?.addEventListener("click", function() {
           localStorage.setItem("link6", "true");
         });
-        document.getElementById("site7").addEventListener("click", function() {
+        document.getElementById("site7")?.addEventListener("click", function() {
           localStorage.setItem("link7", "true");
         });
-        document.getElementById("site8").addEventListener("click", function() {
+        document.getElementById("site8")?.addEventListener("click", function() {
           localStorage.setItem("link8", "true");
         });
-        document.getElementById("site9").addEventListener("click", function() {
+        document.getElementById("site9")?.addEventListener("click", function() {
           localStorage.setItem("link9", "true");
         });
-        document.getElementById("site10").addEventListener("click", function() {
+        document.getElementById("site10")?.addEventListener("click", function() {
           localStorage.setItem("link10", "true");
         });
-        document.getElementById("site11").addEventListener("click", function() {
+        document.getElementById("site11")?.addEventListener("click", function() {
           localStorage.setItem("link11", "true");
         });
-        document.getElementById("site12").addEventListener("click", function() {
+        document.getElementById("site12")?.addEventListener("click", function() {
           localStorage.setItem("link12", "true");
         });
-        document.getElementById("site13").addEventListener("click", function() {
+        document.getElementById("site13")?.addEventListener("click", function() {
           localStorage.setItem("link13", "true");
         });
 
@@ -343,7 +343,7 @@ document.addEventListener("keydown", (e) => {
         if (gavriilPosition === gavriilCode.length) {
 
           document.body.innerHTML = document.body.innerHTML.replace (/soarin is stupid/gi, "soarin is stew pid");
-          
+
             if (!localStorage.getItem("egg17_found")) {
                 localStorage.setItem("egg17_found", "true"); 
                 openEggPopup("egg17_found");

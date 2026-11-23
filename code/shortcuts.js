@@ -96,7 +96,7 @@ document.addEventListener("keydown", (e) => {
 
 
     //Previous page
-    if (e.key === "0") {
+    if (e.shiftKey && e.code === "Digit0") {
         if (window.prev) {
             window.location.href = window.prev;
         }
@@ -104,7 +104,7 @@ document.addEventListener("keydown", (e) => {
 
 
     //Page 1
-    if (e.key === "1") {
+    if (e.shiftKey && e.code  === "Digit1") {
         if (window.key1) {
             window.location.href = window.key1;
         }
@@ -112,7 +112,7 @@ document.addEventListener("keydown", (e) => {
 
 
     //Page 2
-    if (e.key === "2") {
+    if (e.shiftKey && e.code === "Digit2") {
         if (window.key2) {
             window.location.href = window.key2;
         }
@@ -120,7 +120,7 @@ document.addEventListener("keydown", (e) => {
 
 
     //Page 3
-    if (e.key === "3") {
+    if (e.shiftKey && e.code === "Digit3") {
         if (window.key3) {
             window.location.href = window.key3;
         }
@@ -129,7 +129,7 @@ document.addEventListener("keydown", (e) => {
 
 
     //Page 4
-    if (e.key === "4") {
+    if (e.shiftKey && e.code === "Digit4") {
         if (window.key4) {
             window.location.href = window.key4;
         }
@@ -138,7 +138,7 @@ document.addEventListener("keydown", (e) => {
 
 
     //Page 5
-    if (e.key === "5") {
+    if (e.shiftKey && e.code === "Digit5") {
         if (window.key5) {
             window.location.href = window.key5;
         }
@@ -147,7 +147,7 @@ document.addEventListener("keydown", (e) => {
 
 
     //Page 6
-    if (e.key === "6") {
+    if (e.shiftKey && e.code === "Digit6") {
         if (window.key6) {
             window.location.href = window.key6;
         }
@@ -156,7 +156,7 @@ document.addEventListener("keydown", (e) => {
 
 
     //Page 7
-    if (e.key === "7") {
+    if (e.shiftKey && e.code === "Digit7") {
         if (window.key7) {
             window.location.href = window.key7;
         }
@@ -165,7 +165,7 @@ document.addEventListener("keydown", (e) => {
 
 
     //Page 8
-    if (e.key === "8") {
+    if (e.shiftKey && e.code === "Digit8") {
         if (window.key8) {
             window.location.href = window.key8;
         }
@@ -174,7 +174,7 @@ document.addEventListener("keydown", (e) => {
 
 
     //Page 9
-    if (e.key === "9") {
+    if (e.shiftKey && e.code === "Digit9") {
         if (window.key9) {
             window.location.href = window.key9;
         }
