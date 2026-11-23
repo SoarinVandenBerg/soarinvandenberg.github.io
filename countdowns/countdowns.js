@@ -174,10 +174,10 @@ const day2 = now2.getDay();
 
 if (day2 === 3) {
 
-    setInterval(() => {
-        const now2 = new Date();
-        const currentTime = now2.getHours() * 60 + now2.getMinutes();
-        const currentSeconds = now2.getSeconds();
+  setInterval(() => {
+    const now2 = new Date();
+    const currentTime = now2.getHours() * 60 + now2.getMinutes();
+    const currentSeconds = now2.getSeconds();
 
 let block = "";
 let end = null;
@@ -225,114 +225,114 @@ if (block === "Before school" || block === "After school") {
 else if (block === "break") {
     safeSet("countdown07", "School is not in session!");
 }
-else {
+    else {
 
-        const nowInSeconds = currentTime * 60 + currentSeconds;
+    const nowInSeconds = currentTime * 60 + currentSeconds;
 
-        const endInSeconds = end * 60;
-        const diff = endInSeconds - nowInSeconds - 1;
-        
-        if (diff <= 0) {
-            safeSet("countdown07", "School is not in session!");
-            return;
-        }
+    const endInSeconds = end * 60;
+    const diff = endInSeconds - nowInSeconds - 1;
 
-        const hours = Math.floor(diff / 3600);
-        const minutes = Math.floor((diff % 3600) / 60);
-        const seconds = diff % 60;
-
-        const pad = (n) => String(n).padStart(2, "0");
-
-        safeSet("countdown07",
-            `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`);
+    if (diff <= 0) {
+      safeSet("countdown07", "School is not in session!");
+      return;
     }
-}, 1000);
+
+    const hours = Math.floor(diff / 3600);
+    const minutes = Math.floor((diff % 3600) / 60);
+    const seconds = diff % 60;
+
+    const pad = (n) => String(n).padStart(2, "0");
+
+    safeSet("countdown07",
+      `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`);
+    }
+  }, 1000);
 }
 
 
 else if (day2 === 1 || day2 === 4) {
 
-    setInterval(() => {
-        const now2 = new Date();
-        const currentTime = now2.getHours() * 60 + now2.getMinutes();
-        const currentSeconds = now2.getSeconds();
+  setInterval(() => {
+    const now2 = new Date();
+    const currentTime = now2.getHours() * 60 + now2.getMinutes();
+    const currentSeconds = now2.getSeconds();
 
-        let block = "";
-let end = null;
+    let block = "";
+  let end = null;
 
-if (currentTime < 8 * 60 + 40) {
+  if (currentTime < 8 * 60 + 40) {
     block = "Before school";
     end = 8 * 60 + 40;
-}
-else if (currentTime <  10 * 60) {
+  }
+  else if (currentTime <  10 * 60) {
     block = "class1";
     end = 10 * 60;
-}
-else if (currentTime <  10 * 60 + 10) {
+  }
+  else if (currentTime <  10 * 60 + 10) {
     block = "break";
     end = 10 * 60 + 10;
-}
-else if (currentTime <  11 * 60 + 30) {
+  }
+  else if (currentTime <  11 * 60 + 30) {
     block = "class2";
     end = 11 * 60 + 30;
-}
-else if (currentTime <  12 * 60 + 20) {
+  }
+  else if (currentTime <  12 * 60 + 20) {
     block = "lunch";
     end = 12 * 60 + 20;
-}
-else if (currentTime <  13 * 60 + 20) {
+  }
+  else if (currentTime <  13 * 60 + 20) {
     block = "class3";
     end = 13 * 60 + 20;
-}
-else if (currentTime < 13 * 60 + 25) {
+  }
+  else if (currentTime < 13 * 60 + 25) {
     block = "break";
     end = 13 * 60 + 25
-}
-else if (currentTime < 14 * 60 + 5) {
+  }
+  else if (currentTime < 14 * 60 + 5) {
     block = "fit";
     end = 14 * 60 + 5
-} 
-else if (currentTime <  14 * 60 + 10) {
+  } 
+  else if (currentTime <  14 * 60 + 10) {
     block = "break";
     end = 14 * 60 + 10;
-}
-else if (currentTime <  15 * 60 + 10) {
+  }
+  else if (currentTime <  15 * 60 + 10) {
     block = "class4";
     end = 15 * 60 + 10;
-}
-else {
+  }
+  else {
     block = "After school";
     end = null;
-}
+  }
 
-if (block === "Before school" || block === "After school") {
+  if (block === "Before school" || block === "After school") {
     safeSet("countdown07", "School is not in session!");
-}
-else if (block === "break") {
+  }
+  else if (block === "break") {
     safeSet("countdown07", "School is not in session!");
-}
-else {
+  }
+    else {
 
-        const nowInSeconds = currentTime * 60 + currentSeconds;
+    const nowInSeconds = currentTime * 60 + currentSeconds;
 
-        const endInSeconds = end * 60;
-        const diff = endInSeconds - nowInSeconds - 1;
-        
-        if (diff <= 0) {
-            safeSet("countdown07", "School is not in session!");
-            return;
-        }
+    const endInSeconds = end * 60;
+    const diff = endInSeconds - nowInSeconds - 1;
 
-        const hours = Math.floor(diff / 3600);
-        const minutes = Math.floor((diff % 3600) / 60);
-        const seconds = diff % 60;
-
-        const pad = (n) => String(n).padStart(2, "0");
-
-        safeSet("countdown07",
-            `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`);
+    if (diff <= 0) {
+      safeSet("countdown07", "School is not in session!");
+      return;
     }
-    }, 1000);
+
+    const hours = Math.floor(diff / 3600);
+    const minutes = Math.floor((diff % 3600) / 60);
+    const seconds = diff % 60;
+
+    const pad = (n) => String(n).padStart(2, "0");
+
+    safeSet("countdown07",
+      `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`);
+    }
+  }, 1000);
 }
 
 else if (day2 === 2 || day2 === 5) {
