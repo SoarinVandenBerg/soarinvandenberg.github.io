@@ -1,3 +1,5 @@
+//ISS crash
+
 const Crash = new Date("January 11, 2031 19:45:00");
 
 setInterval(() => {
@@ -21,6 +23,7 @@ setInterval(() => {
 }, 1000);
 
 
+// Graduation
 
 const Grad = new Date("June 20, 2028 15:10:00");
 
@@ -45,6 +48,7 @@ setInterval(() => {
 }, 1000);
 
 
+// End of day
 
 setInterval(() => {
     const now = new Date();
@@ -69,6 +73,7 @@ setInterval(() => {
 }, 1000);
 
 
+// End of year
 
 setInterval(() => {
     const now = new Date();
@@ -90,6 +95,7 @@ setInterval(() => {
 }, 1000);
 
 
+// End of month
 
 setInterval(() => {
     const now = new Date();
@@ -112,7 +118,7 @@ setInterval(() => {
 
 
 
-// school countdowns 
+// End of school day
 
         function safeSet(id, text) {
             const el = document.getElementById(id);
@@ -160,6 +166,9 @@ setInterval(() => {
             }, 1000);
         }
         
+
+// End of class 
+
         const now2 = new Date();
         const day2 = now2.getDay();
         
@@ -415,6 +424,9 @@ setInterval(() => {
         safeSet("countdown07", "School is not in session!");
     }
 
+
+    // School days left
+
     const Freedom = new Date("June 22, 2027 15:10:00");
 
     setInterval(() => {
@@ -437,7 +449,7 @@ setInterval(() => {
                     `${pad(days)}:${pad(hours)}:${pad(minutes)}:${pad(seconds)}`);
     }, 1000);
 
-
+// I really have no idea what this one does
 
 const endOfYear = new Date("June 22, 2027 15:10:00");
 
