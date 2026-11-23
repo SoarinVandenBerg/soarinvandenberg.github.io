@@ -7,9 +7,9 @@
     <meta name="robots" content="noindex">
   </head>
   <body>
-    <p class="title">About</p>
-    <br>
-    <p class="text">
+    <p class="title">
+      About
+    </p><br><p class="text">
       Hi! My name is Soarin, and I'm a student from Vancouver, BC.
       I like coding <a href="https://soarinvandenberg.ca/ai">(with or without AI)</a>,
       <a href="https://www.thingiverse.com/TheLazy3DPrinter/designs?" target="_blank">3D printing/modeling</a>, and
@@ -19,51 +19,49 @@
       other stuff like <button id="eggGameStart" class="eggButton">this</button>. Also, im using no AI at all for the making the site.
     <br><br>
       <a href="https://github.com/SoarinVandenBerg/soarinvandenberg.github.io" target="_blank">Here's the link to this website's code</a>
-
-      <br><br><p class="text">Total page visits: <span id="visitCount"></span></p>
-      <br>
-      <div id="githubStatusContainer">
-        <span class="text">Time since last commit: </span>
-        <span id="github-time" class="text"></span>
-        <br>
-        <span class="text">Github build status: </span>
-        <span id="github-status" class="text"></span>
-      </div>
-
+    <br><br><p class="text">
+      Total page visits: <span id="visitCount"></span>
+    </p><br>
+    <div id="githubStatusContainer"><span class="text">
+      Time since last commit: 
+    </span><span id="github-time" class="text"></span><br>
+    <span class="text">
+      Github build status: 
+    </span><span id="github-status" class="text"></span></div>
     <br><br><br></p>
     <p class="text"><a href="https://soarinvandenberg.ca"><-- Exit</a></p>
-    <div class="background">
-    <div class="popup">
-    <p class="header">Easter Egg Found!</p>
-    <div class="buttonbox">
+      <div class="background">
+      <div class="popup">
+      <p class="header">Easter Egg Found!</p>
+      <div class="buttonbox">
       <button class="popupbuttons" id="eggPopupNo">Close</button>
       <button class="popupbuttons" id="eggPopupYes">Go To Page</button>
-    </div></div></div>
-    <script src="code/egg-game.js"></script>
-    <script src="code/offline.js"></script>
-    <script src="code/universal.js"></script>
-    <script src="code/shortcuts.js"></script>
-    <script>
-    window.prev = "https://soarinvandenberg.ca/pages";
+      </div></div></div>
+      <script src="code/egg-game.js"></script>
+      <script src="code/offline.js"></script>
+      <script src="code/universal.js"></script>
+      <script src="code/shortcuts.js"></script>
+      <script>
+      window.prev = "https://soarinvandenberg.ca/pages";
 
-    window.key1 = "https://soarinvandenberg.ca/ai";
-    window.key2 = "https://www.thingiverse.com/TheLazy3DPrinter/designs";
-    window.key3 = "https://www.worldcubeassociation.org/persons/2025BERG01";
-    window.key4 = "https://github.com/SoarinVandenBerg/soarinvandenberg.github.io";
-    </script>
-    <script src="code/commitchecker.js"></script>
-    <script>localStorage.setItem("visited_about", "true");</script>
-    <script>
-      document.getElementById("eggGameStart").addEventListener("click", () => {
-        startEasterEggGame();
-      });
-    </script>
-    <script>
-      fetch("https://visit-counter.svberg07.workers.dev")
-        .then(r => r.text())
-        .then(count => {
-        document.getElementById("visitCount").innerText = count;
-      });
+      window.key1 = "https://soarinvandenberg.ca/ai";
+      window.key2 = "https://www.thingiverse.com/TheLazy3DPrinter/designs";
+      window.key3 = "https://www.worldcubeassociation.org/persons/2025BERG01";
+      window.key4 = "https://github.com/SoarinVandenBerg/soarinvandenberg.github.io";
+      </script>
+      <script src="code/commitchecker.js"></script>
+      <script>localStorage.setItem("visited_about", "true");</script>
+      <script>
+        document.getElementById("eggGameStart").addEventListener("click", () => {
+          startEasterEggGame();
+        });
+      </script>
+      <script>
+        fetch("https://visit-counter.svberg07.workers.dev")
+          .then(r => r.text())
+          .then(count => {
+          document.getElementById("visitCount").innerText = count;
+        });
   </script>
   </body>
 </html>
