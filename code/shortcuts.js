@@ -78,7 +78,7 @@ if (localStorage.getItem("visibleLinkToggle") === "enabled") {
 
 document.addEventListener("keydown", (e) => {
 
-    if (e.key = "l") {
+    if (e.key === "l") {
         document.body.classList.toggle("visible-links");
 
             if (document.body.classList.contains("visible-links")) {
