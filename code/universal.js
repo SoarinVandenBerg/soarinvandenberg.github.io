@@ -331,11 +331,7 @@ const gavriilCode = [
     "g", "a",
     "v", "r",
     "i", "i",
-    "l", "i",
-    "s", "s",
-    "t", "u",
-    "p", "i",
-    "d"
+    "l"
 ];
 
 let gavriilPosition = 0;
