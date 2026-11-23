@@ -10,31 +10,32 @@
     <p class="title">
       Video Finder!
     </p><br>
-
     <p class="text">
-    <input class="searchbox" id="searchBox" type="text" placeholder="Search...">
-    </p><div id="results"></div>
-
+      <input class="searchbox" id="searchBox" type="text" placeholder="Search...">
+    </p>
+      <div id="results"></div>
     <p class="text">
       <button id="prevBtn"  class="eggButton"  style="display:none; left: 10px;"><--Prev</button>
       <button id="nextBtn" class="eggButton" style="display:none; right:10px;">Next--></button>
     </p>
     <br><br><br>
     <p class="text"><a href="https://soarinvandenberg.ca"><-- Exit</a></p>
-    <div class="background">
-    <div class="popup">
-    <p class="header">Easter Egg Found!</p>
-    <div class="buttonbox">
-      <button class="popupbuttons" id="eggPopupNo">Close</button>
-      <button class="popupbuttons" id="eggPopupYes">Go To Page</button>
-    </div></div></div>
-    <script src="../code/offline.js"></script>
-    <script src="../code/universal.js"></script>
-    <script src="../code/shortcuts.js"></script>
-    <script>
-    window.prev = "https://soarinvandenberg.ca/videos";
-    </script>
-    <script src="searchengine.js"></script>
-    <script>localStorage.setItem("visited_videofinder", "true");</script>
+      <div class="background">
+      <div class="popup">
+      <p class="header">Easter Egg Found!</p>
+      <div class="buttonbox">
+        <button class="popupbuttons" id="eggPopupNo">Close</button>
+        <button class="popupbuttons" id="eggPopupYes">Go To Page</button>
+      </div></div></div>
+      <script>
+        window.prev = "https://soarinvandenberg.ca/videos";
+      </script>
+      <script>
+        localStorage.setItem("visited_videofinder", "true");
+      </script>
+      <script src="../code/offline.js"></script>
+      <script src="../code/universal.js"></script>
+      <script src="../code/shortcuts.js"></script>
+      <script src="searchengine.js"></script>
   </body>
 </html>
