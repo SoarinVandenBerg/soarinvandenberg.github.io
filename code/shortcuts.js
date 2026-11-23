@@ -163,21 +163,3 @@ document.addEventListener("keydown", (e) => {
 
  });
 
- /* Site Template
- 
-<script src="code/shortcuts.js"></script>
-<script>
- window.prev = "https://soarinvandenberg.ca/";
-
- window.key1 = "https://soarinvandenberg.ca/";
- window.key2 = "https://soarinvandenberg.ca/";
- window.key3 = "https://soarinvandenberg.ca/";
- window.key4 = "https://soarinvandenberg.ca/";
- window.key5 = "https://soarinvandenberg.ca/";
- window.key6 = "https://soarinvandenberg.ca/";
- window.key7 = "https://soarinvandenberg.ca/";
- window.key8 = "https://soarinvandenberg.ca/";
- window.key9 = "https://soarinvandenberg.ca/";
-</script>
-
- */

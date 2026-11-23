@@ -373,6 +373,21 @@ body.rogue-theme .video-frame {
   border-radius: 4px;
 }
 
+body.visible-links.rogue-theme a {
+  color: #780606;
+  text-decoration: none;
+  font-family: 'Departure Mono', Monospace;
+}
+
+
+/* Visible Links! */
+
+body.visible-links a {
+  color: #00be00;
+  text-decoration: none;
+  font-family: 'Departure Mono', Monospace;
+}
+
 
 
 
