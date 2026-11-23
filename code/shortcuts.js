@@ -72,20 +72,20 @@ document.addEventListener("keydown", (e) => {
 
  // Visible Links
 
- const linksToggle = document.getElementById("linksToggle");
+ const linksToggle = document.getElementById("linkToggle");
 
-if (localStorage.getItem("visibleLinksToggle") === "enabled") {
+if (localStorage.getItem("visibleLinkToggle") === "enabled") {
     document.body.classList.add("visible-links");
 }
 
-const visibleLinks = [
+const visibleLink = [
     "l"
 ];
 
 let linksPosition = 0;
 
 document.addEventListener("keydown", (e) => {
-    if (e.key === rogueMode[linksPosition]) {
+    if (e.key === visibleLink[linksPosition]) {
         linksPosition++;
 
         if (linksPosition === visibleLinks.length) {
@@ -94,7 +94,7 @@ document.addEventListener("keydown", (e) => {
             document.body.classList.toggle("visible-links");
 
                 if (document.body.classList.contains("visible-links")) {
-                    localStorage.setItem("visiblelinkToggle", "enabled");
+                    localStorage.setItem("visibleLinkToggle", "enabled");
                 } else {
                     localStorage.removeItem("visibleLinkToggle");
                 }
