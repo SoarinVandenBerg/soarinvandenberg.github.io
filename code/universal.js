@@ -21,6 +21,14 @@ function openEggPopup(eggkey) {
 }
 
 
+// Egg 1
+
+document.getElementById("Egg1").addEventListener("click", function() {
+  localStorage.setItem("egg1_found", "true");
+  openEggPopup("egg1_found");
+});
+
+
 // Egg 2
 
 const sitePages = [
@@ -57,6 +65,14 @@ if (allCountVisited && !localStorage.getItem("egg3_found")) {
   localStorage.setItem("popupReload", "egg3_found");
   location.reload();
 }
+
+
+// Egg 4
+
+document.getElementById("Egg4").addEventListener("click", function() {
+  localStorage.setItem("egg4_found", "true");
+  openEggPopup("egg4_found");
+});
 
 
 // Egg 6
@@ -127,6 +143,18 @@ document.addEventListener("keydown", (e) => {
  });
 
 
+ // Egg 9
+ 
+ let visits = Number(localStorage.getItem("visits_index") || 0);
+  visits++;
+  localStorage.setItem("visits_index", visits);
+
+  if (visits >= 25 && !localStorage.getItem("egg9_found")) {
+    localStorage.setItem("egg9_found", "true");
+    openEggPopup("egg9_found");
+  }
+
+
  // Egg 10
 
 const ansLife = [
@@ -150,6 +178,14 @@ document.addEventListener("keydown", (e) => {
         ansPos = 0;
       }
  });
+
+
+ // Egg 11
+
+document.getElementById("Egg11").addEventListener("click", function() {
+  localStorage.setItem("egg11_found", "true");
+  openEggPopup("egg11_found");
+});
 
 
  // Egg 12
@@ -256,6 +292,20 @@ const easterEggs = document.querySelectorAll('.egg a');
             }
         });
     });
+});
+
+
+// Egg 15
+
+window.addEventListener("scroll", function() {
+const scrolledTo = window.scrollY + window.innerHeight;
+const pageHeight = document.documentElement.scrollHeight;
+
+if (scrolledTo >= pageHeight - 50) {
+  if (!localStorage.getItem("egg15_found")) {
+      openEggPopup("egg15_found");
+    }
+  }
 });
 
 

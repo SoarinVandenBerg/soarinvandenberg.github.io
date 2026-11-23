@@ -37,10 +37,6 @@
         <button class="popupbuttons" id="eggPopupNo">Close</button>
         <button class="popupbuttons" id="eggPopupYes">Go To Page</button>
       </div></div></div>
-      <script src="code/egg-game.js"></script>
-      <script src="code/offline.js"></script>
-      <script src="code/universal.js"></script>
-      <script src="code/shortcuts.js"></script>
       <script>
       window.prev = "https://soarinvandenberg.ca/pages";
 
@@ -50,7 +46,9 @@
       window.key4 = "https://github.com/SoarinVandenBerg/soarinvandenberg.github.io";
       </script>
       <script src="code/commitchecker.js"></script>
-      <script>localStorage.setItem("visited_about", "true");</script>
+      <script>
+        localStorage.setItem("visited_about", "true");
+      </script>
       <script>
         document.getElementById("eggGameStart").addEventListener("click", () => {
           startEasterEggGame();
@@ -62,6 +60,10 @@
           .then(count => {
           document.getElementById("visitCount").innerText = count;
         });
-  </script>
+      </script>
+      <script src="code/egg-game.js"></script>
+      <script src="code/offline.js"></script>
+      <script src="code/universal.js"></script>
+      <script src="code/shortcuts.js"></script>
   </body>
 </html>

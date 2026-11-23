@@ -794,30 +794,14 @@
         <button class="popupbuttons" id="eggPopupNo">Close</button>
         <button class="popupbuttons" id="eggPopupYes">Go To Page</button>
       </div></div></div>
-      <script src="code/offline.js"></script>
-      <script src="code/universal.js"></script>
-      <script src="code/shortcuts.js"></script>
       <script>
         window.prev = "https://soarinvandenberg.ca/pages";
       </script>
-      <script>localStorage.setItem("visited_books", "true");</script>
       <script>
-        document.getElementById("Egg4").addEventListener("click", function() {
-          localStorage.setItem("egg4_found", "true");
-          openEggPopup("egg4_found");
-        });
+        localStorage.setItem("visited_books", "true");
       </script>
-      <script>
-        window.addEventListener("scroll", function() {
-        const scrolledTo = window.scrollY + window.innerHeight;
-        const pageHeight = document.documentElement.scrollHeight;
-
-        if (scrolledTo >= pageHeight - 50) {
-          if (!localStorage.getItem("egg15_found")) {
-              openEggPopup("egg15_found");
-            }
-          }
-        });
-      </script>
+      <script src="code/offline.js"></script>
+      <script src="code/universal.js"></script>
+      <script src="code/shortcuts.js"></script>
   </body>
 </html>

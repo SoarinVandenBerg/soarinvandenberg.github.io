@@ -721,18 +721,14 @@
         <button class="popupbuttons" id="eggPopupNo">Close</button>
         <button class="popupbuttons" id="eggPopupYes">Go To Page</button>
       </div></div></div>
+      <script>
+        localStorage.setItem("visited_notes", "true");
+      </script>
       <script src="code/offline.js"></script>
       <script src="code/universal.js"></script>
       <script src="code/shortcuts.js"></script>
       <script>
         window.prev = "https://soarinvandenberg.ca/pages";
       </script>
-      <script>localStorage.setItem("visited_notes", "true");</script>
-      <script>
-        document.getElementById("Egg11").addEventListener("click", function() {
-          localStorage.setItem("egg11_found", "true");
-          openEggPopup("egg11_found");
-        });
-    </script>
   </body>
 </html>

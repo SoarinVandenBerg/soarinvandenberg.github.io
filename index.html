@@ -37,9 +37,6 @@
         <button class="popupbuttons yes" id="eggPopupYes">Continue</button>
       </div></div></div>
       <script>fetch("https://visit-counter.svberg07.workers.dev/increment");</script>
-      <script src="code/offline.js"></script>
-      <script src="code/universal.js"></script>
-      <script src="code/shortcuts.js"></script>
       <script>
       window.prev = "https://soarinvandenberg.ca/";
 
@@ -71,21 +68,10 @@
           });
       </script>
       <script>
-        document.getElementById("Egg1").addEventListener("click", function() {
-          localStorage.setItem("egg1_found", "true");
-          openEggPopup("egg1_found");
-        });
-      
-        //different egg
-        let visits = Number(localStorage.getItem("visits_index") || 0);
-        visits++;
-        localStorage.setItem("visits_index", visits);
-
-        if (visits >= 25 && !localStorage.getItem("egg9_found")) {
-          localStorage.setItem("egg9_found", "true");
-          openEggPopup("egg9_found");
-        }
+        localStorage.setItem("visited_index", "true");
       </script>
-      <script>localStorage.setItem("visited_index", "true");</script>
+      <script src="code/offline.js"></script>
+      <script src="code/universal.js"></script>
+      <script src="code/shortcuts.js"></script>
   </body>
 </html>
