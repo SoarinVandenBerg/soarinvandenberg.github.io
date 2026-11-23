@@ -72,40 +72,21 @@ document.addEventListener("keydown", (e) => {
 
  // Visible Links
 
- const linksToggle = document.getElementById("linkToggle");
-
 if (localStorage.getItem("visibleLinkToggle") === "enabled") {
     document.body.classList.add("visible-links");
 }
 
-const visibleLink = [
-    "l"
-];
-
-let linksPosition = 0;
-
 document.addEventListener("keydown", (e) => {
-    if (e.key === visibleLink[linksPosition]) {
-        linksPosition++;
 
-        if (linksPosition === visibleLinks.length) { 
-            
+    if (e.key = "l") {
+        document.body.classList.toggle("visible-links");
 
-            document.body.classList.toggle("visible-links");
-
-                if (document.body.classList.contains("visible-links")) {
-                    localStorage.setItem("visibleLinkToggle", "enabled");
-                } else {
-                    localStorage.removeItem("visibleLinkToggle");
-                }
-
-            window.location.reload();
-
-            linksPosition = 0;
+            if (document.body.classList.contains("visible-links")) {
+                localStorage.setItem("visibleLinkToggle", "enabled");
+            } else {
+            localStorage.removeItem("visibleLinkToggle");
         }
-    } else {
-        linksPosition = 0;
-      }
+    }
  });
 
 
