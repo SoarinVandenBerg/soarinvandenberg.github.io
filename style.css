@@ -101,7 +101,6 @@ body {
 
 #globe {
   width: 290px;
-  filter: brightness(2);
   image-rendering: pixelated;
 }
 
