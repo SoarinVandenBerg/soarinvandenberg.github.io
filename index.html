@@ -7,83 +7,85 @@
     <title>Soarin's Website</title>
   </head>
   <body>
-    <p class="title">Soarin's Website</p>
-    <br>
+    <p class="title">
+      Soarin's Website
+    </p><br>
     <div id="globe-container">
     <img id="globe" src="clutter/globe.gif">
-      <p class="text">Hi! I'm Soarin and this is my website! Try clicking some stuff :D </p>
-      <p>
+      <p class="text">
+        Hi! I'm Soarin and this is my website! Try clicking some stuff :D
+      </p><p>
         <a href="/about">About</a> | 
         <a href="/pages">Pages</a> | 
         <a href="/contact">Contact</a>
-        <button id="Egg1" style="position:absolute; right:0; bottom:0; background:none; border:none;"><span class="egg">:D</span></button>
       </p>
     </div>
-    <div class="background">
-    <div class="popup">
-    <p class="header">Easter Egg Found!</p>
-    <div class="buttonbox">
-      <button class="popupbuttons" id="eggPopupNo">Close</button>
-      <button class="popupbuttons" id="eggPopupYes">Go To Page</button>
-    </div></div></div>
-    <div class="verify">
-    <div class="popup">
-    <p class="header">WARNING:</p>
-    <p class="mobilewarning">This site isnt optimized for mobile devices. Certain elements may appear broken or behave unexpectedly.</p>
-    <div class="buttonbox">
-      <button class="popupbuttons no" id="eggPopupNo">Exit</button>
-      <button class="popupbuttons yes" id="eggPopupYes">Continue</button>
-    </div></div></div>
-    <script>fetch("https://visit-counter.svberg07.workers.dev/increment");</script>
-    <script src="code/offline.js"></script>
-    <script src="code/universal.js"></script>
-    <script src="code/shortcuts.js"></script>
-    <script>
-    window.prev = "https://soarinvandenberg.ca/";
+      <button id="Egg1" style="position:absolute; right:0; bottom:0; background:none; border:none;"><span class="egg">:D</span></button>
+      <div class="background">
+      <div class="popup">
+      <p class="header">Easter Egg Found!</p>
+      <div class="buttonbox">
+        <button class="popupbuttons" id="eggPopupNo">Close</button>
+        <button class="popupbuttons" id="eggPopupYes">Go To Page</button>
+      </div></div></div>
+      <div class="verify">
+      <div class="popup">
+      <p class="header">WARNING:</p>
+      <p class="mobilewarning">This site isnt optimized for mobile devices. Certain elements may appear broken or behave unexpectedly.</p>
+      <div class="buttonbox">
+        <button class="popupbuttons no" id="eggPopupNo">Exit</button>
+        <button class="popupbuttons yes" id="eggPopupYes">Continue</button>
+      </div></div></div>
+      <script>fetch("https://visit-counter.svberg07.workers.dev/increment");</script>
+      <script src="code/offline.js"></script>
+      <script src="code/universal.js"></script>
+      <script src="code/shortcuts.js"></script>
+      <script>
+      window.prev = "https://soarinvandenberg.ca/";
 
-    window.key1 = "https://soarinvandenberg.ca/about";
-    window.key2 = "https://soarinvandenberg.ca/pages";
-    window.key3 = "https://soarinvandenberg.ca/contact";
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-      const ua = navigator.userAgent;
+      window.key1 = "https://soarinvandenberg.ca/about";
+      window.key2 = "https://soarinvandenberg.ca/pages";
+      window.key3 = "https://soarinvandenberg.ca/contact";
+      </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        const ua = navigator.userAgent;
 
-      const isIOS = /iPhone/i.test(ua);
+        const isIOS = /iPhone/i.test(ua);
 
-      if (isIOS) {
-        const overlay = document.querySelector(".verify");
-        const yesBtn = document.querySelector(".yes");
-        const noBtn = document.querySelector(".no");
+          if (isIOS) {
+            const overlay = document.querySelector(".verify");
+            const yesBtn = document.querySelector(".yes");
+            const noBtn = document.querySelector(".no");
 
-        overlay.style.display = "flex";
+            overlay.style.display = "flex";
 
-        yesBtn.onclick = () => {
-          overlay.style.display = "none";
-        };
-        noBtn.onclick = () => {
-          overlay.style.display = "none";
-          window.location.href = "https://www.google.com/";
-        };
-      }
-    });
-    </script>
-    <script>
-      document.getElementById("Egg1").addEventListener("click", function() {
-        localStorage.setItem("egg1_found", "true");
-        openEggPopup("egg1_found");
-      });
-    
-    //different egg
-    let visits = Number(localStorage.getItem("visits_index") || 0);
-    visits++;
-    localStorage.setItem("visits_index", visits);
+            yesBtn.onclick = () => {
+              overlay.style.display = "none";
+            };
+            noBtn.onclick = () => {
+              overlay.style.display = "none";
+              window.location.href = "https://www.google.com/";
+              };
+            }
+          });
+      </script>
+      <script>
+        document.getElementById("Egg1").addEventListener("click", function() {
+          localStorage.setItem("egg1_found", "true");
+          openEggPopup("egg1_found");
+        });
+      
+        //different egg
+        let visits = Number(localStorage.getItem("visits_index") || 0);
+        visits++;
+        localStorage.setItem("visits_index", visits);
 
-    if (visits >= 25 && !localStorage.getItem("egg9_found")) {
-      localStorage.setItem("egg9_found", "true");
-      openEggPopup("egg9_found");
-    }
-    </script>
-    <script>localStorage.setItem("visited_index", "true");</script>
+        if (visits >= 25 && !localStorage.getItem("egg9_found")) {
+          localStorage.setItem("egg9_found", "true");
+          openEggPopup("egg9_found");
+        }
+      </script>
+      <script>localStorage.setItem("visited_index", "true");</script>
   </body>
 </html>
