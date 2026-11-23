@@ -88,7 +88,7 @@ document.addEventListener("keydown", (e) => {
     if (e.key === visibleLink[linksPosition]) {
         linksPosition++;
 
-        if (linksPosition === visibleLinks.length) {
+        if (linksPosition === visibleLinks.length) { 
             
 
             document.body.classList.toggle("visible-links");
