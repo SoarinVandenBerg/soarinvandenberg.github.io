@@ -78,47 +78,32 @@ document.addEventListener("keydown", (e) => {
 
     //Previous page
     if (e.key === "0") {
-
-        const prev = document.body.dataset.next;
-
-        if (prev) {
-            window.location.href = key0
+        if (window.prev) {
+            window.location.href = window.prev;
         }
     }
-
 
 
     //Page 1
     if (e.key === "1") {
-
-        const key1 = document.body.dataset.next;
-
-        if (key1) {
-            window.location.href = key0
+        if (window.key1) {
+            window.location.href = window.key1;
         }
     }
-
 
 
     //Page 2
     if (e.key === "2") {
-
-        const key2 = document.body.dataset.next;
-
-        if (key2) {
-            window.location.href = key0
+        if (window.key2) {
+            window.location.href = window.key2;
         }
     }
 
 
-
     //Page 3
     if (e.key === "3") {
-
-        const key3 = document.body.dataset.next;
-
-        if (key3) {
-            window.location.href = key0
+        if (window.key3) {
+            window.location.href = window.key3;
         }
     }
 
@@ -126,11 +111,8 @@ document.addEventListener("keydown", (e) => {
 
     //Page 4
     if (e.key === "4") {
-
-        const key4 = document.body.dataset.next;
-
-        if (key4) {
-            window.location.href = key0
+        if (window.key4) {
+            window.location.href = window.key4;
         }
     }
 
@@ -138,11 +120,8 @@ document.addEventListener("keydown", (e) => {
 
     //Page 5
     if (e.key === "5") {
-
-        const key5 = document.body.dataset.next;
-
-        if (key5) {
-            window.location.href = key0
+        if (window.key5) {
+            window.location.href = window.key5;
         }
     }
 
@@ -150,11 +129,8 @@ document.addEventListener("keydown", (e) => {
 
     //Page 6
     if (e.key === "6") {
-
-        const key6 = document.body.dataset.next;
-
-        if (key6) {
-            window.location.href = key0
+        if (window.key6) {
+            window.location.href = window.key6;
         }
     }
 
@@ -162,11 +138,8 @@ document.addEventListener("keydown", (e) => {
 
     //Page 7
     if (e.key === "7") {
-
-        const key7 = document.body.dataset.next;
-
-        if (key7) {
-            window.location.href = key0
+        if (window.key7) {
+            window.location.href = window.key7;
         }
     }
 
@@ -174,11 +147,8 @@ document.addEventListener("keydown", (e) => {
 
     //Page 8
     if (e.key === "8") {
-
-        const key8 = document.body.dataset.next;
-
-        if (key8) {
-            window.location.href = key0
+        if (window.key8) {
+            window.location.href = window.key8;
         }
     }
 
@@ -186,13 +156,11 @@ document.addEventListener("keydown", (e) => {
 
     //Page 9
     if (e.key === "9") {
-
-        const key9 = document.body.dataset.next;
-
-        if (key9) {
-            window.location.href = key0
+        if (window.key9) {
+            window.location.href = window.key9;
         }
     }
+
  });
 
  /* Site Template
