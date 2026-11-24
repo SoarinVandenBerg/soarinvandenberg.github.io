@@ -59,14 +59,17 @@ async function getCommitStatus() {
 
     if (linkHeader) {
       const match = linkHeader.match(/&page=(\d+)>; rel="last"/);
+      if (match) {
+        return parseInt(match[1], 10);
+      }
     }
 
+    const finalNumber = await response.json();
+    return data.length;
 
+    document.getElementById("github-number").innerText = getTime(commitDate);
 
-
-
-
-
+    
     if (!checksResponse.ok || !commitResponse.ok) {
       throw new Error(`ERROR: ${checksResponse.status}`);
     }
