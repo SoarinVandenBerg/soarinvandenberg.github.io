@@ -42,37 +42,15 @@ async function getCommitStatus() {
     const commitResponse = await fetch (`https://api.github.com/repos/${owner}/${repo}/commits/${branch}`);
     const numberResponse = await fetch (`https://api.github.com/repos/${owner}/${repo}/commits?sha=${branch}&per_page=1`);
 
-    const headers = {
-      'Accept': 'application/vnd.github+json',
-    };
-    if (token) {
-      headers['authorization'] = `Bearer ${token}`;
-    }
-    
-    const URLResponse = await fetch(url, {headers })
-
-    if (!response.ok) {
-      throw new Error (`ERROR: ${URLResponse.status}`);
+    if (!numberResponse.ok) {
+      const match = numberResponse.headers.get('link').match(/&page=(\d+)>; rel="last"/);
+      document.getElementById("github-number").innerText = parseInt(match[1], 10);
+      throw new Error (`ERROR: ${numberResponse.status}`);
     }
 
-    const linkHeader = URLResponse.headers.get('link');
-
-    if (linkHeader) {
-      const match = linkHeader.match(/&page=(\d+)>; rel="last"/);
-      if (match) {
-        return parseInt(match[1], 10);
-      }
-    }
-
-    const finalNumber = await response.json();
-    return data.length;
-
-    document.getElementById("github-number").innerText = getTime(commitDate);
-
-    
     if (!checksResponse.ok || !commitResponse.ok) {
       throw new Error(`ERROR: ${checksResponse.status}`);
-    }
+    } 
 
     const data = await checksResponse.json();
     const totalChecks = data.total_count;
@@ -87,7 +65,7 @@ async function getCommitStatus() {
       if (check.status === "completed" && check.conclusion === "success") {
         passedChecks++;
       }
-    });
+    })
 
     document.getElementById("github-status").innerText = `${passedChecks}/${totalChecks} passed`;
 
