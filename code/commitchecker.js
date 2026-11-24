@@ -57,17 +57,15 @@ async function getCommitStatus() {
 
     if (totalChecks === 0) {
       document.getElementById("github-status").innerText = "There's something really wrong";
-      return;
+    } else {
+      let passedChecks = 0;
+      data.check_runs.forEach(check => {
+        if (check.status === "completed" && check.conclusion === "success") {
+          passedChecks++;
+        }
+      });
+      document.getElementById("github-status").innerText = `${passedChecks}/${totalChecks} passed`;
     }
-
-    let passedChecks = 0;
-    data.check_runs.forEach(check => {
-      if (check.status === "completed" && check.conclusion === "success") {
-        passedChecks++;
-      }
-    })
-
-    document.getElementById("github-status").innerText = `${passedChecks}/${totalChecks} passed`;
 
   const commitData = await commitResponse.json();
   const commitDate = commitData.commit.author.date;
