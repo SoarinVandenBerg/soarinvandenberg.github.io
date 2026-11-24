@@ -42,7 +42,7 @@ async function getCommitStatus() {
     const commitResponse = await fetch (`https://api.github.com/repos/${owner}/${repo}/commits/${branch}`);
     const numberResponse = await fetch (`https://api.github.com/repos/${owner}/${repo}/commits?sha=${branch}&per_page=1`);
 
-    if (!numberResponse.ok) {
+    if (numberResponse.ok) {
       const match = numberResponse.headers.get('link').match(/&page=(\d+)>; rel="last"/);
       document.getElementById("github-number").innerText = parseInt(match[1], 10);
       throw new Error (`ERROR: ${numberResponse.status}`);
