@@ -40,6 +40,32 @@ async function getCommitStatus() {
   try {
     const checksResponse = await fetch (`https://api.github.com/repos/${owner}/${repo}/commits/${branch}/check-runs`);
     const commitResponse = await fetch (`https://api.github.com/repos/${owner}/${repo}/commits/${branch}`);
+    const numberResponse = await fetch (`https://api.github.com/repos/{owner}/{repo}/commits?sha={branch}&per_page=1`);
+
+    const headers = {
+      'Accept': 'application/vnd.github+json',
+    };
+    if (token) {
+      headers['authorization'] = `Bearer ${token}`;
+    }
+    
+    const URLResponse = await fetch(url, {headers })
+
+    if (!response.ok) {
+      throw new Error (`ERROR: ${URLResponse.status}`);
+    }
+
+    const linkHeader = URLResponse.headers.get('link');
+
+    if (linkHeader) {
+      const match = linkHeader.match(/&page=(\d+)>; rel="last"/);
+    }
+
+
+
+
+
+
 
     if (!checksResponse.ok || !commitResponse.ok) {
       throw new Error(`ERROR: ${checksResponse.status}`);

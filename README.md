@@ -17,8 +17,9 @@ The only languages I've used for the website are JavaScript, CSS, and HTML (does
 Also Markdown ofc
 
 ## AI DISCLOSURE
-I used NO AI for the making of this site! As I said before, this website's original goal was for me to get better at coding!
+I used NO AI for the making of this site! As I said before, this website's original goal was for me to get better at coding!/
 
+That being said, I did have to look up how to do the Github commit checker on the about page, and the Youtube API's too.
 
 ## How to run it locally
 
