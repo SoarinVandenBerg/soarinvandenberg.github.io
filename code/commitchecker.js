@@ -38,41 +38,36 @@ async function getCommitStatus() {
   const branch = "main";
 
   try {
-    const checksResponse = await fetch (`https://api.github.com/repos/${owner}/${repo}/commits/${branch}/check-runs`);
-    const commitResponse = await fetch (`https://api.github.com/repos/${owner}/${repo}/commits/${branch}`);
-    const numberResponse = await fetch (`https://api.github.com/repos/${owner}/${repo}/commits?sha=${branch}&per_page=1`);
+  const checksResponse = await fetch (`https://api.github.com/repos/${owner}/${repo}/commits/${branch}/check-runs`);
+  const commitResponse = await fetch (`https://api.github.com/repos/${owner}/${repo}/commits/${branch}`);
 
-    if (numberResponse.ok) {
-      const match = numberResponse.headers.get('link').match(/&page=(\d+)>; rel="last"/);
-      document.getElementById("github-number").innerText = parseInt(match[1], 10);
-      throw new Error (`ERROR: ${numberResponse.status}`);
+  if (!checksResponse.ok || !commitResponse.ok) {
+    throw new Error(`ERROR: ${checksResponse.status}`);
+  }
+
+  const data = await checksResponse.json();
+  const totalChecks = data.total_count;
+
+  if (totalChecks === 0) {
+    document.getElementById("github-status").innerText = "There's something really wrong";
+    return;
+  }
+
+  let passedChecks = 0;
+  data.check_runs.forEach(check => {
+    if (check.status === "completed" && check.conclusion === "success") {
+      passedChecks++;
     }
+  });
 
-    if (!checksResponse.ok || !commitResponse.ok) {
-      throw new Error(`ERROR: ${checksResponse.status}`);
-    } 
-
-    const data = await checksResponse.json();
-    const totalChecks = data.total_count;
-
-    if (totalChecks === 0) {
-      document.getElementById("github-status").innerText = "There's something really wrong";
-    } else {
-      let passedChecks = 0;
-      data.check_runs.forEach(check => {
-        if (check.status === "completed" && check.conclusion === "success") {
-          passedChecks++;
-        }
-      });
-      document.getElementById("github-status").innerText = `${passedChecks}/${totalChecks} passed`;
-    }
+  document.getElementById("github-status").innerText = `${passedChecks}/${totalChecks} passed`;
 
   const commitData = await commitResponse.json();
   const commitDate = commitData.commit.author.date;
 
   document.getElementById("github-time").innerText = getTime(commitDate);
 
-  } catch (error) {
+} catch (error) {
     console.error("ERROR: Failed to get Github Status:", error);
     document.getElementById("github-status").innerText = "ERROR: You're being rate limited!";
     document.getElementById("github-time").innerText = "ERROR: You're being rate limited!";
