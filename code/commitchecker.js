@@ -40,7 +40,7 @@ async function getCommitStatus() {
   try {
     const checksResponse = await fetch (`https://api.github.com/repos/${owner}/${repo}/commits/${branch}/check-runs`);
     const commitResponse = await fetch (`https://api.github.com/repos/${owner}/${repo}/commits/${branch}`);
-    const numberResponse = await fetch (`https://api.github.com/repos/{owner}/{repo}/commits?sha={branch}&per_page=1`);
+    const numberResponse = await fetch (`https://api.github.com/repos/${owner}/${repo}/commits?sha=${branch}&per_page=1`);
 
     const headers = {
       'Accept': 'application/vnd.github+json',
