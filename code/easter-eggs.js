@@ -108,6 +108,9 @@ listEggs.forEach(egg => {
     localStorage.removeItem("visited_guide");
     localStorage.removeItem("gamblingVisits");
     localStorage.removeItem("randomVisits");
+    localStorage.removeItem("OldESP-32");
+    localStorage.removeItem("OldAI");
+    localStorage.removeItem("OldIndex");
     localStorage.removeItem("count1");
     localStorage.removeItem("count2");
     localStorage.removeItem("count3");

@@ -399,6 +399,9 @@ if (e.key === cheatCode[cheatPosition]) {
     localStorage.setItem("visited_projects", "true");
     localStorage.setItem("visited_404", "true");
     localStorage.setItem("visited_guide", "true");
+    localStorage.setItem("OldIndex", "true");
+    localStorage.setItem("OldAI", "true");
+    localStorage.setItem("OldESP-32", "true");
     localStorage.setItem("gamblingVisits", "true");
     localStorage.setItem("count01", "true");
     localStorage.setItem("count02", "true");
