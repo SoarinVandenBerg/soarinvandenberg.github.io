@@ -381,6 +381,7 @@ if (e.key === cheatCode[cheatPosition]) {
     localStorage.setItem("egg15_found", "true");
     localStorage.setItem("egg16_found", "true");
     localStorage.setItem("egg17_found", "true");
+    localStorage.setItem("egg18_found", "true");
     localStorage.setItem("visits_index", "true");
     localStorage.setItem("visited_about", "true");
     localStorage.setItem("visited_ai", "true");
