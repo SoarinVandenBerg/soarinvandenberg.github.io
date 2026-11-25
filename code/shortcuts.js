@@ -3,15 +3,15 @@
 const themeToggle = document.getElementById("themeToggle");
 
 const normalGlobe = "/clutter/globe.gif";
-const redGlobe = "/clutter/redglobe.gif";
+const redGlobe = "/clutter/red-images/redglobe.gif";
 const normalHuman = "/clutter/human-made.png";
-const redHuman = "/clutter/redhuman-made.png";
+const redHuman = "/clutter/red-images/redhuman-made.png";
 const normalIcon = "/clutter/website_icon.png";
-const redIcon = "/clutter/redwebsite-icon.png";
+const redIcon = "/clutter/red-images/redwebsite-icon.png";
 const normalFlowchart = "/clutter/Flowchart.png";
-const redFlowchart = "/clutter/redFlowchart.png";
+const redFlowchart = "/clutter/red-images/redFlowchart.png";
 const normalBattery = "/clutter/battery.png";
-const redBattery = "/clutter/redbattery.png";
+const redBattery = "/clutter/red-images/redbattery.png";
 
 const globeGif = document.querySelector("#globe");
 const humanPNG = document.querySelector("#human-made");
