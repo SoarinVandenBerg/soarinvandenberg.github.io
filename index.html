@@ -70,6 +70,16 @@
       <script>
         localStorage.setItem("visited_index", "true");
       </script>
+      <script>
+        let visits = Number(localStorage.getItem("visits_index") || 0);
+        visits++;
+        localStorage.setItem("visits_index", visits);
+
+        if (visits >= 25 && !localStorage.getItem("egg9_found")) {
+          localStorage.setItem("egg9_found", "true");
+          openEggPopup("egg9_found");
+        }
+      </script>
       <script src="code/offline.js"></script>
       <script src="code/universal.js"></script>
       <script src="code/shortcuts.js"></script>

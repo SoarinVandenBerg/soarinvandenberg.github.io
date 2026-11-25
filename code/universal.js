@@ -144,18 +144,6 @@ document.addEventListener("keydown", (e) => {
 });
 
 
- // Egg 9
- 
- let visits = Number(localStorage.getItem("visits_index") || 0);
-  visits++;
-  localStorage.setItem("visits_index", visits);
-
-  if (visits >= 25 && !localStorage.getItem("egg9_found")) {
-    localStorage.setItem("egg9_found", "true");
-    openEggPopup("egg9_found");
-  }
-
-
  // Egg 10
 
 const ansLife = [
