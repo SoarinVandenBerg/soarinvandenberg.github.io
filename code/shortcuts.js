@@ -78,15 +78,15 @@ if (localStorage.getItem("visibleLinkToggle") === "enabled") {
 
 document.addEventListener("keydown", (e) => {
 
-    if (e.shiftKey && e.key.toLowerCase() === "l") {
-    document.body.classList.toggle("visible-links");
-      if (document.body.classList.contains("visible-links")) {
-        localStorage.setItem("visibleLinkToggle", "enabled");
-      } else {
-      localStorage.removeItem("visibleLinkToggle");
-    }
+  if (e.shiftKey && e.key.toLowerCase() === "l") {
+  document.body.classList.toggle("visible-links");
+    if (document.body.classList.contains("visible-links")) {
+      localStorage.setItem("visibleLinkToggle", "enabled");
+    } else {
+    localStorage.removeItem("visibleLinkToggle");
+      }
   }
- });
+});
 
 
  //Keyboard shortcuts
