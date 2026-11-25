@@ -105,7 +105,15 @@ listEggs.forEach(egg => {
     localStorage.removeItem("visited_vlogbrothers");
     localStorage.removeItem("visited_videofinder");
     localStorage.removeItem("visited_videos");
+    localStorage.removeItem("visited_guide");
     localStorage.removeItem("gamblingVisits");
+    localStorage.removeItem("randomVisits");
+    localStorage.removeItem("count1");
+    localStorage.removeItem("count2");
+    localStorage.removeItem("count3");
+    localStorage.removeItem("count4");
+    localStorage.removeItem("count5");
+    localStorage.removeItem("count6");
     localStorage.removeItem("count01");
     localStorage.removeItem("count02");
     localStorage.removeItem("count03");
@@ -115,6 +123,7 @@ listEggs.forEach(egg => {
     localStorage.removeItem("count07");
     localStorage.removeItem("count08");
     localStorage.removeItem("count09");
+    localStorage.removeItem("count10");
     localStorage.removeItem("link1");
     localStorage.removeItem("link2");
     localStorage.removeItem("link3");
@@ -128,6 +137,7 @@ listEggs.forEach(egg => {
     localStorage.removeItem("link11");
     localStorage.removeItem("link12");
     localStorage.removeItem("link13");
+    localStorage.removeItem("link14");
 
     location.reload();
     }
