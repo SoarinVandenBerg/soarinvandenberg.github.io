@@ -38,7 +38,7 @@ const allPages = [
   "https://soarinvandenberg.ca/guess-what",
   "https://soarinvandenberg.ca/ideas",
   "https://soarinvandenberg.ca",
-  "https://soarinvandenberg.ca/links",
+  "https://soarinvanden berg.ca/links",
   "https://soarinvandenberg.ca/notes",
   "https://soarinvandenberg.ca/pages",
   "https://soarinvandenberg.ca/cheatcodes",
@@ -48,12 +48,12 @@ const allPages = [
 ];
 
 if (randomButton) {
-  randomButton.addEventListener("click", () => {
+  randomButton.addEventListener("click", (e) => {
     let clicks = Number(localStorage.getItem("randomVisits") || 0);
      clicks++;
      localStorage.setItem("randomVisits", clicks);
 
-    if (visits >= 25 && !localStorage.getItem("egg18_found")) {
+    if (clicks >= 25 && !localStorage.getItem("egg18_found")) {
     localStorage.setItem("egg18_found", "true");
 
       if (typeof openEggPopup === "function") {
