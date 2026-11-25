@@ -1,4 +1,4 @@
-let totalEggs = 17;
+let totalEggs = 18;
 let foundEggs = 0;
 
 if (localStorage.getItem("egg1_found")) foundEggs++;
@@ -18,6 +18,7 @@ if (localStorage.getItem("egg14_found")) foundEggs++;
 if (localStorage.getItem("egg15_found")) foundEggs++;
 if (localStorage.getItem("egg16_found")) foundEggs++;
 if (localStorage.getItem("egg17_found")) foundEggs++;
+if (localStorage.getItem("egg18_found")) foundEggs++;
 
 if (foundEggs === 0) {
   document.getElementById("eggListHead").style.display = "none";
@@ -49,6 +50,7 @@ const listEggs = [
   { key: "egg15_found", text: "-Scroll to the end of the books" },
   { key: "egg16_found", text: "-Archivist! Explore the forgotten pages" },
   { key: "egg17_found", text: "-It should say soarin is stew pid instead" },
+  { key: "egg18_found", text: "-Gambling addict! Press random 25 times!" },
 ]
 
 listEggs.forEach(egg => {
@@ -86,6 +88,7 @@ listEggs.forEach(egg => {
     localStorage.removeItem("egg15_found");
     localStorage.removeItem("egg16_found");
     localStorage.removeItem("egg17_found");
+    localStorage.removeItem("egg18_found");
     localStorage.removeItem("visits_index");
     localStorage.removeItem("visited_about");
     localStorage.removeItem("visited_ai");
@@ -102,6 +105,7 @@ listEggs.forEach(egg => {
     localStorage.removeItem("visited_vlogbrothers");
     localStorage.removeItem("visited_videofinder");
     localStorage.removeItem("visited_videos");
+    localStorage.removeItem("gamblingVisits");
     localStorage.removeItem("count01");
     localStorage.removeItem("count02");
     localStorage.removeItem("count03");

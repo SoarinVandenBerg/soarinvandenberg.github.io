@@ -54,3 +54,12 @@ if (randomButton) {
     window.location.href = allPages[randomIndex];
   });
 }
+
+let visits = Number(localStorage.getItem("gamblingVisits") || 0);
+  visits++;
+  localStorage.setItem("gamblingVisits", visits);
+
+if (visits >= 25 && !localStorage.getItem("egg18_found")) {
+  localStorage.setItem("egg18_found", "true");
+  openEggPopup("egg18_found");
+}
