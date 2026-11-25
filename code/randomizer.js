@@ -49,17 +49,22 @@ const allPages = [
 
 if (randomButton) {
   randomButton.addEventListener("click", () => {
-    const randomIndex = Math.floor(Math.random() * allPages.length);
+    let clicks = Number(localStorage.getItem("randomVisits") || 0);
+     clicks++;
+     localStorage.setItem("randomVisits", clicks);
 
+    if (visits >= 25 && !localStorage.getItem("egg18_found")) {
+    localStorage.setItem("egg18_found", "true");
+
+      if (typeof openEggPopup === "function") {
+        e.preventDefault();
+        openEggPopup("egg18_found");
+
+        return;
+      }
+    }
+
+    const randomIndex = Math.floor(Math.random() * allPages.length);
     window.location.href = allPages[randomIndex];
   });
-}
-
-let visits = Number(localStorage.getItem("gamblingVisits") || 0);
-  visits++;
-  localStorage.setItem("gamblingVisits", visits);
-
-if (visits >= 25 && !localStorage.getItem("egg18_found")) {
-  localStorage.setItem("egg18_found", "true");
-  openEggPopup("egg18_found");
 }
