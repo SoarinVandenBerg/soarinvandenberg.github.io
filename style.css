@@ -132,6 +132,13 @@ body {
   margin: 0;
 }
 
+.header-bold {
+  font-size: 20px;
+  font-family:'Departure Mono', monospace;
+  margin: 0;
+  font-weight: bold;
+}
+
 iframe {
   margin-right: 20px;
 }
@@ -208,6 +215,13 @@ p {
   margin: 0;
 }
 
+.title-bold {
+  font-size: 40px;
+  font-family:'Departure Mono', monospace;
+  margin: 0;
+  font-weight: bold;
+}
+
 .text {
   font-size: 14px;
   font-family:'Departure Mono', monospace;
@@ -215,6 +229,16 @@ p {
   max-width: 800px;
   z-index: 1;
   position: relative;
+}
+
+.text-bold {
+  font-size: 14px;
+  font-family:'Departure Mono', monospace;
+  margin: 0;
+  max-width: 800px;
+  z-index: 1;
+  position: relative;
+  font-weight: bold;
 }
 
 .text-btn {
