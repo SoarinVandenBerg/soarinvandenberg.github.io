@@ -107,6 +107,7 @@ const allEggs = [
   "egg16_found",
   "egg17_found",
   "egg18_found",
+  "egg19_found",
 ]
 
 let allEggsFound = allEggs.every(key => localStorage.getItem(key));
@@ -382,6 +383,7 @@ if (e.key === cheatCode[cheatPosition]) {
     localStorage.setItem("egg16_found", "true");
     localStorage.setItem("egg17_found", "true");
     localStorage.setItem("egg18_found", "true");
+    localStorage.setItem("egg19_found", "true");
     localStorage.setItem("visits_index", "true");
     localStorage.setItem("visited_about", "true");
     localStorage.setItem("visited_ai", "true");
