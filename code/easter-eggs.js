@@ -103,6 +103,7 @@ listEggs.forEach(egg => {
     localStorage.removeItem("visited_index");
     localStorage.removeItem("visited_pages");
     localStorage.removeItem("visited_projects");
+    localStorage.removeItem("visited_links");
     localStorage.removeItem("visited_404");
     localStorage.removeItem("visited_hankschannel");
     localStorage.removeItem("visited_vlogbrothers");
