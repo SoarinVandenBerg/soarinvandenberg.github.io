@@ -1,5 +1,14 @@
 // Popup logic
 
+/* MAKE SURE TO ADD TO EVERY EGG's CODE:
+
+if (!localStorage.getItem("eggX_found")) {
+      localStorage.setItem("eggX_found", "true")
+      localStorage.setItem("popupReload", "eggX_found", "true")
+    }
+
+*/
+
 function openEggPopup(eggkey) {
   if (!localStorage.getItem(eggkey)) {
     localStorage.setItem(eggkey, "true");
