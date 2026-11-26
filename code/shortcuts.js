@@ -42,9 +42,11 @@ document.addEventListener("keydown", (e) => {
 
   if (roguePosition === rogueMode.length) {
 
-    localStorage.setItem("egg19_found", "true")
+    if (!localStorage.getItem("egg19_found")) {
+      localStorage.setItem("egg19_found", "true")
+      localStorage.setItem("popupReload", "egg19_found", "true")
+    }
       
-
     document.body.classList.toggle("rogue-theme");
 
     if (document.body.classList.contains("rogue-theme")) {
