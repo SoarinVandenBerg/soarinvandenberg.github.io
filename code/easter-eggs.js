@@ -1,4 +1,4 @@
-let totalEggs = 18;
+let totalEggs = 19;
 let foundEggs = 0;
 
 if (localStorage.getItem("egg1_found")) foundEggs++;
@@ -19,6 +19,7 @@ if (localStorage.getItem("egg15_found")) foundEggs++;
 if (localStorage.getItem("egg16_found")) foundEggs++;
 if (localStorage.getItem("egg17_found")) foundEggs++;
 if (localStorage.getItem("egg18_found")) foundEggs++;
+if (localStorage.getItem("egg19_found")) foundEggs++;
 
 if (foundEggs === 0) {
   document.getElementById("eggListHead").style.display = "none";
@@ -51,6 +52,7 @@ const listEggs = [
   { key: "egg16_found", text: "-Archivist! Explore the forgotten pages" },
   { key: "egg17_found", text: "-It should say soarin is stew pid instead" },
   { key: "egg18_found", text: "-Gambling addict! Press random 25 times!" },
+  { key: "egg19_found", text: "-Free from Corporation Rim!" },
 ]
 
 listEggs.forEach(egg => {
@@ -89,6 +91,7 @@ listEggs.forEach(egg => {
     localStorage.removeItem("egg16_found");
     localStorage.removeItem("egg17_found");
     localStorage.removeItem("egg18_found");
+    localStorage.removeItem("egg19_found");
     localStorage.removeItem("visits_index");
     localStorage.removeItem("visited_about");
     localStorage.removeItem("visited_ai");

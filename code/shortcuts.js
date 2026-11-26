@@ -41,6 +41,8 @@ document.addEventListener("keydown", (e) => {
     roguePosition++;
 
   if (roguePosition === rogueMode.length) {
+
+    localStorage.setItem("egg19_found", "true")
       
 
     document.body.classList.toggle("rogue-theme");
