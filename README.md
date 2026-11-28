@@ -105,6 +105,7 @@ It's kinda build like a maze. I originally just linked a few pages together, but
 7. [Days Left In School](https://soarinvandenberg.ca/countdowns/days-left)
 8. [End of Class](https://soarinvandenberg.ca/countdowns/class-time)
 
+Alternatively, check out the [guide](https://soarinvandenberg.ca/guide) page!
 ## Other pages not part of the main tree
 These arent attached for various reasons, but here's a list of all of them.\
 
