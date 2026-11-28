@@ -11,7 +11,7 @@ The original goal of this website was to get better at coding! I started working
 I coded it in javascript, and the pages are in html. I've also coded all of this by hand, without the use of AI! I tried to give it a very hacker-y vibe with the green, white and black but idk if that worked out good. I started this project not good at coding at all, so the page looked pretty simple. I got used to the asthetic, so I haven't changed it.
 
 ## Github repo navigation
-The Github repository for this website is a bit wonky as I have no one to go off of. The commit count for this website is over 700 which I've rarely seen anywhere else so I must be doing something differently but it works for me! For the actual files, the main pages are in the root, but everything else is sorted into folders. The JS for the pages is stored in the "code" folder. Most of the files have universal.js connected to it, which just has all of the base stuff that needs to be on every page like cheat codes, settings, or easter eggs.
+The Github repository for this website is a bit wonky as I have no one to go off of. The commit count for this website is over 900 which I've rarely seen anywhere else so I must be doing something differently but it works for me! For the actual files, the main pages are in the root, but everything else is sorted into folders. The JS for the pages is stored in the "code" folder. Most of the files have universal.js connected to it, which just has all of the base stuff that needs to be on every page like cheat codes, settings, or easter eggs.
 
 The only languages I've used for the website are JavaScript, CSS, and HTML (does html even count as a language?). 
 Also Markdown ofc
@@ -62,7 +62,9 @@ One of the main bits of the site is the easter egg system. I've built it up over
 -Visit every videos page on the site!\
 -Find the original link to this page\
 -Scroll to the end of the books\
--Archivist! Explore the forgotten pages
+-Archivist! Explore the forgotten pages\
+-Gambling addict! Press random 25 times!\
+-Free from Corporation Rim!
 
 Alternatively, you can type 132435 in the easter eggs page to unlock them all at once! The reset button is in the bottom right corner.
 
