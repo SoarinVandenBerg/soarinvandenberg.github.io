@@ -359,6 +359,23 @@ document.addEventListener("keydown", (e) => {
 });
 
 
+// Egg 20
+
+const allProjects = [
+  "visited_books_project",
+  "visited_projects_index",
+  "visited_esp-32_project",
+  "visited_codingsprint_project",
+];
+
+let allProjectsVisited = allProjects.every(key => localStorage.getItem(key));
+if (allProjectsVisited && !localStorage.getItem("egg20_found")) {
+  localStorage.setItem("egg20_found", "true");
+  localStorage.setItem("popupReload", "egg20_found");
+  location.reload();
+}
+
+
 
 // This cheatcode is for testing only! It gives you all of the eggs :D
 
@@ -416,6 +433,10 @@ if (e.key === cheatCode[cheatPosition]) {
     localStorage.setItem("OldAI", "true");
     localStorage.setItem("OldESP-32", "true");
     localStorage.setItem("gamblingVisits", "true");
+    localStorage.setItem("visited_codingsprint_project", "true");
+    localStorage.setItem("visited_projects_index", "true");
+    localStorage.setItem("visited_books_project", "true");
+    localStorage.setItem("visited_codingsprint_project", "true");
     localStorage.setItem("count01", "true");
     localStorage.setItem("count02", "true");
     localStorage.setItem("count03", "true");

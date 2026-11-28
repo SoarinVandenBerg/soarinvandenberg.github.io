@@ -20,6 +20,7 @@ if (localStorage.getItem("egg16_found")) foundEggs++;
 if (localStorage.getItem("egg17_found")) foundEggs++;
 if (localStorage.getItem("egg18_found")) foundEggs++;
 if (localStorage.getItem("egg19_found")) foundEggs++;
+if (localStorage.getItem("egg20_found")) foundEggs++;
 
 if (foundEggs === 0) {
   document.getElementById("eggListHead").style.display = "none";
@@ -53,6 +54,7 @@ const listEggs = [
   { key: "egg17_found", text: "-It should say soarin is stew pid instead" },
   { key: "egg18_found", text: "-Gambling addict! Press random 25 times!" },
   { key: "egg19_found", text: "-Free from Corporation Rim!" },
+  { key: "egg20_found", text: "-Visit every project on the page!" },
 ]
 
 listEggs.forEach(egg => {
@@ -92,6 +94,7 @@ listEggs.forEach(egg => {
     localStorage.removeItem("egg17_found");
     localStorage.removeItem("egg18_found");
     localStorage.removeItem("egg19_found");
+    localStorage.removeItem("egg20_found");
     localStorage.removeItem("visits_index");
     localStorage.removeItem("visited_about");
     localStorage.removeItem("visited_ai");
@@ -110,6 +113,10 @@ listEggs.forEach(egg => {
     localStorage.removeItem("visited_videofinder");
     localStorage.removeItem("visited_videos");
     localStorage.removeItem("visited_guide");
+    localStorage.removeItem("visited_codingsprint_project");
+    localStorage.removeItem("visited_esp-32_project");
+    localStorage.removeItem("visited_projects_index");
+    localStorage.removeItem("visited_books_project");
     localStorage.removeItem("gamblingVisits");
     localStorage.removeItem("randomVisits");
     localStorage.removeItem("OldESP-32");
